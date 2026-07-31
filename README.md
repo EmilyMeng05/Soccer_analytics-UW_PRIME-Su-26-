@@ -20,9 +20,7 @@ I think it is important to have a first-round exclusion criterion on who we shou
 
 For the current stage, I am only using the FC26 data, a rating system made by FIFA.
 
-Here is the link: [FC26_data_explained](https://www.fcratings.com/articles/ea-sports-fc-26-attributes-explained)
-
-[FC26_data](https://www.ea.com/games/ea-sports-fc/ratings)
+Here is the link: [FC26_data_explained](https://www.fcratings.com/articles/ea-sports-fc-26-attributes-explained) and [FC26_data](https://www.ea.com/games/ea-sports-fc/ratings)
 
 1. Pace (PAC): Measures acceleration and sprint speed.
 2. Shooting (SHO): Evaluates finishing, positioning, shot power, and long shots.
@@ -32,12 +30,12 @@ Here is the link: [FC26_data_explained](https://www.fcratings.com/articles/ea-sp
 6. Physicality (PHY): Measures strength, stamina, aggression, and jumping
 7. Goalkeeping (CK): Looks at diving, handling, kicking, positioning, and reflexes
 
-** NOTE: **
+**NOTE:**
 
 1. We need to consider injury when making this data.
 2. different position emphasizes on different skills, and so maybe we should break down this rating system a bit more.
 
-### 2. Most played positiona
+### 2. Most played position
 
 We need a way to at least classify players into some categories so it will be easier for the future steps to choose players. After all, we can’t have 11 strikers on the team.
 
@@ -47,7 +45,7 @@ Since a lot of players can play multiple positions, setting a “fixed” positi
 
 Specifically look at the passing rate for each player and order them from high to low.
 
-** Note: **
+**Note:**
 
 We may want to exclude certain positions, like goalie and the striker, because those position weight less on the striking attribute.
 
@@ -63,7 +61,7 @@ My thought is to represent this factor in a node graph with clustering. I will c
 
 This is the most confusing factor for the list, and the reason is that there doesn’t exist a perfect matching style list between players. One thing we could use this variable for is to experiment whether we should pick all players with the same style, all with different styles, or the middle. Experimenting a bit on this part will be valuable.
 
-** Note: **
+**Note:**
 
 There are a lot of constraints for this factor because a player’s playing style could vary from time to time, with different coaches and clubs, and with different positions.
 
