@@ -31,11 +31,7 @@ from sklearn.metrics import confusion_matrix
 
 
 # Read the cleaned outfield player dataset from Stage 1.
-
 df = pd.read_csv("cleaned_eafc26_outfield_players.csv")
-
-print("Dataset shape:", df.shape)
-
 
 # Use the same six-dimensional player representation that has been used
 # throughout the project.
