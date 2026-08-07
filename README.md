@@ -2,86 +2,202 @@
 
 Building the best soccer team using data and math!
 
-There are so many legendary soccer players who have shaped how people play soccer today. From Ronaldinho, Pelé, Kaká, to Messi, C.Ronaldo, Dembélé, and Mbappé. The list goes on and on. This project is to mathematically analyze players’ stats and try to see what factors team managers and coaches need to consider when choosing players for a team.
+There are so many legendary soccer players who have shaped how people play soccer today. From Ronaldinho, Pelé, Kaká, to Messi, Cristiano Ronaldo, Dembélé, and Mbappé, the list goes on and on. Every generation has players who stand out because of their incredible individual talent.
 
-The naive way of creating the best team will be to pick the best player ever from each position. This approach will definitely provide valuable insights because you always want to choose the good players to play. The issue with this method is that having too many good players on the same team might unfortunately interfere with their performance, as everyone wants to shoot, score, and be the leader. Take the Real Madrid team for this season as an example. So I am curious to explore ways in which one can assess players and how to assess team performance.
+A natural question then becomes:
 
-# Project brainstorming
+> **If we could choose any eleven players in the world, what would be the best possible soccer team?**
 
-First, I build a list of 50 important factors that I think will determine whether a player is good or not. Then I pick the top 10 most relevant and easily measured variables out of the 50.
+The naive approach would be to simply pick the best player at every position. While this definitely provides valuable insights because you always want talented players on your team, I don't think this tells the whole story.
 
-Here are the top 10 factors that I have listed.
+Soccer is a team sport. Having too many players with similar strengths may actually reduce the team's overall performance. Everyone wants to attack, everyone wants to score, and not every player naturally complements one another. Recent teams like Real Madrid have shown that even a roster full of world-class players can struggle to find the right balance.
 
-## Top 10 factors for determining a good player under a team setting:
+So instead of asking,
 
-### 1. Overall player quality
+> **"Who are the best players?"**
 
-I think it is important to have a first-round exclusion criterion on who we should pick for these players.
+I want to ask,
 
-For the current stage, I am only using the FC26 data, a rating system made by FIFA.
+> **"How can we mathematically build the best team?"**
 
-Here is the link: [FC26_data_explained](https://www.fcratings.com/articles/ea-sports-fc-26-attributes-explained) and [FC26_data](https://www.ea.com/games/ea-sports-fc/ratings)
+Rather than focusing only on player ratings, I want to investigate how player attributes, positions, chemistry, playing styles, and team diversity all contribute to creating a successful lineup.
 
-1. Pace (PAC): Measures acceleration and sprint speed.
-2. Shooting (SHO): Evaluates finishing, positioning, shot power, and long shots.
-3. Passing (PAS): Combines vision, crossing, curve, free kicks, long passing, and short passing accuracy.
-4. Dribbling (DRI): Factors in agility, balance, reactions, ball control, dribbling, and composure.
-5. Defending (DEF): Assesses defensive awareness, heading, interceptions, standing tackle, and sliding tackle.
-6. Physicality (PHY): Measures strength, stamina, aggression, and jumping
-7. Goalkeeping (CK): Looks at diving, handling, kicking, positioning, and reflexes
+# Project Overview
 
-**NOTE:**
+Instead of trying to solve the entire problem at once, I divide this project into four stages.
 
-1. We need to consider injury when making this data.
-2. different position emphasizes on different skills, and so maybe we should break down this rating system a bit more.
+## Stage 1. Representing Each Player
 
-### 2. Most played position
+The first step is to represent every player using measurable attributes.
 
-We need a way to at least classify players into some categories so it will be easier for the future steps to choose players. After all, we can’t have 11 strikers on the team.
+For the current version of this project, I mainly use the FC26 player ratings. These ratings summarize different aspects of a player's abilities.
 
-Since a lot of players can play multiple positions, setting a “fixed” position for a player will impact the player’s performance to some degree. So for now, I am going to rate these positions from most frequent to least frequent throughout the season.
+Current attributes include:
 
-### 3. Passing relationship between players
+- Pace (PAC)
+- Shooting (SHO)
+- Passing (PAS)
+- Dribbling (DRI)
+- Defending (DEF)
+- Physicality (PHY)
+- Goalkeeping (GK)
 
-Specifically look at the passing rate for each player and order them from high to low.
+In addition to these ratings, I also plan to include information such as
 
-**Note:**
+- Preferred positions
+- Playing styles
+- Club
+- Minutes played
+- Injury history
 
-We may want to exclude certain positions, like goalie and the striker, because those position weight less on the striking attribute.
+The goal of this stage is to convert every player into a numerical feature vector that can later be analyzed mathematically.
 
-### 4. Minutes (or matches) played together
+Useful links: 
 
-This might be the easiest way to test for chemistry between players, answering questions like whether they are close to each other; maybe from the team they were playing at could infer what type of management systems and playing styles these players like.
+[FC26_data_explain](https://www.fcratings.com/articles/ea-sports-fc-26-attributes-explained)
 
-I will define two attributes: same team vs different team.
+[FC26_data](https://www.ea.com/games/ea-sports-fc/ratings)
 
-My thought is to represent this factor in a node graph with clustering. I will connect the players with edges if they played with/against each other, and the number on the edge will represent (played time, played against time)
+## Stage 2. Understanding Player Similarity
 
-### 5. Playing style compatibility
+Once every player is represented numerically, the next step is understanding how similar different players actually are.
 
-This is the most confusing factor for the list, and the reason is that there doesn’t exist a perfect matching style list between players. One thing we could use this variable for is to experiment whether we should pick all players with the same style, all with different styles, or the middle. Experimenting a bit on this part will be valuable.
+Instead of manually deciding whether two players have similar playing styles, I want to let the data and machine learning models answer that question.
 
-**Note:**
+Some techniques I plan to explore include:
 
-There are a lot of constraints for this factor because a player’s playing style could vary from time to time, with different coaches and clubs, and with different positions.
+- Correlation analysis 
+- Principal Component Analysis (PCA)
+- Similarity metrics
+- Data visualization
 
-Link for FC26 player styles: [FC26_player_styles](https://www.fcratings.com/articles/what-are-playstyles-in-ea-sports-fc-26)
+These methods will help reveal which player attributes explain the largest differences between players while also making the data easier to visualize.
+
+## Stage 3. Discovering Player Archetypes
+
+After understanding player similarity, I want to group players into different playing archetypes using clustering algorithms.
+
+Instead of simply saying that Messi and Neymar are similar, I want to mathematically identify groups such as
+
+- Creative playmakers
+- Clinical finishers
+- Ball-winning midfielders
+- Attacking fullbacks
+- Physical center backs
+
+The exact groups will depend on what the clustering algorithm discovers from the data.
+
+One idea I am excited to explore is whether selecting multiple players from the same cluster creates redundancy within a team, while selecting players from different clusters produces a more balanced lineup.
+
+## Stage 4. Building the Best Team
+
+Finally, I combine everything together.
+
+Instead of selecting players solely based on their overall ratings, I want to build a team that balances multiple factors simultaneously.
+
+Some of the factors I plan to investigate include
+
+- Overall player quality
+- Position constraints
+- Playing style diversity
+- Team chemistry
+- Passing relationships
+- Minutes played together
+
+The goal is to compare different team-building strategies and investigate whether diversity and chemistry can outperform simply selecting the highest-rated players.
+
+# Candidate Features
+
+Below are the different features I have brainstormed for this project. Some of these will definitely be included, while others are ideas I would like to experiment with in future versions.
+
+## 1. Overall Player Quality
+
+I think it is important to have a first-round exclusion criterion on who we should pick for the team.
+
+For the current stage, I am using the FC26 player ratings made by EA Sports for getting the overall player quality.
+
+Current thoughts:
+
+- Injury history should probably be considered in future versions.
+- Different positions emphasize different skills, so it may make sense to break these ratings down further.
 
 
-### 6. Attacking contribution [potential skip]
-### 7. Defensive contribution [potential skip]
-### 8. Passing network edge weight / connectivity [potential skip]
+## 2. Most Played Position
 
-### 9. Team balance
+We need a way to classify players into positions because we obviously cannot have eleven strikers on the same team.
 
-Here we want to ensure diversity of the team, in that the model doesn’t just pick only good strikers who can score. We want a mix of attacking, defensive, and positional roles.
+Since many players can play multiple positions, I plan to rank positions based on how frequently each player has played them throughout the season instead of assigning only one fixed position.
 
-### 10. Injury 
 
-This is probably the most important factor in the sense that we do want to keep track of the injuries that players have and whether they are critical injuries or not.
+## 3. Passing Relationships
 
-# Helpful links
+Specifically, I want to examine passing frequency between players.
 
-1. [FC26_most_popular_player_per_position](https://www.fut.gg/tactics/most-used-players/)
+Questions I would like to investigate include:
 
-2. [Squad_rating](https://fifauteam.com/fc-26-squad-rating-guide/)
+- Which players naturally pass to each other?
+- Do highly connected passing pairs perform better together?
+- Should passing chemistry influence team selection?
+
+## 4. Minutes (or Matches) Played Together
+
+This might be one of the easiest ways to measure chemistry.
+
+Players who have spent more time together may already understand each other's movement and playing style.
+
+One idea is to represent this as a graph where
+
+- Nodes represent players.
+- Edges represent shared playing time.
+- Edge weights represent minutes played together.
+
+I also want to distinguish between players who have
+
+- Played on the same team.
+- Frequently played against one another.
+
+
+## 5. Playing Style Compatibility
+
+This is probably the hardest feature to define.
+
+There doesn't seem to be a perfect mathematical definition of playing style compatibility, which is exactly why I think it is interesting.
+
+Instead of manually deciding which styles work together, I hope the clustering step can help answer questions such as
+
+- Should we build a team with very similar players?
+- Should every player have a completely different style?
+- Is the best team somewhere in the middle?
+
+Current thought:
+
+A player's style changes depending on their coach, club, teammates, and even their position, so this feature will probably require the most experimentation.
+
+Useful link:
+
+[FC26_player_style](https://www.fcratings.com/articles/what-are-playstyles-in-ea-sports-fc-26)
+
+## 6. Attacking Contribution *(Potential Future Feature)*
+
+Measure how much each player contributes to attacking opportunities beyond simply scoring goals.
+
+This is a particularly important skill to consider when placing a player in the attacking team.
+
+## 7. Defensive Contribution *(Potential Future Feature)*
+
+Measure how much each player contributes defensively, even if they are not traditional defenders.
+
+This is a particularly important skill to consider when placing a player in the defensing team.
+
+## 8. Team Balance
+
+One of the main goals of this project is to avoid selecting eleven individually great players who all perform the same role.
+
+Instead, I want to investigate whether mathematically encouraging diversity leads to stronger teams.
+
+
+## 9. Injury History
+
+This is probably one of the most important real-world factors.
+
+Even if a player is world-class, frequent injuries may significantly affect their overall value to the team.
