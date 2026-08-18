@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
@@ -8,33 +10,81 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
 
-# STAGE 3.3: LEARNING POSSIBLE POSITIONS FROM PLAYER ATTRIBUTES
+# STAGE 3.3A: LOGISTIC REGRESSION POSITION PREDICTION
 #
-# Up to this point, the EAFC position column has mostly been used as
-# descriptive information.
-#
-# However, many soccer players are capable of playing multiple roles.
-#
-# If we force every player to stay in their listed EAFC position,
-# we may lose interesting possibilities when building teams later.
+# prepare_dataset.py has already cleaned the EAFC26 dataset.
 #
 # In this stage, I want to ask:
 #
-# Can a player's likely positions be learned directly from their
+# Can a player's likely position be learned directly from their
 # six main EAFC attributes?
 #
-# The model will NOT be told that strikers should have high shooting
-# or that center backs should have high defending.
+# The model is given:
 #
-# Instead, it will learn those relationships from players whose
-# positions are already known.
+# PAC
+# SHO
+# PAS
+# DRI
+# DEF
+# PHY
+#
+# and tries to predict the player's official EAFC position.
+#
+# The goal is not only to predict one position.
+#
+# I also want to keep the probability distribution across positions
+# because this may help identify players whose attribute profiles
+# resemble multiple positions.
 
 
-# Read the cleaned outfield player dataset from Stage 1.
-df = pd.read_csv("cleaned_eafc26_outfield_players.csv")
+# Define project paths.
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA = PROJECT_ROOT / "data"
+
+RESULTS = (
+    PROJECT_ROOT
+    / "results"
+    / "stage_3_3"
+    / "logistic_regression"
+)
+
+RESULTS.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+
+# Read the cleaned outfield player dataset created by prepare_dataset.py.
+
+df = pd.read_csv(
+    DATA
+    / "processed"
+    / "cleaned_eafc26_outfield_players.csv"
+)
+
+print(
+    "Dataset shape:",
+    df.shape
+)
+
+
+# Show all columns when printing player predictions.
+
+pd.set_option(
+    "display.max_columns",
+    None
+)
+
+pd.set_option(
+    "display.width",
+    200
+)
+
 
 # Use the same six-dimensional player representation that has been used
-# throughout the project.
+# throughout the earlier stages of the project.
 
 features = [
     "PAC",
@@ -46,29 +96,28 @@ features = [
 ]
 
 
-# The target variable is the player's listed EAFC position.
-#
-# This makes Stage 3.3 a supervised learning problem:
-#
-# inputs:
-# PAC, SHO, PAS, DRI, DEF, PHY
-#
-# output:
-# Position
+# Input variables.
 
-X = df[features]
-y = df["Position"]
+X = df[
+    features
+]
 
 
-# Split the player dataset into training and testing sets.
+# Target variable.
+
+y = df[
+    "Position"
+]
+
+
+# Split the dataset into training and testing sets.
 #
-# The model will learn the relationship between player attributes and
-# positions using the training set.
+# The model learns from the training players.
 #
-# The test set contains players the model has not seen during training.
+# The test players are held out so that we can evaluate whether the
+# learned relationship generalizes to unseen players.
 #
-# This allows us to evaluate whether the learned relationships generalize
-# to unseen players.
+# stratify=y keeps the position distribution similar in both sets.
 
 X_train, X_test, y_train, y_test = train_test_split(
     X,
@@ -81,28 +130,27 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Standardize the player attributes.
 #
-# This keeps the scale of each feature comparable and is especially useful
-# for Logistic Regression.
+# The scaler is fit only on the training data to avoid using information
+# from the test set during model training.
 
 scaler = StandardScaler()
 
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+X_train_scaled = scaler.fit_transform(
+    X_train
+)
+
+X_test_scaled = scaler.transform(
+    X_test
+)
 
 
-# Start with multinomial Logistic Regression.
+# Train the Logistic Regression model.
 #
-# Logistic Regression is useful here because:
+# Logistic Regression is useful because:
 #
-# 1. It can predict multiple classes.
-# 2. It produces probabilities for every possible position.
-# 3. It is easier to interpret than many more complicated models.
-#
-# The most important output for this project is not only the single
-# predicted position.
-#
-# We want the full probability distribution because that tells us
-# whether a player may reasonably fit several positions.
+# 1. It supports multiple position classes.
+# 2. It produces probabilities for each possible position.
+# 3. It provides a simple and interpretable baseline model.
 
 model = LogisticRegression(
     max_iter=3000,
@@ -115,56 +163,103 @@ model.fit(
 )
 
 
-# Evaluate the model using players it did not see during training.
+# Predict positions for the held-out test players.
 
 y_pred = model.predict(
     X_test_scaled
 )
+
+
+# Calculate overall accuracy.
 
 accuracy = accuracy_score(
     y_test,
     y_pred
 )
 
-print("\nModel accuracy:")
-print(round(accuracy, 4))
-
-
-# Print a classification report.
-#
-# Precision, recall, and F1-score are especially useful here because
-# some positions occur much more frequently than others.
-
-print("\nClassification report:")
 
 print(
-    classification_report(
-        y_test,
-        y_pred,
-        zero_division=0
+    "\nLogistic Regression accuracy:"
+)
+
+print(
+    round(
+        accuracy,
+        4
     )
 )
 
 
-# Create a confusion matrix.
+# Save the overall model evaluation.
+
+model_evaluation = pd.DataFrame({
+    "Metric": [
+        "Accuracy"
+    ],
+    "Value": [
+        accuracy
+    ]
+})
+
+
+model_evaluation.to_csv(
+    RESULTS
+    / "model_evaluation.csv",
+    index=False
+)
+
+
+# Calculate precision, recall, and F1-score for each position.
 #
-# This will help us understand which positions the model tends
-# to confuse with one another.
+# This is important because some positions contain many more players
+# than others.
+
+report = classification_report(
+    y_test,
+    y_pred,
+    zero_division=0,
+    output_dict=True
+)
+
+
+report_df = pd.DataFrame(
+    report
+).transpose()
+
+
+print(
+    "\nClassification report:"
+)
+
+print(
+    report_df.round(
+        3
+    )
+)
+
+
+report_df.to_csv(
+    RESULTS
+    / "classification_report.csv"
+)
+
+
+# Create the confusion matrix.
 #
-# Those mistakes may actually be interesting.
+# This helps us understand which positions the model tends to confuse.
 #
-# For example:
+# Some confusing pairs may reflect genuine similarities:
 #
-# CM being confused with CDM or CAM
+# CAM vs CM
 #
-# LW being confused with LM
+# CM vs CDM
 #
-# RW being confused with RM
+# LW vs LM
 #
-# could reflect genuine positional similarity rather than completely
-# incorrect predictions.
+# RW vs RM
 
 position_labels = model.classes_
+
 
 confusion = confusion_matrix(
     y_test,
@@ -172,41 +267,67 @@ confusion = confusion_matrix(
     labels=position_labels
 )
 
+
 confusion_df = pd.DataFrame(
     confusion,
     index=position_labels,
     columns=position_labels
 )
 
-print("\nConfusion matrix:")
-print(confusion_df)
+
+print(
+    "\nConfusion matrix:"
+)
+
+print(
+    confusion_df
+)
+
 
 confusion_df.to_csv(
-    "position_prediction_confusion_matrix.csv"
+    RESULTS
+    / "position_prediction_confusion_matrix.csv"
 )
 
 
-# Now train the same model representation on every player.
+# The train/test model above is used only to evaluate whether Logistic
+# Regression can learn meaningful relationships between attributes
+# and positions.
 #
-# The model will generate a probability for every possible position.
+# Now train a final model using the complete dataset.
 #
-# For example, a player might receive:
-#
-# CM = 0.40
-# CAM = 0.32
-# CDM = 0.18
-# RM = 0.07
-# ST = 0.03
-#
-# These probabilities give us a continuous measure of positional fit
-# instead of forcing every player into one position.
+# This final model is used only to generate position probabilities
+# for exploratory analysis and future stages.
 
-X_all_scaled = scaler.transform(
-    df[features]
+final_scaler = StandardScaler()
+
+
+X_all_scaled = final_scaler.fit_transform(
+    df[
+        features
+    ]
 )
 
-position_probabilities = model.predict_proba(
-    X_all_scaled
+
+final_model = LogisticRegression(
+    max_iter=3000,
+    random_state=42
+)
+
+
+final_model.fit(
+    X_all_scaled,
+    y
+)
+
+
+# Calculate the probability that every player resembles each possible
+# EAFC position.
+
+position_probabilities = (
+    final_model.predict_proba(
+        X_all_scaled
+    )
 )
 
 
@@ -216,8 +337,9 @@ position_probabilities = model.predict_proba(
 
 probability_columns = [
     f"Prob_{position}"
-    for position in model.classes_
+    for position in final_model.classes_
 ]
+
 
 probability_df = pd.DataFrame(
     position_probabilities,
@@ -226,7 +348,7 @@ probability_df = pd.DataFrame(
 )
 
 
-# Add all position probabilities back to the player dataset.
+# Add the probability columns to the player dataset.
 
 results = pd.concat(
     [
@@ -239,26 +361,38 @@ results = pd.concat(
 
 # Find each player's three most likely positions.
 #
-# The top three positions make the results easier for people to read.
+# The complete probability distribution is still saved.
 #
-# However, the full probability distribution will still be saved because
-# Stage 3.4 and Stage 4 may need more than only the top three choices.
+# The top three simply make the results easier to interpret.
 
-def get_top_positions(probabilities, classes, top_n=3):
+def get_top_positions(
+    probabilities,
+    classes,
+    top_n=3
+):
 
-    order = probabilities.argsort()[::-1][:top_n]
+    order = (
+        probabilities
+        .argsort()[::-1][:top_n]
+    )
+
 
     positions = [
         classes[i]
         for i in order
     ]
 
+
     scores = [
         probabilities[i]
         for i in order
     ]
 
-    return positions, scores
+
+    return (
+        positions,
+        scores
+    )
 
 
 top_1_positions = []
@@ -275,9 +409,10 @@ for probabilities in position_probabilities:
 
     positions, scores = get_top_positions(
         probabilities,
-        model.classes_,
+        final_model.classes_,
         top_n=3
     )
+
 
     top_1_positions.append(
         positions[0]
@@ -287,6 +422,7 @@ for probabilities in position_probabilities:
         scores[0]
     )
 
+
     top_2_positions.append(
         positions[1]
     )
@@ -294,6 +430,7 @@ for probabilities in position_probabilities:
     top_2_probabilities.append(
         scores[1]
     )
+
 
     top_3_positions.append(
         positions[2]
@@ -304,30 +441,55 @@ for probabilities in position_probabilities:
     )
 
 
-results["PredictedPosition1"] = top_1_positions
-results["PositionProbability1"] = top_1_probabilities
+# Add the three most likely positions to the results.
 
-results["PredictedPosition2"] = top_2_positions
-results["PositionProbability2"] = top_2_probabilities
+results[
+    "PredictedPosition1"
+] = top_1_positions
 
-results["PredictedPosition3"] = top_3_positions
-results["PositionProbability3"] = top_3_probabilities
+results[
+    "PositionProbability1"
+] = top_1_probabilities
 
 
-# Compare the model's most likely position with the listed EAFC position.
+results[
+    "PredictedPosition2"
+] = top_2_positions
+
+results[
+    "PositionProbability2"
+] = top_2_probabilities
+
+
+results[
+    "PredictedPosition3"
+] = top_3_positions
+
+results[
+    "PositionProbability3"
+] = top_3_probabilities
+
+
+# Check whether the first predicted position matches the official EAFC position.
 #
-# If they are different, that does NOT automatically mean the model is wrong.
+# A disagreement does NOT automatically mean the model is wrong.
 #
-# These disagreements may identify players whose attribute profiles resemble
-# another tactical position.
+# It may indicate that the player's attribute profile resembles
+# another positional group.
 
-results["OfficialPositionMatch"] = (
-    results["PredictedPosition1"]
-    == results["Position"]
+results[
+    "OfficialPositionMatch"
+] = (
+    results[
+        "PredictedPosition1"
+    ]
+    == results[
+        "Position"
+    ]
 )
 
 
-# Print some example results.
+# Columns used when printing example predictions.
 
 example_columns = [
     "Name",
@@ -340,7 +502,10 @@ example_columns = [
     "PositionProbability3"
 ]
 
-print("\nExample predicted positions:")
+
+print(
+    "\nExample predicted positions:"
+)
 
 print(
     results[
@@ -350,23 +515,20 @@ print(
 )
 
 
-# Create a function that allows us to inspect individual players.
-#
-# This will be useful for players such as:
-#
-# Jude Bellingham
-# Federico Valverde
-# Achraf Hakimi
-# Lionel Messi
-#
-# where we are especially interested in positional flexibility.
+# Create a function for inspecting individual players.
 
-def show_player_positions(player_name):
+def show_player_positions(
+    player_name
+):
 
     player = results[
-        results["Name"].str.lower()
+        results[
+            "Name"
+        ]
+        .str.lower()
         == player_name.lower()
     ]
+
 
     if len(player) == 0:
 
@@ -378,26 +540,18 @@ def show_player_positions(player_name):
 
 
     print(
-        f"\nPosition predictions for {player_name}:"
+        f"\nLogistic Regression position predictions for {player_name}:"
     )
+
 
     print(
         player[
-            [
-                "Name",
-                "Position",
-                "PredictedPosition1",
-                "PositionProbability1",
-                "PredictedPosition2",
-                "PositionProbability2",
-                "PredictedPosition3",
-                "PositionProbability3"
-            ]
+            example_columns
         ]
     )
 
 
-# Test several interesting players.
+# Inspect several interesting players.
 
 show_player_positions(
     "Jude Bellingham"
@@ -415,16 +569,23 @@ show_player_positions(
     "Lionel Messi"
 )
 
+show_player_positions(
+    "Trent Alexander-Arnold"
+)
 
-# We can also look for players whose model-predicted position differs
-# from their listed EAFC position.
+
+# Find highly rated players whose first predicted position differs
+# from their official EAFC position.
 #
-# These players may be especially interesting for the role-based
-# team-building part of the project.
+# These players may be useful examples when studying positional flexibility.
 
 position_disagreements = results[
-    results["OfficialPositionMatch"] == False
+    results[
+        "OfficialPositionMatch"
+    ]
+    == False
 ].copy()
+
 
 position_disagreements = (
     position_disagreements
@@ -435,7 +596,11 @@ position_disagreements = (
 )
 
 
-print("\nHighest-rated players whose predicted position differs from their listed position:")
+print(
+    "\nHighest-rated players whose Logistic Regression prediction "
+    "differs from their listed position:"
+)
+
 
 print(
     position_disagreements[
@@ -445,13 +610,13 @@ print(
 )
 
 
-# Save the complete results.
+# Save the complete position-probability dataset.
 #
-# This file includes:
+# This contains:
 #
-# original player information
+# player information
 #
-# six EAFC attributes
+# PAC SHO PAS DRI DEF PHY
 #
 # full probability distribution across positions
 #
@@ -459,48 +624,77 @@ print(
 #
 # probability for each predicted position
 #
-# whether the model's first prediction matches the official EAFC position
-#
-# Stage 3.4 can use this file to visualize positional flexibility.
+# official-position match indicator
 
 results.to_csv(
-    "player_position_predictions.csv",
+    RESULTS
+    / "player_position_predictions.csv",
     index=False
 )
 
 
-# Save the position disagreements separately because these players
-# may provide some of the most interesting examples in the project.
+# Save disagreement examples separately.
 
 position_disagreements.to_csv(
-    "position_prediction_disagreements.csv",
+    RESULTS
+    / "position_prediction_disagreements.csv",
     index=False
 )
 
 
-# Stage 3.3 does NOT claim that the model has discovered a player's
-# true position.
+# Save a small model summary.
 #
-# The official EAFC position is being used as the training label,
-# so the model is learning which attribute profiles are associated
-# with those existing position labels.
+# This will make it easier to compare Logistic Regression with
+# Random Forest and future rich-feature models.
+
+model_summary = pd.DataFrame({
+    "Model": [
+        "Logistic Regression"
+    ],
+    "Features": [
+        "PAC, SHO, PAS, DRI, DEF, PHY"
+    ],
+    "Accuracy": [
+        accuracy
+    ]
+})
+
+
+model_summary.to_csv(
+    RESULTS
+    / "model_summary.csv",
+    index=False
+)
+
+
+# Stage 3.3A does NOT claim that the model has discovered a player's
+# true or ideal soccer position.
 #
-# The useful result is the probability distribution.
+# The official EAFC position is used as the training label.
 #
-# A player with:
+# Therefore, the model learns which combinations of the six EAFC
+# attributes are associated with those existing position labels.
 #
-# CM  = 0.42
+# The classification accuracy tells us how well these six broad
+# attributes distinguish official positions.
+#
+# The probability distribution is useful for exploring positional
+# flexibility.
+#
+# For example:
+#
+# CM  = 0.45
 # CAM = 0.35
 # CDM = 0.15
 #
-# appears much more positionally flexible than a player with:
+# suggests a more flexible profile than:
 #
 # CB = 0.95
 #
-# This provides a mathematical foundation for exploring positional
-# versatility without allowing every player to play every role equally.
-#
-# Stage 3.4 can use these probabilities together with the attacking
-# and defensive contribution scores from Stage 3.2 to build role maps.
+# Stage 3.4 will investigate the actual attribute profiles associated
+# with each position and eventually introduce richer player attributes.
 
-print("\nStage 3.3 position prediction complete!")
+
+print(
+    "\nStage 3.3A Logistic Regression position prediction complete!"
+)

@@ -1,0 +1,2 @@
+Model,Features,Accuracy
+Logistic Regression,"PAC, SHO, PAS, DRI, DEF, PHY",0.6088421052631579

@@ -1,0 +1,3 @@
+feature_set,number_of_features,top_1_accuracy,top_2_accuracy,top_3_accuracy
+six_features,6,0.68,0.8665263157894737,0.9532631578947368
+rich_features,34,0.752,0.9145263157894736,0.9772631578947368

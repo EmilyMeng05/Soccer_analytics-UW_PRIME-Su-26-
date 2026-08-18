@@ -1,0 +1,2 @@
+Model,Features,Accuracy
+Random Forest,"PAC, SHO, PAS, DRI, DEF, PHY",0.5671578947368421

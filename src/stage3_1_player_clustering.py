@@ -1,37 +1,83 @@
+from pathlib import Path
+
 import pandas as pd
-import matplotlib.pyplot as plt
 import matplotlib
+import matplotlib.pyplot as plt
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.decomposition import PCA
 
-# just save the graph, dont show me
-matplotlib.use("Agg")
 
 # STAGE 3.1: DISCOVERING PLAYER ARCHETYPES
 #
-# In Stage 2, we showed that players with similar EAFC attribute profiles
-# tend to appear close together mathematically.
+# Stage 2 showed that players with similar EAFC attribute profiles
+# appear close together mathematically.
 #
-# Now I want to ask a slightly different question:
+# Stage 3.1 asks a different question:
 #
-# Can the data naturally divide players into different playing archetypes?
+# Can the data naturally divide players into different player archetypes?
 #
-# Importantly, I do NOT want to assume how many playing styles exist.
-# I also do not want to assume that one clustering solution is automatically
-# correct just because it has the best numerical score.
+# I do NOT want to assume how many archetypes exist beforehand.
 #
-# Instead, this stage will generate several candidate clustering solutions
-# and compare them mathematically and from a soccer interpretation perspective.
+# Instead, I will test several possible numbers of clusters and compare:
+#
+# inertia
+# silhouette score
+# cluster sizes
+# average attributes
+# position distributions
+# recognizable players
+#
+# The goal is not necessarily to find one "perfect" value of K.
+#
+# Instead, I want to understand what kinds of player groupings naturally
+# appear at different levels of detail.
 
 
-# Read the cleaned outfield player dataset created in Stage 1.
+# Save graphs without automatically opening them.
 
-df = pd.read_csv("cleaned_eafc26_outfield_players.csv")
+matplotlib.use("Agg")
 
-# Continue using the same six-dimensional player representation:
+
+# Define project paths.
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA = PROJECT_ROOT / "data"
+
+RESULTS = (
+    PROJECT_ROOT
+    / "results"
+    / "stage_3_1"
+)
+
+RESULTS.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+
+# Read the cleaned outfield player dataset created by prepare_dataset.py.
+
+df = pd.read_csv(
+    DATA
+    / "processed"
+    / "cleaned_eafc26_outfield_players.csv"
+)
+
+print(
+    "Dataset shape:",
+    df.shape
+)
+
+
+# Continue using the same six-dimensional player representation
+# from Stages 1 and 2.
+#
+# player = [PAC, SHO, PAS, DRI, DEF, PHY]
+
 features = [
     "PAC",
     "SHO",
@@ -43,44 +89,49 @@ features = [
 
 
 # Standardize the six attributes before clustering.
+#
+# K-Means uses distances between players.
+#
+# Standardization prevents an attribute with a larger spread
+# from dominating the clustering process.
+
 scaler = StandardScaler()
 
-X_scaled = scaler.fit_transform(df[features])
+X_scaled = scaler.fit_transform(
+    df[features]
+)
 
 
-# We do not know how many natural player archetypes exist.
+# Test several possible numbers of clusters.
 #
-# Instead of immediately choosing something like K = 5, I will test
-# several possible values.
-#
-# K represents the number of clusters that K-Means tries to create.
+# K represents the number of player groups that K-Means will create.
 
-k_values = range(2, 11)
+k_values = range(
+    2,
+    11
+)
 
 inertias = []
+
 silhouette_scores = []
 
 
-# For every possible value of K, run K-Means and calculate two measurements:
+# Evaluate every possible K using:
 #
-# 1. Inertia
-#    Measures how tightly players are grouped around their cluster centers.
-#    Lower values mean players are closer to the center of their assigned group.
+# Inertia
 #
-#    However, inertia ALWAYS decreases as K increases.
-#    Therefore, we cannot simply choose the K with the lowest inertia.
+# Lower inertia means players are closer to their assigned cluster centers.
 #
-#    Instead, the Elbow Method looks for the point where adding additional
-#    clusters stops producing a large improvement.
+# However, inertia always decreases as K increases, so the smallest
+# inertia is NOT automatically the best solution.
 #
-# 2. Silhouette Score
-#    Measures how well each player fits inside their own cluster compared
-#    with neighboring clusters.
+# The Elbow Method looks for the point where adding another cluster
+# produces only a relatively small improvement.
 #
-#    Higher silhouette scores generally represent clearer separation.
+# Silhouette Score
 #
-#    However, the clustering with the highest silhouette score is not
-#    automatically the most useful soccer interpretation.
+# Higher silhouette scores indicate that players tend to fit their
+# own cluster better than neighboring clusters.
 
 for k in k_values:
 
@@ -90,7 +141,9 @@ for k in k_values:
         n_init=10
     )
 
-    labels = kmeans.fit_predict(X_scaled)
+    labels = kmeans.fit_predict(
+        X_scaled
+    )
 
     inertias.append(
         kmeans.inertia_
@@ -104,9 +157,11 @@ for k in k_values:
     )
 
 
-# Print the results so we can compare different values of K.
+# Print clustering evaluation results.
 
-print("\nClustering evaluation:")
+print(
+    "\nClustering evaluation:"
+)
 
 for k, inertia, silhouette in zip(
     k_values,
@@ -121,34 +176,32 @@ for k, inertia, silhouette in zip(
     )
 
 
-# Save the clustering evaluation results.
-#
-# This will make it easier to record the results in PROJECT_NOTES.md
-# and compare the different clustering experiments later.
+# Save clustering evaluation results.
 
 evaluation = pd.DataFrame({
-    "K": list(k_values),
-    "Inertia": inertias,
-    "SilhouetteScore": silhouette_scores
+    "K":
+        list(k_values),
+
+    "Inertia":
+        inertias,
+
+    "SilhouetteScore":
+        silhouette_scores
 })
 
+
 evaluation.to_csv(
-    "clustering_evaluation.csv",
+    RESULTS
+    / "clustering_evaluation.csv",
     index=False
 )
 
 
 # Plot the Elbow Method.
-#
-# Again, we are NOT looking for the lowest inertia.
-#
-# Since inertia decreases whenever more clusters are added, the lowest
-# value will almost always occur at the largest K tested.
-#
-# Instead, we are looking for a bend in the curve where adding more
-# clusters begins producing smaller improvements.
 
-plt.figure(figsize=(8,5))
+plt.figure(
+    figsize=(8,5)
+)
 
 plt.plot(
     list(k_values),
@@ -156,16 +209,27 @@ plt.plot(
     marker="o"
 )
 
-plt.xlabel("Number of Clusters (K)")
-plt.ylabel("Inertia")
-plt.title("Elbow Method for Player Archetypes")
+plt.xlabel(
+    "Number of Clusters (K)"
+)
 
-plt.xticks(list(k_values))
+plt.ylabel(
+    "Inertia"
+)
+
+plt.title(
+    "Elbow Method for Player Archetypes"
+)
+
+plt.xticks(
+    list(k_values)
+)
 
 plt.tight_layout()
 
 plt.savefig(
-    "clustering_elbow_method.png",
+    RESULTS
+    / "clustering_elbow_method.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -174,18 +238,10 @@ plt.close()
 
 
 # Plot silhouette score for each K.
-#
-# A higher silhouette score generally indicates more clearly separated
-# clusters.
-#
-# In the initial experiment, K = 2 produced the highest silhouette score.
-# However, that solution mainly separated defensive players from the rest
-# of the dataset.
-#
-# Since our goal is to discover more detailed player archetypes, we will
-# examine several larger values of K rather than automatically accepting K = 2.
 
-plt.figure(figsize=(8,5))
+plt.figure(
+    figsize=(8,5)
+)
 
 plt.plot(
     list(k_values),
@@ -193,16 +249,27 @@ plt.plot(
     marker="o"
 )
 
-plt.xlabel("Number of Clusters (K)")
-plt.ylabel("Silhouette Score")
-plt.title("Silhouette Score by Number of Player Archetypes")
+plt.xlabel(
+    "Number of Clusters (K)"
+)
 
-plt.xticks(list(k_values))
+plt.ylabel(
+    "Silhouette Score"
+)
+
+plt.title(
+    "Silhouette Score by Number of Player Archetypes"
+)
+
+plt.xticks(
+    list(k_values)
+)
 
 plt.tight_layout()
 
 plt.savefig(
-    "clustering_silhouette_scores.png",
+    RESULTS
+    / "clustering_silhouette_scores.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -210,15 +277,24 @@ plt.savefig(
 plt.close()
 
 
-# Print the mathematically best K according to silhouette score.
+# Find the K with the highest silhouette score.
 #
-# This is useful information, but this is NOT yet our final choice.
+# This is useful mathematical information, but it does NOT automatically
+# mean that this K is the best soccer interpretation.
 
-best_index = silhouette_scores.index(
-    max(silhouette_scores)
+best_index = (
+    silhouette_scores.index(
+        max(
+            silhouette_scores
+        )
+    )
 )
 
-best_k = list(k_values)[best_index]
+best_k = (
+    list(k_values)[
+        best_index
+    ]
+)
 
 print(
     "\nHighest silhouette score occurs at K =",
@@ -226,23 +302,13 @@ print(
 )
 
 
-# The first experiment showed that K = 2 mainly creates a broad
-# attack-versus-defense split.
+# The earlier experiment showed that K = 2 creates a broad split
+# between more defensive players and more attacking players.
 #
-# That is meaningful, but it may be too general for our goal of discovering
-# player archetypes.
+# That is meaningful, but it may be too general if we want to discover
+# more detailed player archetypes.
 #
-# Therefore, I want to examine several candidate clustering solutions
-# in more detail.
-#
-# K = 2 gives us the broadest structure.
-#
-# K = 3 is interesting because soccer naturally includes players who may
-# contribute strongly to both attacking and defending.
-#
-# K = 4, 5, and 6 may reveal more specialized styles.
-#
-# We will not assume in advance which of these is the correct answer.
+# Therefore, I will examine several candidate values of K in more detail.
 
 candidate_k_values = [
     2,
@@ -253,12 +319,12 @@ candidate_k_values = [
 ]
 
 
-# PCA will be used only for visualization.
+# Use PCA only for visualization.
 #
-# The actual K-Means clustering still uses all six standardized attributes.
+# K-Means itself still uses all six standardized EAFC attributes.
 #
-# PCA converts the six-dimensional player representation into two dimensions
-# so that we can visualize where the clusters appear relative to each other.
+# PCA reduces the six-dimensional player space to two dimensions
+# so we can draw the clusters.
 
 pca = PCA(
     n_components=2
@@ -268,34 +334,59 @@ pca_components = pca.fit_transform(
     X_scaled
 )
 
-df["PC1"] = pca_components[:, 0]
-df["PC2"] = pca_components[:, 1]
+df["PC1"] = (
+    pca_components[:, 0]
+)
+
+df["PC2"] = (
+    pca_components[:, 1]
+)
 
 
-# Now run separate clustering experiments for each candidate K.
+# Run separate clustering experiments for each candidate K.
 #
-# For every experiment, we will:
+# Every K gets its own result folder:
 #
-# 1. Assign every player to a cluster.
-# 2. Count the number of players in each cluster.
-# 3. Calculate average EAFC attributes for every cluster.
-# 4. Examine position distributions.
-# 5. Print recognizable high-rated players.
-# 6. Create a PCA visualization.
-# 7. Save the results.
+# results/
+#     stage_3_1/
+#         k2/
+#         k3/
+#         k4/
+#         k5/
+#         k6/
 #
-# This gives us enough information to compare the different clustering
-# solutions later without making an immediate decision.
+# This keeps the experiments organized and prevents files
+# from different K values from being mixed together.
 
 for k in candidate_k_values:
 
-    print("\n")
-    print("======================================")
-    print(f"CLUSTERING EXPERIMENT: K = {k}")
-    print("======================================")
+    print(
+        "\n======================================"
+    )
+
+    print(
+        f"CLUSTERING EXPERIMENT: K = {k}"
+    )
+
+    print(
+        "======================================"
+    )
 
 
-    # Run K-Means using the current number of clusters.
+    # Create a result folder for the current K.
+
+    K_RESULTS = (
+        RESULTS
+        / f"k{k}"
+    )
+
+    K_RESULTS.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+
+    # Run K-Means.
 
     kmeans = KMeans(
         n_clusters=k,
@@ -308,128 +399,167 @@ for k in candidate_k_values:
     )
 
 
-    # Create a temporary copy of the player dataset.
-    #
-    # This prevents one clustering experiment from overwriting another.
+    # Create a separate copy for this clustering experiment.
 
     experiment_df = df.copy()
 
-    experiment_df["Cluster"] = cluster_labels
+    experiment_df[
+        "Cluster"
+    ] = cluster_labels
 
 
-    # Count how many players belong to each cluster.
+    # Count the number of players in every cluster.
     #
-    # Extremely small clusters might suggest that K is becoming too large,
-    # while very large clusters may indicate that the grouping is too broad.
+    # Very small clusters could indicate that K is becoming too large.
+    #
+    # Very large clusters could indicate that the grouping is still broad.
 
     cluster_counts = (
-        experiment_df["Cluster"]
+        experiment_df[
+            "Cluster"
+        ]
         .value_counts()
         .sort_index()
     )
 
-    print("\nPlayers in each cluster:")
 
-    print(cluster_counts)
+    print(
+        "\nPlayers in each cluster:"
+    )
+
+    print(
+        cluster_counts
+    )
 
 
-    # Calculate the mean EAFC attributes inside every cluster.
+    cluster_counts.to_csv(
+        K_RESULTS
+        / "cluster_counts.csv"
+    )
+
+
+    # Calculate the average EAFC attributes inside each cluster.
     #
-    # These averages help us understand what each group represents.
+    # These averages help us interpret what each group represents.
     #
-    # For example, a cluster with high PAC, SHO, and DRI but low DEF
-    # might represent attacking players.
-    #
-    # We should NOT name the clusters before looking at these results.
+    # We should not name the clusters before examining these results.
 
     cluster_means = (
         experiment_df
-        .groupby("Cluster")[features]
+        .groupby(
+            "Cluster"
+        )[features]
         .mean()
         .round(2)
     )
 
-    print("\nAverage attributes by cluster:")
 
-    print(cluster_means)
+    print(
+        "\nAverage attributes by cluster:"
+    )
 
+    print(
+        cluster_means
+    )
 
-    # Save the cluster means for this K.
-    #
-    # Having separate files will make it much easier to compare
-    # K = 2, 3, 4, 5, and 6 later.
 
     cluster_means.to_csv(
-        f"cluster_attribute_means_k{k}.csv"
+        K_RESULTS
+        / "cluster_attribute_means.csv"
     )
 
 
-    # Examine which traditional soccer positions appear inside each cluster.
+    # Examine the traditional position distribution inside each cluster.
     #
-    # One of the main research questions is whether the clustering simply
-    # recreates traditional positions or discovers styles that cross
-    # positional boundaries.
+    # This helps answer:
+    #
+    # Does clustering simply recreate soccer positions?
+    #
+    # Or do multiple positions share similar attribute-based archetypes?
 
     position_counts = pd.crosstab(
-        experiment_df["Cluster"],
-        experiment_df["Position"]
+        experiment_df[
+            "Cluster"
+        ],
+        experiment_df[
+            "Position"
+        ]
     )
 
-    print("\nPosition counts by cluster:")
 
-    print(position_counts)
+    print(
+        "\nPosition counts by cluster:"
+    )
+
+    print(
+        position_counts
+    )
+
 
     position_counts.to_csv(
-        f"cluster_position_counts_k{k}.csv"
+        K_RESULTS
+        / "cluster_position_counts.csv"
     )
 
 
-    # Percentages are more useful than raw counts when clusters have
-    # different sizes.
+    # Calculate position percentages inside each cluster.
     #
-    # For example, if a cluster is:
-    #
-    # 40% CAM
-    # 25% CM
-    # 20% RW
-    # 15% CF
-    #
-    # that might represent a playing style shared across several positions.
+    # Percentages are easier to compare when cluster sizes differ.
 
     position_percentages = pd.crosstab(
-        experiment_df["Cluster"],
-        experiment_df["Position"],
+        experiment_df[
+            "Cluster"
+        ],
+        experiment_df[
+            "Position"
+        ],
         normalize="index"
-    ).round(3)
+    ).round(
+        3
+    )
 
-    print("\nPosition percentages by cluster:")
 
-    print(position_percentages)
+    print(
+        "\nPosition percentages by cluster:"
+    )
+
+    print(
+        position_percentages
+    )
+
 
     position_percentages.to_csv(
-        f"cluster_position_percentages_k{k}.csv"
+        K_RESULTS
+        / "cluster_position_percentages.csv"
     )
 
 
     # Look at the highest-rated players inside every cluster.
     #
-    # Cluster averages give us the mathematical description of a group,
-    # while recognizable players help us understand whether that description
-    # makes sense from a soccer perspective.
-    #
-    # The interpretation should come AFTER seeing both pieces of information.
+    # Cluster averages provide the mathematical interpretation,
+    # while recognizable players help us decide whether that
+    # interpretation makes sense from a soccer perspective.
+
+    top_players_all_clusters = []
+
 
     for cluster in sorted(
-        experiment_df["Cluster"].unique()
+        experiment_df[
+            "Cluster"
+        ].unique()
     ):
 
         print(
             f"\nTop players in Cluster {cluster}:"
         )
 
+
         top_players = (
             experiment_df[
-                experiment_df["Cluster"] == cluster
+                experiment_df[
+                    "Cluster"
+                ]
+                == cluster
             ]
             .sort_values(
                 "OVR",
@@ -450,27 +580,67 @@ for k in candidate_k_values:
                 ]
             ]
             .head(10)
+            .copy()
         )
 
-        print(top_players)
+
+        top_players[
+            "Cluster"
+        ] = cluster
 
 
-    # Visualize the current clustering solution using PCA.
+        print(
+            top_players
+        )
+
+
+        top_players_all_clusters.append(
+            top_players
+        )
+
+
+    # Save all top players for this K in one CSV.
+
+    top_players_df = pd.concat(
+        top_players_all_clusters,
+        ignore_index=True
+    )
+
+
+    top_players_df.to_csv(
+        K_RESULTS
+        / "top_players_by_cluster.csv",
+        index=False
+    )
+
+
+    # Visualize the clusters using the two PCA coordinates.
     #
-    # Again, PCA is only being used to draw the graph.
-    # K-Means was performed using all six standardized attributes.
+    # PCA is only being used for the graph.
+    #
+    # K-Means itself was performed using all six standardized attributes.
 
-    plt.figure(figsize=(10,8))
+    plt.figure(
+        figsize=(10,8)
+    )
+
 
     clusters = sorted(
-        experiment_df["Cluster"].unique()
+        experiment_df[
+            "Cluster"
+        ].unique()
     )
+
 
     for cluster in clusters:
 
         subset = experiment_df[
-            experiment_df["Cluster"] == cluster
+            experiment_df[
+                "Cluster"
+            ]
+            == cluster
         ]
+
 
         plt.scatter(
             subset["PC1"],
@@ -480,8 +650,14 @@ for k in candidate_k_values:
             s=15
         )
 
-    plt.xlabel("Principal Component 1")
-    plt.ylabel("Principal Component 2")
+
+    plt.xlabel(
+        "Principal Component 1"
+    )
+
+    plt.ylabel(
+        "Principal Component 2"
+    )
 
     plt.title(
         f"EAFC26 Player Archetypes: K = {k}"
@@ -494,55 +670,65 @@ for k in candidate_k_values:
 
     plt.tight_layout()
 
+
     plt.savefig(
-        f"player_clusters_k{k}.png",
+        K_RESULTS
+        / "player_clusters.png",
         dpi=300,
         bbox_inches="tight"
     )
 
+
     plt.close()
 
 
-    # Save every player's cluster assignment for the current experiment.
+    # Save every player's cluster assignment.
     #
-    # We are intentionally keeping the different K solutions separate
-    # because we have not yet decided which representation is most useful.
+    # The different K solutions remain separate because we have not
+    # decided that one representation is automatically correct.
 
     experiment_df.to_csv(
-        f"player_clusters_k{k}.csv",
+        K_RESULTS
+        / "player_clusters.csv",
         index=False
     )
 
 
 # Stage 3.1 does NOT conclude that one clustering solution is correct.
 #
-# Instead, the goal is to produce several candidate descriptions of
-# player archetypes.
+# Instead, it produces several candidate descriptions of player archetypes.
 #
-# We will compare them using:
+# These solutions can be compared using:
 #
-# - silhouette score
-# - elbow method
-# - cluster sizes
-# - average EAFC attributes
-# - position distributions
-# - recognizable players
-# - interpretability
+# silhouette score
+# elbow method
+# cluster sizes
+# average attributes
+# position distributions
+# recognizable players
+# interpretability
 #
-# K = 2 may reveal the strongest overall split in the dataset, while
-# larger K values may reveal more detailed playing archetypes.
+# K = 2 may reveal the strongest broad split in the dataset.
 #
-# Separately, Stage 3.2 will investigate attacking-versus-defensive balance.
+# Larger values of K may reveal more detailed player styles.
 #
-# This distinction matters because clustering asks:
+# Stage 3.2 asks a different question:
+#
+# "How much does each player contribute offensively and defensively?"
+#
+# Clustering asks:
 #
 # "What groups naturally exist?"
 #
-# while balance analysis asks:
+# Stage 3.2 asks:
 #
-# "Which players are strong in both attacking and defending?"
+# "Where does each individual player lie on an attack-defense spectrum?"
 #
-# We do not want to force a balanced-player group into K-Means if the data
-# does not naturally create one.
+# Keeping these questions separate prevents us from forcing a
+# "balanced player" cluster into the data if K-Means does not
+# naturally produce one.
 
-print("\nStage 3.1 clustering experiments complete!")
+
+print(
+    "\nStage 3.1 clustering experiments complete!"
+)

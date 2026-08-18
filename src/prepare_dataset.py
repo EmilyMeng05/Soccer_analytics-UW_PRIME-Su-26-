@@ -1,59 +1,50 @@
-import os
+from pathlib import Path
+
 import pandas as pd
 
 
 # DATA PREPARATION
 #
-# This file is responsible only for cleaning and preparing the raw EAFC data.
+# This is the only file that should read the raw EAFC26 dataset.
 #
-# Instead of repeating the same filtering and position-cleaning steps in
-# every analysis file, I want to create one standardized dataset that all
-# later stages can use.
+# Its job is to:
 #
-# The general workflow is:
+# 1. Read the raw 59-column EAFC26 dataset.
+# 2. Standardize position names.
+# 3. Apply the OVR > 60 candidate filter.
+# 4. Separate goalkeepers and outfield players.
+# 5. Save a simple six-attribute dataset.
+# 6. Save a full-feature dataset for richer Stage 3 experiments.
 #
-# Raw EAFC26 data
-#
-# ↓
-#
-# Select useful columns
-#
-# ↓
-#
-# Standardize position names
-#
-# ↓
-#
-# Remove very low-rated players
-#
-# ↓
-#
-# Separate goalkeepers and outfield players
-#
-# ↓
-#
-# Save cleaned datasets
-#
-# Later, this same process can be applied to previous EAFC seasons.
+# All later stages should read one of the files created here instead
+# of cleaning the raw data again.
 
 
-# Create folders if they do not already exist.
+# Define project paths.
 
-os.makedirs(
-    "processed",
-    exist_ok=True
-)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-os.makedirs(
-    "results",
+DATA = PROJECT_ROOT / "data"
+
+RAW_DATA = DATA / "unprocessed"
+
+PROCESSED_DATA = DATA / "processed"
+
+
+# Create the processed-data folder if necessary.
+
+PROCESSED_DATA.mkdir(
+    parents=True,
     exist_ok=True
 )
 
 
-# Read the raw EAFC26 dataset.
+# Read the original EAFC26 dataset.
+#
+# This should contain all original columns.
 
 df = pd.read_csv(
-    "EAFC26-Men.csv"
+    RAW_DATA / "EAFC26-Men.csv"
 )
 
 print(
@@ -61,84 +52,26 @@ print(
     df.shape
 )
 
+print(
+    "\nOriginal number of columns:",
+    len(df.columns)
+)
 
-# Display all available columns.
-#
-# This is especially useful now because the original dataset contains
-# many more variables than the six aggregate EAFC attributes.
-#
-# Later, Stage 3.3 can investigate whether some of these additional
-# variables improve position prediction.
 
-print("\nAvailable columns:")
+# Print all available raw columns.
+#
+# This will be especially useful when we begin using richer attributes.
+
+print(
+    "\nAvailable raw columns:"
+)
 
 for column in df.columns:
+
     print(column)
 
 
-# Keep the columns currently needed throughout the project.
-#
-# I am intentionally keeping Alternative positions because it may become
-# especially useful for the positional versatility analysis later.
-
-important_columns = [
-    "ID",
-    "Name",
-    "OVR",
-    "Position",
-    "Alternative positions",
-    "Age",
-    "Nation",
-    "League",
-    "Team",
-    "play style",
-    "PAC",
-    "SHO",
-    "PAS",
-    "DRI",
-    "DEF",
-    "PHY"
-]
-
-
-# Check whether all required columns actually exist.
-#
-# This prevents confusing errors later if a column name changes
-# between datasets.
-
-missing_columns = [
-    column
-    for column in important_columns
-    if column not in df.columns
-]
-
-if missing_columns:
-
-    print(
-        "\nWarning: the following expected columns are missing:"
-    )
-
-    print(
-        missing_columns
-    )
-
-
-# Only select columns that actually exist.
-
-available_columns = [
-    column
-    for column in important_columns
-    if column in df.columns
-]
-
-cleaned = df[
-    available_columns
-].copy()
-
-
-# Standardize the main position names.
-#
-# Using full names makes later tables and visualizations easier to understand.
+# Standardize the main EAFC position labels.
 
 position_map = {
 
@@ -189,47 +122,36 @@ position_map = {
 }
 
 
-cleaned["Position"] = (
-    cleaned["Position"]
+df["Position"] = (
+    df["Position"]
     .replace(
         position_map
     )
 )
 
 
-# Remove duplicate player rows.
-#
-# ID should identify individual players, so if duplicated IDs occur,
-# keep only the first record.
+# Remove duplicate player IDs.
 
-if "ID" in cleaned.columns:
+if "ID" in df.columns:
 
-    duplicate_count = cleaned[
-        "ID"
-    ].duplicated().sum()
+    duplicate_count = (
+        df["ID"]
+        .duplicated()
+        .sum()
+    )
 
     print(
-        "\nDuplicate player IDs:",
+        "\nDuplicate IDs:",
         duplicate_count
     )
 
-    cleaned = cleaned.drop_duplicates(
+    df = df.drop_duplicates(
         subset="ID",
         keep="first"
     )
 
 
-# Remove players with missing values in the six core EAFC attributes.
-#
-# These attributes are required for:
-#
-# PCA
-# clustering
-# attacking/defensive contribution
-# position prediction
-#
-# Therefore, players without these values cannot be used in the
-# current modeling pipeline.
+# Convert the main numerical attributes to numeric values.
 
 core_features = [
     "PAC",
@@ -240,31 +162,91 @@ core_features = [
     "PHY"
 ]
 
+numeric_columns = [
+    "OVR",
+    *core_features
+]
 
-before_missing_filter = len(
-    cleaned
+
+for column in numeric_columns:
+
+    df[column] = pd.to_numeric(
+        df[column],
+        errors="coerce"
+    )
+
+
+# Apply the same candidate filter used throughout the project.
+#
+# This is not intended to define an elite player.
+#
+# It simply removes very low-rated players while preserving a large
+# candidate pool.
+
+df = df[
+    df["OVR"] > 60
+].copy()
+
+
+print(
+    "\nPlayers after OVR filtering:",
+    df.shape
 )
 
-cleaned = cleaned.dropna(
+
+# Separate goalkeepers and outfield players.
+
+goalkeepers_full = df[
+    df["Position"]
+    == "Goalkeeper"
+].copy()
+
+
+outfield_full = df[
+    df["Position"]
+    != "Goalkeeper"
+].copy()
+
+
+# Outfield players need the six main attributes.
+#
+# Remove players missing any of these values.
+
+outfield_full = outfield_full.dropna(
     subset=core_features
-)
+).copy()
 
-after_missing_filter = len(
-    cleaned
+
+print(
+    "\nOutfield players:",
+    len(outfield_full)
 )
 
 print(
-    "\nPlayers removed because of missing core attributes:",
-    before_missing_filter - after_missing_filter
+    "Goalkeepers:",
+    len(goalkeepers_full)
 )
 
 
-# Convert the six core features and OVR to numeric values.
+# Create the simplified dataset used by the earlier project stages.
 #
-# If any invalid text exists, pandas will convert it to NaN.
+# This contains:
+#
+# player information
+# +
+# PAC SHO PAS DRI DEF PHY
 
-numeric_columns = [
+basic_columns = [
+    "ID",
+    "Name",
     "OVR",
+    "Position",
+    "Alternative positions",
+    "Age",
+    "Nation",
+    "League",
+    "Team",
+    "play style",
     "PAC",
     "SHO",
     "PAS",
@@ -274,131 +256,67 @@ numeric_columns = [
 ]
 
 
-for column in numeric_columns:
-
-    if column in cleaned.columns:
-
-        cleaned[column] = pd.to_numeric(
-            cleaned[column],
-            errors="coerce"
-        )
+available_basic_columns = [
+    column
+    for column in basic_columns
+    if column in outfield_full.columns
+]
 
 
-# Remove any rows that became missing after numeric conversion.
-
-cleaned = cleaned.dropna(
-    subset=numeric_columns
-)
-
-
-# Apply the same first-round quality filter used earlier in the project.
-#
-# OVR > 60 is NOT being used to define elite players.
-#
-# It simply removes very low-rated players while keeping a large
-# candidate pool for analysis.
-
-cleaned = cleaned[
-    cleaned["OVR"] > 60
+outfield_basic = outfield_full[
+    available_basic_columns
 ].copy()
 
 
-print(
-    "\nPlayers after OVR filtering:",
-    cleaned.shape
-)
-
-
-# Separate goalkeepers from outfield players.
+# Save the simplified outfield dataset.
 #
-# Goalkeepers have a very different attribute system and should not be
-# analyzed using PAC, SHO, PAS, DRI, DEF, and PHY in the same way.
+# Stages 1 through 3.3 currently use this representation.
 
-goalkeepers = cleaned[
-    cleaned["Position"]
-    == "Goalkeeper"
-].copy()
-
-
-outfield = cleaned[
-    cleaned["Position"]
-    != "Goalkeeper"
-].copy()
-
-
-print(
-    "\nGoalkeepers:",
-    len(goalkeepers)
-)
-
-print(
-    "Outfield players:",
-    len(outfield)
-)
-
-
-# Check the distribution of positions.
-#
-# This is useful for Stage 3.3 because supervised learning models may
-# struggle when some positions contain far fewer players than others.
-
-print(
-    "\nOutfield position counts:"
-)
-
-print(
-    outfield[
-        "Position"
-    ]
-    .value_counts()
-)
-
-
-# Check missing values after cleaning.
-
-print(
-    "\nMissing values after cleaning:"
-)
-
-print(
-    cleaned.isna().sum()
-)
-
-
-# Save the complete cleaned dataset.
-
-cleaned.to_csv(
-    "processed/cleaned_eafc26_players.csv",
+outfield_basic.to_csv(
+    PROCESSED_DATA
+    / "cleaned_eafc26_outfield_players.csv",
     index=False
 )
 
 
-# Save the outfield-player dataset.
-#
-# Most of the current project will use this file.
+# Save the goalkeepers separately.
 
-outfield.to_csv(
-    "processed/cleaned_eafc26_outfield_players.csv",
+goalkeepers_full.to_csv(
+    PROCESSED_DATA
+    / "cleaned_eafc26_goalkeepers.csv",
     index=False
 )
 
 
-# Save goalkeepers separately.
-#
-# Goalkeepers can receive their own analysis later.
+# Save the complete filtered player dataset.
 
-goalkeepers.to_csv(
-    "processed/cleaned_eafc26_goalkeepers.csv",
+df.to_csv(
+    PROCESSED_DATA
+    / "cleaned_eafc26_players.csv",
     index=False
 )
 
 
-# Save the position counts separately.
+# MOST IMPORTANT FOR STAGE 3.4:
+#
+# Save ALL original columns for outfield players.
+#
+# Unlike cleaned_eafc26_outfield_players.csv, this file should still contain
+# most of the original ~59 EAFC columns.
+#
+# Stage 3.4 can use this file to investigate richer attributes.
+
+outfield_full.to_csv(
+    PROCESSED_DATA
+    / "eafc26_outfield_full_features.csv",
+    index=False
+)
+
+
+# Save position counts.
 
 position_counts = (
-    outfield[
-        "Position"
-    ]
+    outfield_basic["Position"]
     .value_counts()
     .rename_axis(
         "Position"
@@ -410,15 +328,16 @@ position_counts = (
 
 
 position_counts.to_csv(
-    "processed/eafc26_position_counts.csv",
+    PROCESSED_DATA
+    / "eafc26_position_counts.csv",
     index=False
 )
 
 
-# Save a summary of the six main EAFC attributes.
+# Save a basic summary of the six main attributes.
 
 attribute_summary = (
-    outfield[
+    outfield_basic[
         core_features
     ]
     .describe()
@@ -427,84 +346,44 @@ attribute_summary = (
 
 
 attribute_summary.to_csv(
-    "processed/eafc26_attribute_summary.csv"
-)
-
-
-# Later we will probably want to use more detailed EAFC attributes.
-#
-# Instead of deleting the original 59-column dataset, save a filtered
-# full-feature version as well.
-#
-# This keeps all available variables for future machine-learning experiments.
-
-full_feature_data = df.copy()
-
-
-# Standardize position names in the full dataset too.
-
-full_feature_data[
-    "Position"
-] = (
-    full_feature_data[
-        "Position"
-    ]
-    .replace(
-        position_map
-    )
-)
-
-
-# Apply the same OVR cutoff.
-
-full_feature_data = full_feature_data[
-    full_feature_data[
-        "OVR"
-    ] > 60
-].copy()
-
-
-# Remove goalkeepers for the detailed outfield feature dataset.
-
-full_feature_outfield = full_feature_data[
-    full_feature_data[
-        "Position"
-    ] != "Goalkeeper"
-].copy()
-
-
-full_feature_outfield.to_csv(
-    "processed/eafc26_outfield_full_features.csv",
-    index=False
+    PROCESSED_DATA
+    / "eafc26_attribute_summary.csv"
 )
 
 
 print(
-    "\nSaved:"
+    "\nSaved datasets:"
 )
 
 print(
-    "processed/cleaned_eafc26_players.csv"
+    PROCESSED_DATA
+    / "cleaned_eafc26_outfield_players.csv"
 )
 
 print(
-    "processed/cleaned_eafc26_outfield_players.csv"
+    PROCESSED_DATA
+    / "cleaned_eafc26_goalkeepers.csv"
 )
 
 print(
-    "processed/cleaned_eafc26_goalkeepers.csv"
+    PROCESSED_DATA
+    / "cleaned_eafc26_players.csv"
 )
 
 print(
-    "processed/eafc26_position_counts.csv"
+    PROCESSED_DATA
+    / "eafc26_outfield_full_features.csv"
+)
+
+
+print(
+    "\nBasic outfield shape:",
+    outfield_basic.shape
 )
 
 print(
-    "processed/eafc26_attribute_summary.csv"
-)
-
-print(
-    "processed/eafc26_outfield_full_features.csv"
+    "Full-feature outfield shape:",
+    outfield_full.shape
 )
 
 

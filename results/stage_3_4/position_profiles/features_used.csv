@@ -1,0 +1,35 @@
+Feature,FeatureType
+PAC,Core
+SHO,Core
+PAS,Core
+DRI,Core
+DEF,Core
+PHY,Core
+Acceleration,Rich
+Sprint Speed,Rich
+Positioning,Rich
+Finishing,Rich
+Shot Power,Rich
+Long Shots,Rich
+Volleys,Rich
+Penalties,Rich
+Vision,Rich
+Crossing,Rich
+Free Kick Accuracy,Rich
+Short Passing,Rich
+Long Passing,Rich
+Curve,Rich
+Agility,Rich
+Balance,Rich
+Reactions,Rich
+Ball Control,Rich
+Dribbling,Rich
+Composure,Rich
+Interceptions,Rich
+Heading Accuracy,Rich
+Standing Tackle,Rich
+Sliding Tackle,Rich
+Jumping,Rich
+Stamina,Rich
+Strength,Rich
+Aggression,Rich

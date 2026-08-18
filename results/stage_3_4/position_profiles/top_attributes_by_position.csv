@@ -1,0 +1,56 @@
+Position,Rank,Feature,StandardizedScore
+Attacking Midfielder,1,Free Kick Accuracy,0.885
+Attacking Midfielder,2,Crossing,0.861
+Attacking Midfielder,3,PAS,0.816
+Attacking Midfielder,4,Curve,0.759
+Attacking Midfielder,5,DRI,0.746
+Center Back,1,Strength,0.863
+Center Back,2,DEF,0.861
+Center Back,3,Heading Accuracy,0.824
+Center Back,4,Sliding Tackle,0.808
+Center Back,5,Standing Tackle,0.787
+Central Midfielder,1,Long Passing,0.859
+Central Midfielder,2,Crossing,0.776
+Central Midfielder,3,PAS,0.734
+Central Midfielder,4,Short Passing,0.73
+Central Midfielder,5,Free Kick Accuracy,0.594
+Defensive Midfielder,1,Interceptions,0.753
+Defensive Midfielder,2,Long Passing,0.746
+Defensive Midfielder,3,DEF,0.726
+Defensive Midfielder,4,Standing Tackle,0.711
+Defensive Midfielder,5,Sliding Tackle,0.702
+Left Back,1,Vision,0.762
+Left Back,2,Sliding Tackle,0.659
+Left Back,3,Standing Tackle,0.578
+Left Back,4,DEF,0.567
+Left Back,5,Interceptions,0.564
+Left Midfielder,1,Acceleration,0.851
+Left Midfielder,2,PAC,0.823
+Left Midfielder,3,Agility,0.773
+Left Midfielder,4,Sprint Speed,0.745
+Left Midfielder,5,Finishing,0.633
+Left Winger,1,Acceleration,0.879
+Left Winger,2,Agility,0.868
+Left Winger,3,PAC,0.843
+Left Winger,4,Finishing,0.764
+Left Winger,5,Sprint Speed,0.754
+Right Back,1,Sliding Tackle,0.646
+Right Back,2,Vision,0.628
+Right Back,3,Standing Tackle,0.575
+Right Back,4,DEF,0.566
+Right Back,5,Interceptions,0.558
+Right Midfielder,1,Acceleration,0.868
+Right Midfielder,2,PAC,0.844
+Right Midfielder,3,Agility,0.815
+Right Midfielder,4,Sprint Speed,0.764
+Right Midfielder,5,Vision,0.63
+Right Winger,1,Acceleration,0.809
+Right Winger,2,PAC,0.783
+Right Winger,3,Finishing,0.773
+Right Winger,4,Agility,0.74
+Right Winger,5,Sprint Speed,0.702
+Striker,1,Penalties,1.021
+Striker,2,Finishing,1.013
+Striker,3,Volleys,0.983
+Striker,4,SHO,0.933
+Striker,5,Positioning,0.784

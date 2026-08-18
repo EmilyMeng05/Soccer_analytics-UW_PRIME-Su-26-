@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
 
 
 # STAGE 3.2: ATTACKING VS DEFENSIVE CONTRIBUTION
@@ -25,7 +26,27 @@ import plotly.graph_objects as go
 
 # Read the cleaned outfield player dataset created in Stage 1.
 
-df = pd.read_csv("cleaned_eafc26_outfield_players.csv")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA = PROJECT_ROOT / "data"
+
+RESULTS = (
+    PROJECT_ROOT
+    / "results"
+    / "stage_3_2"
+)
+
+RESULTS.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+
+df = pd.read_csv(
+    DATA
+    / "processed"
+    / "cleaned_eafc26_outfield_players.csv"
+)
 
 
 # For attacking contribution, I will begin with four EAFC attributes:
@@ -306,7 +327,8 @@ plt.title(
 plt.tight_layout()
 
 plt.savefig(
-    "attack_defense_player_map.png",
+    RESULTS
+    / "attack_defense_player_map.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -487,7 +509,8 @@ plt.legend()
 plt.tight_layout()
 
 plt.savefig(
-    "attack_defense_highlighted_players.png",
+    RESULTS
+    / "attack_defense_highlighted_players.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -673,14 +696,14 @@ fig.update_layout(
 # and explore individual players.
 
 fig.write_html(
-    "interactive_attack_defense_player_map.html"
+    RESULTS
+    / "interactive_attack_defense_player_map.html"
 )
 
 
 # Automatically open the interactive graph when the script runs.
 
 fig.show()
-
 
 # Save the complete Stage 3.2 dataset.
 #
@@ -692,7 +715,8 @@ fig.show()
 # Balance Gap
 
 df.to_csv(
-    "player_balance_results.csv",
+    RESULTS
+    / "player_balance_results.csv",
     index=False
 )
 
@@ -700,45 +724,30 @@ df.to_csv(
 # Save useful subsets separately.
 
 top_high_both.to_csv(
-    "high_attacking_and_defensive_players.csv",
+    RESULTS
+    / "high_attacking_and_defensive_players.csv",
     index=False
 )
+
 
 top_attack.to_csv(
-    "high_attacking_players.csv",
+    RESULTS
+    / "high_attacking_players.csv",
     index=False
 )
+
 
 top_defense.to_csv(
-    "high_defensive_players.csv",
+    RESULTS
+    / "high_defensive_players.csv",
     index=False
 )
+
 
 smallest_gap.to_csv(
-    "smallest_attack_defense_gap.csv",
+    RESULTS
+    / "smallest_attack_defense_gap.csv",
     index=False
 )
 
-
-# Stage 3.2 does NOT assume that players who contribute strongly
-# on both sides are automatically better for a team.
-#
-# It also does NOT assume that specialists are worse.
-#
-# This stage only creates a way to describe where each player lies
-# on the attacking-versus-defensive spectrum.
-#
-# Later, Stage 4 can experiment with different team-building strategies:
-#
-# teams containing more attacking specialists
-#
-# teams containing more defensive specialists
-#
-# teams containing more players who contribute strongly to both
-#
-# or teams containing a mixture of all three.
-#
-# This allows the project to test different team compositions instead
-# of assuming in advance which style is best.
-
-print("\nStage 3.2 attack-defense analysis complete!")
+print("stage 3_2 complete")

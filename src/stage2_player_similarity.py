@@ -1,25 +1,67 @@
+from pathlib import Path
+
 import pandas as pd
 import matplotlib.pyplot as plt
+
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.neighbors import NearestNeighbors
 
 
-# Read the cleaned outfield player dataset from Stage 1.
-# Since the data has already been cleaned, we do not need to repeat
-# the filtering and goalkeeper separation steps.
+# STAGE 2: PLAYER SIMILARITY AND PCA
+#
+# prepare_dataset.py has already cleaned the EAFC26 data.
+#
+# Stage 2 therefore starts directly from the cleaned outfield-player dataset.
+#
+# The goal of this stage is to understand whether the six main EAFC
+# attributes can be simplified into a smaller number of meaningful dimensions
+# and whether players with similar attribute profiles appear close together.
 
-df = pd.read_csv("cleaned_eafc26_outfield_players.csv")
 
-print("Dataset shape:", df.shape)
+# Define project paths.
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA = PROJECT_ROOT / "data"
+
+RESULTS = (
+    PROJECT_ROOT
+    / "results"
+    / "stage_2"
+)
+
+RESULTS.mkdir(
+    parents=True,
+    exist_ok=True
+)
 
 
-# We will continue using the six main EAFC attributes to represent each player.
+# Read the cleaned outfield player dataset created by prepare_dataset.py.
+
+df = pd.read_csv(
+    DATA
+    / "processed"
+    / "cleaned_eafc26_outfield_players.csv"
+)
+
+print(
+    "Dataset shape:",
+    df.shape
+)
+
+
+# Use the six main EAFC attributes to represent every outfield player.
+#
+# Mathematically:
 #
 # player = [PAC, SHO, PAS, DRI, DEF, PHY]
 #
-# At this stage, the goal is no longer to decide whether a player is good.
-# Instead, we want to understand how players differ from each other.
+# At this stage, the goal is not to decide whether one player is better
+# than another.
+#
+# Instead, I want to understand how these six attributes relate to each
+# other and whether players with similar profiles appear close together.
 
 features = [
     "PAC",
@@ -30,60 +72,112 @@ features = [
     "PHY"
 ]
 
-# The six attributes have different distributions and ranges.
-# Before calculating distances or running PCA, we standardize them so that
-# one attribute does not dominate the analysis simply because it has
-# a larger spread.
+
+# Standardize the six attributes.
 #
-# After standardization, each feature will approximately have
-# mean = 0 and standard deviation = 1.
+# PCA and distance-based methods can be influenced by differences in
+# feature scale and variation.
+#
+# Standardization transforms each attribute so that it has approximately:
+#
+# mean = 0
+# standard deviation = 1
+#
+# This allows every attribute to contribute more fairly.
 
 scaler = StandardScaler()
 
-X_scaled = scaler.fit_transform(df[features])
+X_scaled = scaler.fit_transform(
+    df[features]
+)
 
 
-# Before reducing the data to two dimensions, I want to see how much
-# information each principal component explains.
+# Run PCA using all six possible components first.
 #
-# Since we started with six attributes, PCA can produce up to six
+# Since we begin with six attributes, PCA can create up to six
 # principal components.
+#
+# The explained variance tells us how much of the original variation
+# in player attributes is captured by each component.
 
 pca_full = PCA()
 
-pca_full.fit(X_scaled)
+pca_full.fit(
+    X_scaled
+)
 
-explained_variance = pca_full.explained_variance_ratio_
+explained_variance = (
+    pca_full.explained_variance_ratio_
+)
 
-print("\nExplained variance by principal component:")
 
-for i, variance in enumerate(explained_variance):
+print(
+    "\nExplained variance by principal component:"
+)
+
+for i, variance in enumerate(
+    explained_variance
+):
+
     print(
-        f"PC{i + 1}: {variance:.3f} "
+        f"PC{i + 1}: "
+        f"{variance:.3f} "
         f"({variance * 100:.1f}%)"
     )
 
 
-# Plot the amount of variance explained by each principal component.
-#
-# This allows us to decide whether reducing the data to two dimensions
-# still preserves enough information about the original players.
+# Save the explained variance values.
 
-plt.figure(figsize=(8,5))
+explained_variance_df = pd.DataFrame({
+    "PrincipalComponent": [
+        f"PC{i + 1}"
+        for i in range(
+            len(explained_variance)
+        )
+    ],
+    "ExplainedVarianceRatio":
+        explained_variance
+})
+
+
+explained_variance_df.to_csv(
+    RESULTS
+    / "pca_explained_variance.csv",
+    index=False
+)
+
+
+# Plot the variance explained by every principal component.
+
+plt.figure(
+    figsize=(8,5)
+)
 
 plt.bar(
-    range(1, len(explained_variance) + 1),
+    range(
+        1,
+        len(explained_variance) + 1
+    ),
     explained_variance
 )
 
-plt.xlabel("Principal Component")
-plt.ylabel("Explained Variance Ratio")
-plt.title("Variance Explained by Each Principal Component")
+plt.xlabel(
+    "Principal Component"
+)
+
+plt.ylabel(
+    "Explained Variance Ratio"
+)
+
+plt.title(
+    "Variance Explained by Each Principal Component"
+)
 
 plt.tight_layout()
 
 plt.savefig(
-    "pca_explained_variance.png",
+    RESULTS
+    / "pca_explained_variance.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -91,51 +185,108 @@ plt.savefig(
 plt.show()
 
 
-# Now reduce the six-dimensional player representation into two dimensions.
+# Reduce the six-dimensional player representation to two dimensions.
 #
-# PCA is NOT grouping players by overall rating.
-# Instead, it creates two new variables, PC1 and PC2, that capture
-# the largest patterns of variation across PAC, SHO, PAS, DRI, DEF, and PHY.
-
-pca = PCA(n_components=2)
-
-components = pca.fit_transform(X_scaled)
-
-df["PC1"] = components[:, 0]
-df["PC2"] = components[:, 1]
-
-
-# To understand what PC1 and PC2 actually represent, we look at the PCA loadings.
+# PCA is NOT clustering players.
 #
-# A large positive or negative loading means that the original attribute
-# contributes strongly to that principal component.
+# Instead, it creates new variables that summarize the largest patterns
+# of variation in the original six attributes.
+#
+# PC1 and PC2 are used mainly for interpretation and visualization.
+
+pca = PCA(
+    n_components=2
+)
+
+components = pca.fit_transform(
+    X_scaled
+)
+
+df["PC1"] = (
+    components[:, 0]
+)
+
+df["PC2"] = (
+    components[:, 1]
+)
+
+
+# Examine PCA loadings.
+#
+# Loadings describe how strongly each original EAFC attribute contributes
+# to each principal component.
+#
+# Large positive or negative values indicate a stronger relationship
+# between the original attribute and the principal component.
 
 loadings = pd.DataFrame(
     pca.components_.T,
-    columns=["PC1", "PC2"],
+    columns=[
+        "PC1",
+        "PC2"
+    ],
     index=features
 )
 
-print("\nPCA loadings:")
-print(loadings)
+
+print(
+    "\nPCA loadings:"
+)
+
+print(
+    loadings
+)
+
+
+loadings.to_csv(
+    RESULTS
+    / "pca_loadings.csv"
+)
+
+
+# Calculate the total amount of variance explained by PC1 and PC2.
+
+two_component_variance = (
+    pca.explained_variance_ratio_.sum()
+)
+
+print(
+    "\nVariance explained by PC1 and PC2:"
+)
+
+print(
+    f"{two_component_variance:.3f} "
+    f"({two_component_variance * 100:.1f}%)"
+)
 
 
 # Plot players in the two-dimensional PCA space.
 #
-# Each point represents one player.
-# Players with similar combinations of EAFC attributes should appear
-# closer together on the graph.
+# Every point represents one player.
 #
-# We color the players by their traditional soccer position so that we
-# can check whether positions naturally emerge from the attribute data.
+# Players with similar combinations of EAFC attributes should appear
+# closer together.
+#
+# The points are colored by official position only to help interpret
+# whether traditional soccer positions naturally appear in different
+# parts of the feature space.
 
-plt.figure(figsize=(11,8))
+plt.figure(
+    figsize=(11,8)
+)
 
-positions = df["Position"].unique()
+positions = (
+    df["Position"]
+    .unique()
+)
+
 
 for position in positions:
 
-    subset = df[df["Position"] == position]
+    subset = df[
+        df["Position"]
+        == position
+    ]
 
     plt.scatter(
         subset["PC1"],
@@ -145,10 +296,18 @@ for position in positions:
         s=15
     )
 
-plt.xlabel("Principal Component 1")
-plt.ylabel("Principal Component 2")
 
-plt.title("Player Similarity Based on EAFC26 Attributes")
+plt.xlabel(
+    "Principal Component 1"
+)
+
+plt.ylabel(
+    "Principal Component 2"
+)
+
+plt.title(
+    "Player Similarity Based on EAFC26 Attributes"
+)
 
 plt.legend(
     bbox_to_anchor=(1.05, 1),
@@ -158,7 +317,8 @@ plt.legend(
 plt.tight_layout()
 
 plt.savefig(
-    "PCA_Player_Map.png",
+    RESULTS
+    / "PCA_Player_Map.png",
     dpi=300,
     bbox_inches="tight"
 )
@@ -166,118 +326,150 @@ plt.savefig(
 plt.show()
 
 
-# PCA is useful for visualization, but we do not want to calculate
-# player similarity using only PC1 and PC2 because some information
-# is lost when reducing six dimensions to two.
+# PCA is useful for visualization, but PC1 and PC2 do not preserve
+# all of the information from the original six-dimensional player space.
 #
-# Instead, player similarity will be calculated using the original
-# six standardized attributes.
+# Therefore, player similarity will be calculated using all six
+# standardized attributes rather than only PC1 and PC2.
 
 neighbors = NearestNeighbors(
     n_neighbors=6,
     metric="euclidean"
 )
 
-neighbors.fit(X_scaled)
+neighbors.fit(
+    X_scaled
+)
 
 
-# This function allows us to enter a player's name and find the players
-# with the most similar EAFC attribute profiles.
+# Find players with the most similar six-attribute profiles.
 #
-# The first returned player is normally the player themselves,
-# so we exclude that result.
+# The first nearest neighbor will normally be the player themselves,
+# so that result is removed.
 
-def find_similar_players(player_name):
+def find_similar_players(
+    player_name
+):
 
     matches = df[
-        df["Name"].str.lower() == player_name.lower()
+        df["Name"]
+        .str.lower()
+        == player_name.lower()
     ]
+
 
     if len(matches) == 0:
 
-        print("Player not found.")
-        return
+        print(
+            f"\nPlayer '{player_name}' not found."
+        )
 
-    player_index = matches.index[0]
+        return None
 
-    distances, indices = neighbors.kneighbors(
-        X_scaled[player_index].reshape(1, -1)
+
+    player_index = (
+        matches.index[0]
     )
 
-    results = df.iloc[indices[0][1:]][
-        [
-            "Name",
-            "Position",
-            "Team",
-            "OVR",
-            "PAC",
-            "SHO",
-            "PAS",
-            "DRI",
-            "DEF",
-            "PHY"
-        ]
-    ].copy()
 
-    results["Distance"] = distances[0][1:]
+    distances, indices = (
+        neighbors.kneighbors(
+            X_scaled[
+                player_index
+            ].reshape(
+                1,
+                -1
+            )
+        )
+    )
+
+
+    similar_players = (
+        df.iloc[
+            indices[0][1:]
+        ][
+            [
+                "Name",
+                "Position",
+                "Team",
+                "OVR",
+                "PAC",
+                "SHO",
+                "PAS",
+                "DRI",
+                "DEF",
+                "PHY"
+            ]
+        ]
+        .copy()
+    )
+
+
+    similar_players[
+        "Distance"
+    ] = (
+        distances[0][1:]
+    )
+
 
     print(
         f"\nPlayers most similar to {player_name}:"
     )
 
-    print(results)
-
-    return results
-
-
-# Test the similarity function with a player from the dataset.
-# You can replace this name with any player you are interested in.
-
-find_similar_players("Lionel Messi")
+    print(
+        similar_players
+    )
 
 
-# Save the PCA coordinates so that we can reuse them later
-# when we begin clustering players into different archetypes.
+    return similar_players
+
+
+# Test the similarity function with Lionel Messi.
+#
+# This can be changed to any player in the dataset.
+
+messi_similar_players = (
+    find_similar_players(
+        "Lionel Messi"
+    )
+)
+
+
+# Save the example similarity results.
+
+if messi_similar_players is not None:
+
+    messi_similar_players.to_csv(
+        RESULTS
+        / "lionel_messi_similar_players.csv",
+        index=False
+    )
+
+
+# Save the PCA coordinates for every player.
+#
+# These coordinates can be reused later for visualization and clustering.
 
 df.to_csv(
-    "player_similarity_results.csv",
+    RESULTS
+    / "player_similarity_results.csv",
     index=False
 )
 
-print("\nStage 2 initial analysis complete!")
 
+# Stage 2 focuses on understanding the structure of the six EAFC attributes.
+#
+# Main questions:
+#
+# Can the six-dimensional player representation be simplified?
+#
+# What do the first principal components appear to represent?
+#
+# Do players with similar EAFC profiles appear close together?
+#
+# Stage 3.1 will use the same six-dimensional player representation
+# to investigate whether players naturally divide into different archetypes.
 
-
-# Dataset shape: (11872, 16)
-
-# Explained variance by principal component:
-# PC1: 0.484 (48.4%)
-# PC2: 0.248 (24.8%)
-# PC3: 0.121 (12.1%)
-# PC4: 0.112 (11.2%)
-# PC5: 0.020 (2.0%)
-# PC6: 0.015 (1.5%)
-
-# since PC1 and PC2 has the highest amount we pick those two
-
-# PCA loadings:
-#           PC1       PC2
-# PAC  0.361919 -0.174162
-# SHO  0.511179  0.048507
-# PAS  0.444461  0.460897
-# DRI  0.540490  0.224083
-# DEF -0.272101  0.628252
-# PHY -0.209753  0.556753
-
-# Notice PC1 seems to focus on the previous 4 attributes which are mostly associated with attacking
-# while PC2 focus on the last four attributes and are more associated with defensing
-
-# Players most similar to Lionel Messi:
-#                  Name              Position             Team  OVR  PAC  SHO  PAS  DRI  DEF  PHY  Distance
-# 47       Paulo Dybala  Attacking Midfielder          AS Roma   86   80   85   84   87   41   64  0.650135
-# 115      Riyad Mahrez      Right Midfielder          Al Ahli   84   78   80   81   88   39   63  0.741222
-# 159        Iago Aspas          Right Winger            Celta   83   77   84   80   84   35   62  0.953613
-# 163  Leandro Trossard           Left Winger          Arsenal   83   80   81   80   85   30   60  1.018354
-# 217    Ángel Di María          Right Winger  Rosario Central   82   73   80   85   85   43   62  1.065817
-
-# Stage 2 initial analysis complete!
+print(
+    "\nStage 2 player similarity analysis complete!"
+)

@@ -1,0 +1,3 @@
+Model,Feature Set,Number of Features,Top-1 Accuracy,Top-2 Accuracy,Top-3 Accuracy
+Logistic Regression,six_features,6,0.6930526315789474,0.879578947368421,0.9612631578947368
+Logistic Regression,rich_features,34,0.7722105263157895,0.9338947368421052,0.9827368421052631

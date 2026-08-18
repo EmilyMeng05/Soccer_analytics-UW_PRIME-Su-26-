@@ -1,0 +1,14 @@
+                      precision    recall  f1-score   support
+
+Attacking Midfielder     0.6585    0.3506    0.4576       154
+         Center Back     0.9073    0.9145    0.9109       503
+  Central Midfielder     0.6108    0.8248    0.7019       314
+Defensive Midfielder     0.6467    0.4954    0.5610       218
+           Full Back     0.8054    0.8889    0.8451       405
+             Striker     0.8717    0.9030    0.8871       361
+     Wide Midfielder     0.5886    0.6814    0.6316       317
+              Winger     0.4286    0.0291    0.0545       103
+
+            accuracy                         0.7520      2375
+           macro avg     0.6897    0.6360    0.6312      2375
+        weighted avg     0.7420    0.7520    0.7325      2375
