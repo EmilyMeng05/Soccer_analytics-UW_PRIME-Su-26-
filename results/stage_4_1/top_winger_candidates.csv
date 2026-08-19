@@ -1,0 +1,26 @@
+ID,Name,Position,Team,League,Nation,OVR,Preferred foot,Alternative positions,Age,Height,Weight,Original Role Group,Evaluated Role,Role Source,Position Fit Score,Role Attribute Score,Player Role Suitability
+238794,Vini Jr.,Left Winger,Real Madrid,LALIGA EA SPORTS,Brazil,89,Right,"['ST', 'LM']",25,"176cm / 5'9""",73kg / 161lb,Winger,Winger,Official Position,100.0,90.56,92.374
+246669,Bukayo Saka,Right Winger,Arsenal,Premier League,England,88,Left,['RM'],24,"178cm / 5'10""",65kg / 143lb,Winger,Winger,Official Position,100.0,85.72,90.088
+247635,Khvicha Kvaratskhelia,Left Winger,Paris SG,Ligue 1 McDonald's,Georgia,87,Right,"['RW', 'LM']",25,"183cm / 6'0""",70kg / 154lb,Winger,Winger,Official Position,100.0,85.86,89.794
+243812,Rodrygo,Right Winger,Real Madrid,LALIGA EA SPORTS,Brazil,85,Right,"['ST', 'RM']",25,"174cm / 5'9""",64kg / 141lb,Winger,Winger,Official Position,100.0,85.86999999999999,89.098
+158023,Lionel Messi,Right Winger,Inter Miami CF,MLS,Argentina,86,Left,"['ST', 'CAM', 'RM']",38,"169cm / 5'7""",67kg / 148lb,Winger,Winger,Official Position,100.0,84.65,88.96000000000001
+243014,Bryan Mbeumo,Right Winger,Man Utd,Premier League,Cameroon,85,Left,"['RM', 'ST']",26,"171cm / 5'7""",75kg / 165lb,Winger,Winger,Official Position,100.0,85.25999999999999,88.854
+241721,Rafael Leão,Left Winger,Milano FC,Serie A Enilive,Portugal,84,Right,['LM'],26,"188cm / 6'2""",81kg / 179lb,Winger,Winger,Official Position,100.0,85.42,88.568
+227796,Christian Pulisic,Right Winger,Milano FC,Serie A Enilive,United States,84,Right,"['RM', 'CAM']",27,"178cm / 5'10""",73kg / 161lb,Winger,Winger,Official Position,100.0,85.38,88.55199999999999
+237692,Phil Foden,Right Winger,Manchester City,Premier League,England,85,Left,"['CM', 'LW', 'RM']",25,"171cm / 5'7""",70kg / 154lb,Winger,Winger,Official Position,100.0,84.11,88.39399999999999
+264652,Bradley Barcola,Left Winger,Paris SG,Ligue 1 McDonald's,France,84,Right,"['RW', 'LM']",23,"188cm / 6'2""",70kg / 154lb,Winger,Winger,Official Position,100.0,84.92,88.368
+200104,Heung Min Son,Left Winger,LAFC,MLS,Korea Republic,85,Right,"['ST', 'LM']",33,"183cm / 6'0""",78kg / 172lb,Winger,Winger,Official Position,100.0,83.83,88.282
+271421,Désiré Doué,Right Winger,Paris SG,Ligue 1 McDonald's,France,85,Right,"['LW', 'CM', 'RM']",20,"181cm / 5'11""",79kg / 174lb,Winger,Winger,Official Position,100.0,83.42999999999999,88.122
+242964,Anthony Gordon,Left Winger,Newcastle Utd,Premier League,England,83,Right,"['RW', 'LM']",25,"183cm / 6'0""",72kg / 159lb,Winger,Winger,Official Position,100.0,84.61,87.894
+207421,Leandro Trossard,Left Winger,Arsenal,Premier League,Belgium,83,Right,"['ST', 'LM']",31,"171cm / 5'7""",67kg / 148lb,Winger,Winger,Official Position,100.0,82.78,87.162
+241461,Ferran Torres,Left Winger,FC Barcelona,LALIGA EA SPORTS,Spain,83,Right,"['RW', 'ST', 'LM']",26,"184cm / 6'0""",77kg / 170lb,Winger,Winger,Official Position,100.0,82.62,87.098
+270409,Savinho,Right Winger,Manchester City,Premier League,Brazil,82,Left,"['LW', 'RM']",21,"176cm / 5'9""",71kg / 157lb,Winger,Winger,Official Position,100.0,83.33,87.032
+257470,Anthony Elanga,Right Winger,Newcastle Utd,Premier League,Sweden,81,Right,['RM'],23,"178cm / 5'10""",70kg / 154lb,Winger,Winger,Official Position,100.0,83.87,86.898
+251566,Gabriel Martinelli,Left Winger,Arsenal,Premier League,Brazil,81,Right,['LM'],24,"178cm / 5'10""",75kg / 165lb,Winger,Winger,Official Position,100.0,83.84,86.886
+192629,Iago Aspas,Right Winger,Celta,LALIGA EA SPORTS,Spain,83,Left,"['ST', 'RM']",38,"176cm / 5'9""",67kg / 148lb,Winger,Winger,Official Position,100.0,81.8,86.77
+210935,Domenico Berardi,Right Winger,Sassuolo,Serie A Enilive,Italy,82,Left,['RM'],31,"183cm / 6'0""",72kg / 159lb,Winger,Winger,Official Position,100.0,82.34,86.636
+236632,David Neres,Left Winger,SSC Napoli,Serie A Enilive,Brazil,81,Left,['LM'],29,"175cm / 5'9""",69kg / 152lb,Winger,Winger,Official Position,100.0,82.77,86.458
+246420,Jérémy Doku,Left Winger,Manchester City,Premier League,Belgium,80,Right,"['RW', 'LM']",23,"173cm / 5'8""",66kg / 146lb,Winger,Winger,Official Position,100.0,83.37,86.34800000000001
+208418,Yannick Carrasco,Left Winger,Al Shabab,ROSHN Saudi League,Belgium,81,Right,['LM'],32,"181cm / 5'11""",73kg / 161lb,Winger,Winger,Official Position,100.0,82.48,86.342
+243593,Armand Laurienté,Left Winger,Sassuolo,Serie A Enilive,France,80,Right,['LM'],27,"171cm / 5'7""",59kg / 130lb,Winger,Winger,Official Position,100.0,82.92,86.168
+245155,Mohammed Kudus,Right Winger,Spurs,Premier League,Ghana,80,Left,"['LW', 'ST', 'RM']",25,"177cm / 5'10""",70kg / 154lb,Winger,Winger,Official Position,100.0,82.91,86.164

@@ -1,0 +1,8 @@
+Assumption,Value
+Simulation count,50000
+Random seed,42
+Decision minute,45
+Base expected goals,1.35
+Rating scale,20.0
+Opponent,Reference opponent matched to default XI
+Goal model,Independent Poisson scoring in the first and second halves

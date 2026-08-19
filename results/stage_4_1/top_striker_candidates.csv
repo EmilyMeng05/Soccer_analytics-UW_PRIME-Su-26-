@@ -1,0 +1,26 @@
+ID,Name,Position,Team,League,Nation,OVR,Preferred foot,Alternative positions,Age,Height,Weight,Original Role Group,Evaluated Role,Role Source,Position Fit Score,Role Attribute Score,Player Role Suitability
+239085,Erling Haaland,Striker,Manchester City,Premier League,Norway,90,Left,,25,"195cm / 6'5""",94kg / 207lb,Striker,Striker,Official Position,100.0,91.88,93.252
+202126,Harry Kane,Striker,FC Bayern München,Bundesliga,England,89,Right,,32,"188cm / 6'2""",86kg / 190lb,Striker,Striker,Official Position,100.0,91.62,92.798
+231747,Kylian Mbappé,Striker,Real Madrid,LALIGA EA SPORTS,France,91,Right,"['LW', 'LM']",27,"182cm / 6'0""",75kg / 165lb,Striker,Striker,Official Position,100.0,87.75999999999999,91.954
+231478,Lautaro Martínez,Striker,Lombardia FC,Serie A Enilive,Argentina,88,Right,,28,"174cm / 5'9""",72kg / 159lb,Striker,Striker,Official Position,100.0,89.66,91.66399999999999
+188545,Robert Lewandowski,Striker,FC Barcelona,LALIGA EA SPORTS,Poland,88,Right,,37,"185cm / 6'1""",81kg / 179lb,Striker,Striker,Official Position,100.0,89.25999999999999,91.50399999999999
+231443,Ousmane Dembélé,Striker,Paris SG,Ligue 1 McDonald's,France,90,Left,"['RW', 'CAM']",28,"178cm / 5'10""",67kg / 148lb,Striker,Striker,Official Position,100.0,86.2,90.98
+215441,Serhou Guirassy,Striker,Borussia Dortmund,Bundesliga,Guinea,87,Right,,30,"187cm / 6'2""",82kg / 181lb,Striker,Striker,Official Position,100.0,88.62,90.898
+232293,Victor Osimhen,Striker,Galatasaray,Trendyol Süper Lig,Nigeria,87,Right,,27,"186cm / 6'1""",77kg / 170lb,Striker,Striker,Official Position,100.0,88.06,90.674
+233731,Alexander Isak,Striker,Liverpool,Premier League,Sweden,88,Right,,26,"192cm / 6'4""",77kg / 170lb,Striker,Striker,Official Position,100.0,86.94,90.576
+241651,Viktor Gyökeres,Striker,Arsenal,Premier League,Sweden,87,Right,,27,"189cm / 6'2""",94kg / 207lb,Striker,Striker,Official Position,100.0,86.3,89.97
+20801,Cristiano Ronaldo,Striker,Al Nassr,ROSHN Saudi League,Portugal,85,Right,,41,"187cm / 6'2""",85kg / 187lb,Striker,Striker,Official Position,100.0,86.9,89.51
+246191,Julián Alvarez,Striker,Atlético de Madrid,LALIGA EA SPORTS,Argentina,87,Right,,26,"170cm / 5'7""",71kg / 157lb,Striker,Striker,Official Position,100.0,84.76,89.354
+234236,Patrik Schick,Striker,Leverkusen,Bundesliga,Czech Republic,85,Left,,30,"191cm / 6'3""",87kg / 192lb,Striker,Striker,Official Position,100.0,85.9,89.11
+165153,Karim Benzema,Striker,Al Ittihad,ROSHN Saudi League,France,85,Right,['CAM'],38,"185cm / 6'1""",81kg / 179lb,Striker,Striker,Official Position,100.0,85.54,88.966
+194765,Antoine Griezmann,Striker,Atlético de Madrid,LALIGA EA SPORTS,France,85,Left,"['LM', 'CAM']",35,"176cm / 5'9""",67kg / 148lb,Striker,Striker,Official Position,100.0,83.86,88.294
+192505,Romelu Lukaku,Striker,SSC Napoli,Serie A Enilive,Belgium,84,Left,,32,"191cm / 6'3""",94kg / 207lb,Striker,Striker,Official Position,100.0,84.68,88.272
+228093,Marcus Thuram,Striker,Lombardia FC,Serie A Enilive,France,85,Right,,28,"192cm / 6'4""",80kg / 176lb,Striker,Striker,Official Position,100.0,83.52,88.158
+216549,Alexander Sørloth,Striker,Atlético de Madrid,LALIGA EA SPORTS,Norway,84,Left,"['RW', 'RM']",30,"195cm / 6'5""",94kg / 207lb,Striker,Striker,Official Position,100.0,84.38,88.152
+221697,Ollie Watkins,Striker,Aston Villa,Premier League,England,84,Right,,30,"180cm / 5'11""",70kg / 154lb,Striker,Striker,Official Position,100.0,83.82000000000001,87.928
+192123,Chris Wood,Striker,Nott'm Forest,Premier League,New Zealand,82,Right,,34,"191cm / 6'3""",92kg / 203lb,Striker,Striker,Official Position,100.0,85.3,87.82
+241850,Mateo Retegui,Striker,Al Qadsiah,ROSHN Saudi League,Italy,83,Right,,26,"186cm / 6'1""",86kg / 190lb,Striker,Striker,Official Position,100.0,84.08,87.68199999999999
+215333,Duván Zapata,Striker,Torino,Serie A Enilive,Colombia,82,Right,,35,"188cm / 6'2""",88kg / 194lb,Striker,Striker,Official Position,100.0,84.72,87.588
+214096,Tim Kleindienst,Striker,M'gladbach,Bundesliga,Germany,81,Left,,30,"194cm / 6'4""",85kg / 187lb,Striker,Striker,Official Position,100.0,85.16,87.414
+242458,Artem Dovbyk,Striker,AS Roma,Serie A Enilive,Ukraine,83,Left,,28,"189cm / 6'2""",78kg / 172lb,Striker,Striker,Official Position,100.0,83.14,87.306
+188335,Ante Budimir,Striker,CA Osasuna,LALIGA EA SPORTS,Croatia,82,Left,,34,"190cm / 6'3""",75kg / 165lb,Striker,Striker,Official Position,100.0,83.98,87.292

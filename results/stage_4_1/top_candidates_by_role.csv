@@ -1,0 +1,201 @@
+ID,Name,Position,Team,League,Nation,OVR,Preferred foot,Alternative positions,Age,Height,Weight,Original Role Group,Evaluated Role,Role Source,Position Fit Score,Role Attribute Score,Player Role Suitability
+203376,Virgil van Dijk,Center Back,Liverpool,Premier League,Holland,90,Right,,34,"193cm / 6'4""",92kg / 203lb,Center Back,Center Back,Official Position,100.0,89.55,92.32
+232580,Gabriel,Center Back,Arsenal,Premier League,Brazil,88,Left,,28,"190cm / 6'3""",87kg / 192lb,Center Back,Center Back,Official Position,100.0,87.9,90.96000000000001
+213331,Jonathan Tah,Center Back,FC Bayern München,Bundesliga,Germany,87,Right,,30,"195cm / 6'5""",94kg / 207lb,Center Back,Center Back,Official Position,100.0,86.75,90.15
+207865,Marquinhos,Center Back,Paris SG,Ligue 1 McDonald's,Brazil,87,Right,,31,"183cm / 6'0""",75kg / 165lb,Center Back,Center Back,Official Position,100.0,86.4,90.01
+243715,William Saliba,Center Back,Arsenal,Premier League,France,87,Right,,25,"193cm / 6'4""",85kg / 187lb,Center Back,Center Back,Official Position,100.0,86.05,89.87
+237383,Alessandro Bastoni,Center Back,Lombardia FC,Serie A Enilive,Italy,87,Left,,26,"190cm / 6'3""",75kg / 165lb,Center Back,Center Back,Official Position,100.0,85.95,89.83
+239818,Rúben Dias,Center Back,Manchester City,Premier League,Portugal,86,Right,,28,"187cm / 6'2""",82kg / 181lb,Center Back,Center Back,Official Position,100.0,86.5,89.7
+205452,Antonio Rüdiger,Center Back,Real Madrid,LALIGA EA SPORTS,Germany,86,Right,,33,"190cm / 6'3""",85kg / 187lb,Center Back,Center Back,Official Position,100.0,86.05,89.52
+237678,Ibrahima Konaté,Center Back,Liverpool,Premier League,France,86,Right,,26,"194cm / 6'4""",95kg / 209lb,Center Back,Center Back,Official Position,100.0,85.7,89.38
+256196,Willian Pacho,Center Back,Paris SG,Ligue 1 McDonald's,Ecuador,86,Left,,24,"188cm / 6'2""",81kg / 179lb,Center Back,Center Back,Official Position,100.0,85.1,89.14
+239580,Bremer,Center Back,Juventus,Serie A Enilive,Brazil,85,Right,,29,"187cm / 6'2""",84kg / 185lb,Center Back,Center Back,Official Position,100.0,85.45,88.92999999999999
+247819,Nico Schlotterbeck,Center Back,Borussia Dortmund,Bundesliga,Germany,85,Left,,26,"191cm / 6'3""",86kg / 190lb,Center Back,Center Back,Official Position,100.0,85.35000000000001,88.89
+204525,Iñigo Martínez,Center Back,Al Nassr,ROSHN Saudi League,Spain,85,Left,,34,"182cm / 6'0""",76kg / 168lb,Center Back,Center Back,Official Position,100.0,85.35,88.89
+229558,Dayot Upamecano,Center Back,FC Bayern München,Bundesliga,France,85,Right,,27,"186cm / 6'1""",90kg / 198lb,Center Back,Center Back,Official Position,100.0,84.85,88.69
+204638,Willi Orban,Center Back,RB Leipzig,Bundesliga,Hungary,84,Right,,33,"186cm / 6'1""",89kg / 196lb,Center Back,Center Back,Official Position,100.0,85.05,88.42
+199845,Francesco Acerbi,Center Back,Lombardia FC,Serie A Enilive,Italy,84,Left,,38,"192cm / 6'4""",88kg / 194lb,Center Back,Center Back,Official Position,100.0,84.95,88.38
+248550,Vivian,Center Back,Athletic Club,LALIGA EA SPORTS,Spain,84,Right,,26,"183cm / 6'0""",83kg / 183lb,Center Back,Center Back,Official Position,100.0,84.45,88.18
+238095,Nikola Milenković,Center Back,Nott'm Forest,Premier League,Serbia,83,Right,,28,"195cm / 6'5""",90kg / 198lb,Center Back,Center Back,Official Position,100.0,85.0,88.05
+226851,Benjamin Pavard,Center Back,OM,Ligue 1 McDonald's,France,84,Right,,30,"186cm / 6'1""",81kg / 179lb,Center Back,Center Back,Official Position,100.0,84.05,88.02
+240130,Éder Militão,Center Back,Real Madrid,LALIGA EA SPORTS,Brazil,84,Right,,28,"186cm / 6'1""",79kg / 174lb,Center Back,Center Back,Official Position,100.0,84.0,88.0
+216460,José María Giménez,Center Back,Atlético de Madrid,LALIGA EA SPORTS,Uruguay,83,Right,,31,"185cm / 6'1""",79kg / 174lb,Center Back,Center Back,Official Position,100.0,84.65,87.91
+278016,Murillo,Center Back,Nott'm Forest,Premier League,Brazil,83,Left,,23,"180cm / 5'11""",75kg / 165lb,Center Back,Center Back,Official Position,100.0,84.0,87.65
+253163,Ronald Araujo,Center Back,FC Barcelona,LALIGA EA SPORTS,Uruguay,83,Right,['RB'],27,"188cm / 6'2""",79kg / 174lb,Center Back,Center Back,Official Position,100.0,83.85,87.59
+233486,Robin Le Normand,Center Back,Atlético de Madrid,LALIGA EA SPORTS,Spain,83,Right,,29,"187cm / 6'2""",80kg / 176lb,Center Back,Center Back,Official Position,100.0,83.65,87.50999999999999
+247257,Ibañez,Center Back,Al Ahli,ROSHN Saudi League,Brazil,82,Right,,27,"185cm / 6'1""",73kg / 161lb,Center Back,Center Back,Official Position,100.0,84.4,87.46000000000001
+235212,Achraf Hakimi,Right Back,Paris SG,Ligue 1 McDonald's,Morocco,89,Right,['RM'],27,"181cm / 5'11""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,88.15,91.41
+252145,Nuno Mendes,Left Back,Paris SG,Ligue 1 McDonald's,Portugal,86,Left,['LM'],23,"180cm / 5'11""",70kg / 154lb,Full Back,Full Back,Official Position,100.0,84.41,88.864
+241486,Jules Koundé,Right Back,FC Barcelona,LALIGA EA SPORTS,France,87,Right,"['CB', 'RM']",27,"180cm / 5'11""",75kg / 165lb,Full Back,Full Back,Official Position,100.0,82.8,88.57
+226161,Marcos Llorente,Right Back,Atlético de Madrid,LALIGA EA SPORTS,Spain,84,Right,"['CM', 'RM']",31,"184cm / 6'0""",74kg / 163lb,Full Back,Full Back,Official Position,100.0,85.31,88.524
+231281,Trent Alexander-Arnold,Right Back,Real Madrid,LALIGA EA SPORTS,England,86,Right,['RM'],27,"180cm / 5'11""",69kg / 152lb,Full Back,Full Back,Official Position,100.0,83.09,88.336
+232656,Theo Hernández,Left Back,Al Hilal,ROSHN Saudi League,France,84,Left,['LM'],28,"184cm / 6'0""",81kg / 179lb,Full Back,Full Back,Official Position,100.0,84.03,88.012
+210514,João Cancelo,Right Back,Al Hilal,ROSHN Saudi League,Portugal,84,Right,"['LB', 'RM']",31,"182cm / 6'0""",74kg / 163lb,Full Back,Full Back,Official Position,100.0,83.86,87.944
+234396,Alphonso Davies,Left Back,FC Bayern München,Bundesliga,Canada,84,Left,['LM'],25,"185cm / 6'1""",77kg / 170lb,Full Back,Full Back,Official Position,100.0,83.05,87.62
+204963,Carvajal,Right Back,Real Madrid,LALIGA EA SPORTS,Spain,85,Right,['RM'],34,"173cm / 5'8""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,81.69,87.426
+229348,Antonee Robinson,Left Back,Fulham,Premier League,United States,82,Left,['LM'],28,"183cm / 6'0""",70kg / 154lb,Full Back,Full Back,Official Position,100.0,84.19,87.376
+226268,Federico Dimarco,Left Back,Lombardia FC,Serie A Enilive,Italy,85,Left,['LM'],28,"175cm / 5'9""",76kg / 168lb,Full Back,Full Back,Official Position,100.0,81.48,87.342
+253149,Jeremie Frimpong,Right Back,Liverpool,Premier League,Holland,83,Right,"['RM', 'RW']",25,"172cm / 5'8""",65kg / 143lb,Full Back,Full Back,Official Position,100.0,82.42,87.018
+260908,Milos Kerkez,Left Back,Liverpool,Premier League,Hungary,82,Left,['LM'],22,"180cm / 5'11""",71kg / 157lb,Full Back,Full Back,Official Position,100.0,83.11,86.944
+239231,Marc Cucurella,Left Back,Chelsea,Premier League,Spain,84,Left,,27,"174cm / 5'9""",66kg / 146lb,Full Back,Full Back,Official Position,100.0,80.96,86.78399999999999
+263578,Balde,Left Back,FC Barcelona,LALIGA EA SPORTS,Spain,83,Left,['LM'],22,"175cm / 5'9""",69kg / 152lb,Full Back,Full Back,Official Position,100.0,81.31,86.574
+236703,David Raum,Left Back,RB Leipzig,Bundesliga,Germany,82,Left,['LM'],27,"181cm / 5'11""",83kg / 183lb,Full Back,Full Back,Official Position,100.0,82.01,86.504
+217870,Giovanni Di Lorenzo,Right Back,SSC Napoli,Serie A Enilive,Italy,83,Right,"['CB', 'RM']",32,"183cm / 6'0""",82kg / 181lb,Full Back,Full Back,Official Position,100.0,81.13,86.502
+233096,Denzel Dumfries,Right Back,Lombardia FC,Serie A Enilive,Holland,84,Right,['RM'],29,"188cm / 6'2""",80kg / 176lb,Full Back,Full Back,Official Position,100.0,80.17999999999999,86.472
+243576,Pedro Porro,Right Back,Spurs,Premier League,Spain,82,Right,['RM'],26,"173cm / 5'8""",69kg / 152lb,Full Back,Full Back,Official Position,100.0,81.22999999999999,86.192
+251517,Joško Gvardiol,Left Back,Manchester City,Premier League,Croatia,84,Left,"['CB', 'LM']",24,"185cm / 6'1""",80kg / 176lb,Full Back,Full Back,Official Position,100.0,79.33,86.132
+227647,Maximilian Mittelstädt,Left Back,VfB Stuttgart,Bundesliga,Germany,82,Left,['LM'],29,"180cm / 5'11""",71kg / 157lb,Full Back,Full Back,Official Position,100.0,80.22,85.788
+228618,Ferland Mendy,Left Back,Real Madrid,LALIGA EA SPORTS,France,81,Left,['LM'],30,"180cm / 5'11""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,81.03,85.762
+225375,Konrad Laimer,Right Back,FC Bayern München,Bundesliga,Austria,82,Right,"['CDM', 'CM', 'RM']",28,"180cm / 5'11""",72kg / 159lb,Full Back,Full Back,Official Position,100.0,80.03,85.712
+261865,Miguel Gutiérrez,Left Back,SSC Napoli,Serie A Enilive,Spain,81,Left,['LM'],24,"180cm / 5'11""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,80.88,85.702
+268889,Álvaro Carreras,Left Back,Real Madrid,LALIGA EA SPORTS,Spain,80,Left,['LM'],23,"186cm / 6'1""",78kg / 172lb,Full Back,Full Back,Official Position,100.0,81.54,85.61600000000001
+231866,Rodri,Defensive Midfielder,Manchester City,Premier League,Spain,90,Right,['CM'],29,"190cm / 6'3""",82kg / 181lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,88.9,92.06
+212622,Joshua Kimmich,Defensive Midfielder,FC Bayern München,Bundesliga,Germany,89,Right,"['RB', 'CM']",31,"177cm / 5'10""",75kg / 165lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,88.35,91.49
+234378,Declan Rice,Defensive Midfielder,Arsenal,Premier League,England,87,Right,['CM'],27,"185cm / 6'1""",80kg / 176lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,86.8,90.17
+256079,Moisés Caicedo,Defensive Midfielder,Chelsea,Premier League,Ecuador,87,Right,['CM'],24,"178cm / 5'10""",73kg / 161lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,85.95,89.83
+208128,Hakan Çalhanoğlu,Defensive Midfielder,Lombardia FC,Serie A Enilive,Turkey,86,Right,['CM'],32,"178cm / 5'10""",69kg / 152lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.95,89.08
+241096,Sandro Tonali,Defensive Midfielder,Newcastle Utd,Premier League,Italy,86,Right,['CM'],25,"181cm / 5'11""",79kg / 174lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.0,88.7
+215914,N'Golo Kanté,Defensive Midfielder,Al Ittihad,ROSHN Saudi League,France,85,Right,['CM'],35,"168cm / 5'6""",70kg / 154lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.55,88.57
+246104,Ryan Gravenberch,Defensive Midfielder,Liverpool,Premier League,Holland,85,Right,['CM'],23,"190cm / 6'3""",77kg / 170lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.25,88.45
+199503,Granit Xhaka,Defensive Midfielder,Sunderland,Premier League,Switzerland,85,Left,['CM'],33,"186cm / 6'1""",80kg / 176lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.1,88.39
+222077,Manuel Locatelli,Defensive Midfielder,Juventus,Serie A Enilive,Italy,84,Right,['CM'],28,"185cm / 6'1""",75kg / 165lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.95,87.98
+223959,Lucas Torreira,Defensive Midfielder,Galatasaray,Trendyol Süper Lig,Uruguay,83,Right,['CM'],30,"166cm / 5'5""",60kg / 132lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.2,87.72999999999999
+241637,Aurélien Tchouaméni,Defensive Midfielder,Real Madrid,LALIGA EA SPORTS,France,84,Right,"['CM', 'CB']",26,"187cm / 6'2""",81kg / 179lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.05,87.62
+224293,Rúben Neves,Defensive Midfielder,Al Hilal,ROSHN Saudi League,Portugal,84,Right,['CM'],29,"180cm / 5'11""",83kg / 183lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.45,87.38
+244669,Morten Hjulmand,Defensive Midfielder,Sporting CP,Liga Portugal,Denmark,83,Right,['CM'],26,"185cm / 6'1""",78kg / 172lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.2,87.33
+236987,Boubacar Kamara,Defensive Midfielder,Aston Villa,Premier League,France,83,Right,['CM'],26,"184cm / 6'0""",68kg / 150lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.7,87.13
+209989,Thomas Partey,Defensive Midfielder,Villarreal CF,LALIGA EA SPORTS,Ghana,83,Right,"['CM', 'RB']",32,"185cm / 6'1""",77kg / 170lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.65,87.11
+229391,Palhinha,Defensive Midfielder,Spurs,Premier League,Portugal,83,Right,['CM'],30,"190cm / 6'3""",83kg / 183lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.35,86.99
+209499,Fabinho,Defensive Midfielder,Al Ittihad,ROSHN Saudi League,Brazil,82,Right,['CM'],32,"188cm / 6'2""",78kg / 172lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.15,86.96000000000001
+248148,Zubimendi,Defensive Midfielder,Arsenal,Premier League,Spain,83,Right,['CM'],27,"180cm / 5'11""",74kg / 163lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.25,86.94999999999999
+236496,Mattéo Guendouzi,Defensive Midfielder,Latium,Serie A Enilive,France,82,Right,['CM'],26,"185cm / 6'1""",68kg / 150lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.05,86.92
+216352,Marcelo Brozović,Defensive Midfielder,Al Nassr,ROSHN Saudi League,Croatia,81,Right,['CM'],33,"181cm / 5'11""",72kg / 159lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.05,86.57
+213648,Pierre-Emile Højbjerg,Defensive Midfielder,OM,Ligue 1 McDonald's,Denmark,82,Right,['CM'],30,"187cm / 6'2""",84kg / 185lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,81.8,86.42
+250959,Angelo Stiller,Defensive Midfielder,VfB Stuttgart,Bundesliga,Germany,83,Left,['CM'],24,"183cm / 6'0""",77kg / 170lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,80.85,86.38999999999999
+229261,Denis Zakaria,Defensive Midfielder,AS Monaco,Ligue 1 McDonald's,Switzerland,82,Right,['CM'],29,"190cm / 6'3""",81kg / 179lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,81.15,86.16
+202024,Remo Freuler,Defensive Midfielder,Bologna,Serie A Enilive,Switzerland,81,Right,['CM'],33,"180cm / 5'11""",80kg / 176lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,81.6,85.99
+251854,Pedri,Central Midfielder,FC Barcelona,LALIGA EA SPORTS,Spain,89,Right,"['CDM', 'CAM']",23,"174cm / 5'9""",60kg / 132lb,Central Midfielder,Central Midfielder,Official Position,100.0,87.17,91.018
+255253,Vitinha,Central Midfielder,Paris SG,Ligue 1 McDonald's,Portugal,89,Right,"['CDM', 'CAM']",26,"172cm / 5'8""",64kg / 141lb,Central Midfielder,Central Midfielder,Official Position,100.0,86.76,90.854
+239053,Federico Valverde,Central Midfielder,Real Madrid,LALIGA EA SPORTS,Uruguay,89,Right,"['CDM', 'RB']",27,"182cm / 6'0""",74kg / 163lb,Central Midfielder,Central Midfielder,Official Position,100.0,86.58,90.782
+192985,Kevin De Bruyne,Central Midfielder,SSC Napoli,Serie A Enilive,Belgium,87,Right,['CAM'],34,"181cm / 5'11""",75kg / 165lb,Central Midfielder,Central Midfielder,Official Position,100.0,88.04,90.666
+222665,Martin Ødegaard,Central Midfielder,Arsenal,Premier League,Norway,87,Left,['CAM'],27,"178cm / 5'10""",68kg / 150lb,Central Midfielder,Central Midfielder,Official Position,100.0,87.96,90.634
+224232,Nicolò Barella,Central Midfielder,Lombardia FC,Serie A Enilive,Italy,87,Right,,29,"175cm / 5'9""",68kg / 150lb,Central Midfielder,Central Midfielder,Official Position,100.0,86.7,90.13
+228702,Frenkie de Jong,Central Midfielder,FC Barcelona,LALIGA EA SPORTS,Holland,87,Right,['CDM'],28,"181cm / 5'11""",74kg / 163lb,Central Midfielder,Central Midfielder,Official Position,100.0,86.52,90.05799999999999
+239837,Alexis Mac Allister,Central Midfielder,Liverpool,Premier League,Argentina,87,Right,['CDM'],27,"176cm / 5'9""",72kg / 159lb,Central Midfielder,Central Midfielder,Official Position,100.0,85.75,89.75
+247851,Bruno Guimarães,Central Midfielder,Newcastle Utd,Premier League,Brazil,86,Right,['CDM'],28,"182cm / 6'0""",74kg / 163lb,Central Midfielder,Central Midfielder,Official Position,100.0,85.66,89.364
+216393,Youri Tielemans,Central Midfielder,Aston Villa,Premier League,Belgium,85,Right,"['CDM', 'CAM']",28,"176cm / 5'9""",72kg / 159lb,Central Midfielder,Central Midfielder,Official Position,100.0,85.78,89.062
+240638,Tijjani Reijnders,Central Midfielder,Manchester City,Premier League,Holland,86,Right,"['CDM', 'CAM']",27,"185cm / 6'1""",73kg / 161lb,Central Midfielder,Central Midfielder,Official Position,100.0,84.37,88.848
+218667,Bernardo Silva,Central Midfielder,Manchester City,Premier League,Portugal,84,Left,"['RM', 'CDM', 'CAM']",31,"173cm / 5'8""",65kg / 143lb,Central Midfielder,Central Midfielder,Official Position,100.0,85.46,88.584
+247090,Enzo Fernández,Central Midfielder,Chelsea,Premier League,Argentina,84,Right,"['CDM', 'CAM']",25,"178cm / 5'10""",76kg / 168lb,Central Midfielder,Central Midfielder,Official Position,100.0,85.08,88.432
+220697,James Maddison,Central Midfielder,Spurs,Premier League,England,84,Right,"['CAM', 'CDM']",29,"175cm / 5'9""",73kg / 161lb,Central Midfielder,Central Midfielder,Official Position,100.0,84.47,88.188
+272834,João Neves,Central Midfielder,Paris SG,Ligue 1 McDonald's,Portugal,85,Right,['CDM'],21,"174cm / 5'9""",66kg / 146lb,Central Midfielder,Central Midfielder,Official Position,100.0,83.15,88.01
+247394,Dejan Kulusevski,Central Midfielder,Spurs,Premier League,Sweden,83,Left,"['RW', 'CAM']",25,"186cm / 6'1""",80kg / 176lb,Central Midfielder,Central Midfielder,Official Position,100.0,84.8,87.97
+177003,Luka Modrić,Central Midfielder,Milano FC,Serie A Enilive,Croatia,83,Right,"['CAM', 'CDM']",40,"172cm / 5'8""",67kg / 148lb,Central Midfielder,Central Midfielder,Official Position,100.0,84.4,87.81
+212616,Rodrigo De Paul,Central Midfielder,Inter Miami CF,MLS,Argentina,84,Right,"['CDM', 'CAM']",31,"180cm / 5'11""",70kg / 154lb,Central Midfielder,Central Midfielder,Official Position,100.0,83.27,87.708
+226271,Fabián Ruiz,Central Midfielder,Paris SG,Ligue 1 McDonald's,Spain,85,Left,['CDM'],29,"189cm / 6'2""",70kg / 154lb,Central Midfielder,Central Midfielder,Official Position,100.0,82.16,87.61399999999999
+223848,Sergej Milinković-Savić,Central Midfielder,Al Hilal,ROSHN Saudi League,Serbia,84,Right,"['CDM', 'CAM']",31,"192cm / 6'4""",95kg / 209lb,Central Midfielder,Central Midfielder,Official Position,100.0,82.84,87.536
+248243,Eduardo Camavinga,Central Midfielder,Real Madrid,LALIGA EA SPORTS,France,83,Left,"['CDM', 'LB']",23,"185cm / 6'1""",77kg / 170lb,Central Midfielder,Central Midfielder,Official Position,100.0,83.35,87.38999999999999
+192318,Mario Götze,Central Midfielder,Frankfurt,Bundesliga,Germany,82,Right,"['CAM', 'RM', 'CDM']",33,"176cm / 5'9""",72kg / 159lb,Central Midfielder,Central Midfielder,Official Position,100.0,84.07000000000001,87.328
+228813,Aleix García,Central Midfielder,Leverkusen,Bundesliga,Spain,83,Right,['CDM'],28,"173cm / 5'8""",68kg / 150lb,Central Midfielder,Central Midfielder,Official Position,100.0,83.12,87.298
+237238,Scott McTominay,Central Midfielder,SSC Napoli,Serie A Enilive,Scotland,85,Right,['CAM'],29,"193cm / 6'4""",88kg / 194lb,Central Midfielder,Central Midfielder,Official Position,100.0,81.27,87.258
+192883,Henrikh Mkhitaryan,Central Midfielder,Lombardia FC,Serie A Enilive,Armenia,83,Right,,37,"177cm / 5'10""",75kg / 165lb,Central Midfielder,Central Midfielder,Official Position,100.0,82.8,87.16999999999999
+256630,Florian Wirtz,Attacking Midfielder,Liverpool,Premier League,Germany,89,Right,"['ST', 'CM']",22,"177cm / 5'10""",71kg / 157lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,87.8,91.27
+257534,Cole Palmer,Attacking Midfielder,Chelsea,Premier League,England,87,Left,"['RM', 'ST']",23,"185cm / 6'1""",76kg / 168lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,86.6,90.09
+252371,Jude Bellingham,Attacking Midfielder,Real Madrid,LALIGA EA SPORTS,England,90,Right,['CM'],22,"186cm / 6'1""",75kg / 165lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,83.65,89.96
+212198,Bruno Fernandes,Attacking Midfielder,Man Utd,Premier League,Portugal,87,Right,['CM'],31,"179cm / 5'10""",69kg / 152lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,85.75,89.75
+211110,Paulo Dybala,Attacking Midfielder,AS Roma,Serie A Enilive,Argentina,86,Left,['ST'],32,"177cm / 5'10""",75kg / 165lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,85.2,89.18
+256790,Jamal Musiala,Attacking Midfielder,FC Bayern München,Bundesliga,Germany,88,Right,"['LM', 'CM', 'ST']",23,"184cm / 6'0""",72kg / 159lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.8,88.91999999999999
+197781,Isco,Attacking Midfielder,Real Betis,LALIGA EA SPORTS,Spain,84,Right,"['LM', 'CM']",33,"176cm / 5'9""",79kg / 174lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,84.65,88.26
+244260,Dani Olmo,Attacking Midfielder,FC Barcelona,LALIGA EA SPORTS,Spain,85,Right,"['CM', 'ST']",27,"179cm / 5'10""",72kg / 159lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.7,87.83
+240950,Pedro Gonçalves,Attacking Midfielder,Sporting CP,Liga Portugal,Portugal,83,Right,"['LM', 'CM']",27,"173cm / 5'8""",78kg / 172lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,83.8,87.57
+236772,Dominik Szoboszlai,Attacking Midfielder,Liverpool,Premier League,Hungary,83,Right,['CM'],25,"186cm / 6'1""",74kg / 163lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,83.45,87.43
+244675,Sancet,Attacking Midfielder,Athletic Club,LALIGA EA SPORTS,Spain,84,Right,"['CM', 'ST']",25,"188cm / 6'2""",77kg / 170lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.15,87.26
+240243,Matheus Cunha,Attacking Midfielder,Man Utd,Premier League,Brazil,83,Right,"['LW', 'ST']",26,"183cm / 6'0""",76kg / 168lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.85,87.19
+245367,Xavi Simons,Attacking Midfielder,Spurs,Premier League,Holland,84,Right,"['LM', 'ST']",22,"179cm / 5'10""",58kg / 128lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,81.5,87.0
+235794,Eberechi Eze,Attacking Midfielder,Arsenal,Premier League,England,83,Right,"['LW', 'ST']",27,"178cm / 5'10""",67kg / 148lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.15,86.91
+212194,Julian Brandt,Attacking Midfielder,Borussia Dortmund,Bundesliga,Germany,83,Right,['CM'],29,"185cm / 6'1""",83kg / 183lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.0,86.85
+226226,Giovani Lo Celso,Attacking Midfielder,Real Betis,LALIGA EA SPORTS,Argentina,82,Left,"['CM', 'CDM']",29,"177cm / 5'10""",68kg / 150lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.65,86.76
+210008,Adrien Rabiot,Attacking Midfielder,Milano FC,Serie A Enilive,France,83,Left,['CM'],30,"191cm / 6'3""",80kg / 176lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,81.3,86.57
+212523,Anderson Talisca,Attacking Midfielder,Fenerbahçe,Trendyol Süper Lig,Brazil,81,Left,"['ST', 'RW', 'CM']",32,"191cm / 6'3""",75kg / 165lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,82.65,86.41
+236015,Morgan Gibbs-White,Attacking Midfielder,Nott'm Forest,Premier League,England,82,Right,['ST'],26,"179cm / 5'10""",72kg / 159lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,81.4,86.26
+251470,Charles De Ketelaere,Attacking Midfielder,Bergamo Calcio,Serie A Enilive,Belgium,82,Left,"['ST', 'CM']",25,"192cm / 6'4""",79kg / 174lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,81.3,86.22
+216547,Rafa,Attacking Midfielder,Beşiktaş,Trendyol Süper Lig,Portugal,82,Right,"['ST', 'LM']",32,"172cm / 5'8""",66kg / 146lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,81.2,86.18
+222737,Malcom,Attacking Midfielder,Al Hilal,ROSHN Saudi League,Brazil,82,Left,"['RM', 'LM', 'CM']",29,"172cm / 5'8""",74kg / 163lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,80.95,86.08
+244778,Trincão,Attacking Midfielder,Sporting CP,Liga Portugal,Portugal,82,Left,"['RM', 'RW', 'ST']",26,"184cm / 6'0""",74kg / 163lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,80.95,86.08
+210411,Otávio,Attacking Midfielder,Al Qadsiah,ROSHN Saudi League,Portugal,82,Right,"['CM', 'RM']",31,"171cm / 5'7""",67kg / 148lb,Attacking Midfielder,Attacking Midfielder,Official Position,100.0,80.7,85.98
+158023,Lionel Messi,Right Winger,Inter Miami CF,MLS,Argentina,86,Left,"['ST', 'CAM', 'RM']",38,"169cm / 5'7""",67kg / 148lb,Winger,Attacking Midfielder,Flexible Position 1,84.21838439883474,86.8,85.87459609970868
+209331,Mohamed Salah,Right Midfielder,Liverpool,Premier League,Egypt,91,Left,['RW'],33,"175cm / 5'9""",72kg / 159lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,88.5,92.25
+233419,Raphinha,Left Midfielder,FC Barcelona,LALIGA EA SPORTS,Brazil,89,Left,['LW'],29,"176cm / 5'9""",68kg / 150lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,88.33,91.482
+277643,Lamine Yamal,Right Midfielder,FC Barcelona,LALIGA EA SPORTS,Spain,89,Left,['RW'],18,"180cm / 5'11""",72kg / 159lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,85.89,90.506
+256516,Nico Williams,Left Midfielder,Athletic Club,LALIGA EA SPORTS,Spain,86,Right,"['RM', 'LW']",23,"181cm / 5'11""",67kg / 148lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,85.67,89.368
+247827,Michael Olise,Right Midfielder,FC Bayern München,Bundesliga,France,86,Left,['RW'],24,"184cm / 6'0""",73kg / 161lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.8,88.62
+241852,Moussa Diaby,Right Midfielder,Al Ittihad,ROSHN Saudi League,France,84,Left,['RW'],26,"170cm / 5'7""",67kg / 148lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,85.33,88.532
+241084,Luis Díaz,Left Midfielder,FC Bayern München,Bundesliga,Colombia,85,Right,"['LW', 'ST']",29,"180cm / 5'11""",73kg / 161lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.75,88.25
+210035,Grimaldo,Left Midfielder,Leverkusen,Bundesliga,Spain,84,Left,"['LB', 'LW']",30,"171cm / 5'7""",68kg / 150lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.37,87.748
+220502,Mattia Zaccagni,Left Midfielder,Latium,Serie A Enilive,Italy,84,Right,['LW'],30,"177cm / 5'10""",63kg / 139lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.13,87.652
+216201,Iñaki Williams,Right Midfielder,Athletic Club,LALIGA EA SPORTS,Ghana,83,Right,"['ST', 'RW']",31,"186cm / 6'1""",80kg / 176lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.53,87.46199999999999
+257279,Álex Baena,Left Midfielder,Atlético de Madrid,LALIGA EA SPORTS,Spain,84,Right,"['ST', 'LW']",24,"175cm / 5'9""",70kg / 154lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.19,87.276
+242516,Cody Gakpo,Left Midfielder,Liverpool,Premier League,Holland,84,Right,['LW'],26,"189cm / 6'2""",76kg / 168lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.01,87.20400000000001
+204485,Riyad Mahrez,Right Midfielder,Al Ahli,ROSHN Saudi League,Algeria,84,Left,['RW'],35,"179cm / 5'10""",67kg / 148lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.76,87.104
+232639,Ritsu Doan,Right Midfielder,Frankfurt,Bundesliga,Japan,82,Left,['RB'],27,"172cm / 5'8""",74kg / 163lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.38,87.05199999999999
+210602,Salem Al Dawsari,Left Midfielder,Al Hilal,ROSHN Saudi League,Saudi Arabia,82,Right,['LW'],34,"173cm / 5'8""",71kg / 157lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.88,86.852
+255565,Kaoru Mitoma,Left Midfielder,Brighton,Premier League,Japan,82,Right,['LW'],28,"178cm / 5'10""",74kg / 163lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.49,86.696
+208722,Sadio Mané,Left Midfielder,Al Nassr,ROSHN Saudi League,Senegal,83,Right,"['RM', 'ST', 'LW']",33,"174cm / 5'9""",69kg / 152lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.55,86.66999999999999
+213345,Kingsley Coman,Left Midfielder,Al Nassr,ROSHN Saudi League,France,83,Right,"['RM', 'LW']",29,"181cm / 5'11""",75kg / 165lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.05,86.47
+222492,Leroy Sané,Right Midfielder,Galatasaray,Trendyol Süper Lig,Germany,82,Left,"['LM', 'RW']",30,"183cm / 6'0""",80kg / 176lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.91,86.464
+237681,Takefusa Kubo,Right Midfielder,Real Sociedad,LALIGA EA SPORTS,Japan,82,Left,['RW'],24,"173cm / 5'8""",64kg / 141lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.55,86.32
+225201,Álex Berenguer,Left Midfielder,Athletic Club,LALIGA EA SPORTS,Spain,82,Right,"['RM', 'CAM', 'LW']",30,"175cm / 5'9""",73kg / 161lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.41,86.264
+253396,Giuliano Simeone,Right Midfielder,Atlético de Madrid,LALIGA EA SPORTS,Argentina,81,Right,"['ST', 'LM', 'RW']",23,"173cm / 5'8""",75kg / 165lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.08,86.182
+263205,Barış Alper Yılmaz,Left Midfielder,Galatasaray,Trendyol Süper Lig,Turkey,80,Right,"['RM', 'LW']",25,"186cm / 6'1""",80kg / 176lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.77,86.108
+231416,Dodi Lukébakio,Right Midfielder,SL Benfica,Liga Portugal,Belgium,82,Left,"['RW', 'ST']",28,"187cm / 6'2""",77kg / 170lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,80.66,85.964
+224371,Jarrod Bowen,Right Midfielder,West Ham,Premier League,England,83,Left,"['ST', 'RW']",29,"175cm / 5'9""",70kg / 154lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,79.69,85.926
+238794,Vini Jr.,Left Winger,Real Madrid,LALIGA EA SPORTS,Brazil,89,Right,"['ST', 'LM']",25,"176cm / 5'9""",73kg / 161lb,Winger,Winger,Official Position,100.0,90.56,92.374
+246669,Bukayo Saka,Right Winger,Arsenal,Premier League,England,88,Left,['RM'],24,"178cm / 5'10""",65kg / 143lb,Winger,Winger,Official Position,100.0,85.72,90.088
+247635,Khvicha Kvaratskhelia,Left Winger,Paris SG,Ligue 1 McDonald's,Georgia,87,Right,"['RW', 'LM']",25,"183cm / 6'0""",70kg / 154lb,Winger,Winger,Official Position,100.0,85.86,89.794
+243812,Rodrygo,Right Winger,Real Madrid,LALIGA EA SPORTS,Brazil,85,Right,"['ST', 'RM']",25,"174cm / 5'9""",64kg / 141lb,Winger,Winger,Official Position,100.0,85.86999999999999,89.098
+158023,Lionel Messi,Right Winger,Inter Miami CF,MLS,Argentina,86,Left,"['ST', 'CAM', 'RM']",38,"169cm / 5'7""",67kg / 148lb,Winger,Winger,Official Position,100.0,84.65,88.96000000000001
+243014,Bryan Mbeumo,Right Winger,Man Utd,Premier League,Cameroon,85,Left,"['RM', 'ST']",26,"171cm / 5'7""",75kg / 165lb,Winger,Winger,Official Position,100.0,85.25999999999999,88.854
+241721,Rafael Leão,Left Winger,Milano FC,Serie A Enilive,Portugal,84,Right,['LM'],26,"188cm / 6'2""",81kg / 179lb,Winger,Winger,Official Position,100.0,85.42,88.568
+227796,Christian Pulisic,Right Winger,Milano FC,Serie A Enilive,United States,84,Right,"['RM', 'CAM']",27,"178cm / 5'10""",73kg / 161lb,Winger,Winger,Official Position,100.0,85.38,88.55199999999999
+237692,Phil Foden,Right Winger,Manchester City,Premier League,England,85,Left,"['CM', 'LW', 'RM']",25,"171cm / 5'7""",70kg / 154lb,Winger,Winger,Official Position,100.0,84.11,88.39399999999999
+264652,Bradley Barcola,Left Winger,Paris SG,Ligue 1 McDonald's,France,84,Right,"['RW', 'LM']",23,"188cm / 6'2""",70kg / 154lb,Winger,Winger,Official Position,100.0,84.92,88.368
+200104,Heung Min Son,Left Winger,LAFC,MLS,Korea Republic,85,Right,"['ST', 'LM']",33,"183cm / 6'0""",78kg / 172lb,Winger,Winger,Official Position,100.0,83.83,88.282
+271421,Désiré Doué,Right Winger,Paris SG,Ligue 1 McDonald's,France,85,Right,"['LW', 'CM', 'RM']",20,"181cm / 5'11""",79kg / 174lb,Winger,Winger,Official Position,100.0,83.42999999999999,88.122
+242964,Anthony Gordon,Left Winger,Newcastle Utd,Premier League,England,83,Right,"['RW', 'LM']",25,"183cm / 6'0""",72kg / 159lb,Winger,Winger,Official Position,100.0,84.61,87.894
+207421,Leandro Trossard,Left Winger,Arsenal,Premier League,Belgium,83,Right,"['ST', 'LM']",31,"171cm / 5'7""",67kg / 148lb,Winger,Winger,Official Position,100.0,82.78,87.162
+241461,Ferran Torres,Left Winger,FC Barcelona,LALIGA EA SPORTS,Spain,83,Right,"['RW', 'ST', 'LM']",26,"184cm / 6'0""",77kg / 170lb,Winger,Winger,Official Position,100.0,82.62,87.098
+270409,Savinho,Right Winger,Manchester City,Premier League,Brazil,82,Left,"['LW', 'RM']",21,"176cm / 5'9""",71kg / 157lb,Winger,Winger,Official Position,100.0,83.33,87.032
+257470,Anthony Elanga,Right Winger,Newcastle Utd,Premier League,Sweden,81,Right,['RM'],23,"178cm / 5'10""",70kg / 154lb,Winger,Winger,Official Position,100.0,83.87,86.898
+251566,Gabriel Martinelli,Left Winger,Arsenal,Premier League,Brazil,81,Right,['LM'],24,"178cm / 5'10""",75kg / 165lb,Winger,Winger,Official Position,100.0,83.84,86.886
+192629,Iago Aspas,Right Winger,Celta,LALIGA EA SPORTS,Spain,83,Left,"['ST', 'RM']",38,"176cm / 5'9""",67kg / 148lb,Winger,Winger,Official Position,100.0,81.8,86.77
+210935,Domenico Berardi,Right Winger,Sassuolo,Serie A Enilive,Italy,82,Left,['RM'],31,"183cm / 6'0""",72kg / 159lb,Winger,Winger,Official Position,100.0,82.34,86.636
+236632,David Neres,Left Winger,SSC Napoli,Serie A Enilive,Brazil,81,Left,['LM'],29,"175cm / 5'9""",69kg / 152lb,Winger,Winger,Official Position,100.0,82.77,86.458
+246420,Jérémy Doku,Left Winger,Manchester City,Premier League,Belgium,80,Right,"['RW', 'LM']",23,"173cm / 5'8""",66kg / 146lb,Winger,Winger,Official Position,100.0,83.37,86.34800000000001
+208418,Yannick Carrasco,Left Winger,Al Shabab,ROSHN Saudi League,Belgium,81,Right,['LM'],32,"181cm / 5'11""",73kg / 161lb,Winger,Winger,Official Position,100.0,82.48,86.342
+243593,Armand Laurienté,Left Winger,Sassuolo,Serie A Enilive,France,80,Right,['LM'],27,"171cm / 5'7""",59kg / 130lb,Winger,Winger,Official Position,100.0,82.92,86.168
+245155,Mohammed Kudus,Right Winger,Spurs,Premier League,Ghana,80,Left,"['LW', 'ST', 'RM']",25,"177cm / 5'10""",70kg / 154lb,Winger,Winger,Official Position,100.0,82.91,86.164
+239085,Erling Haaland,Striker,Manchester City,Premier League,Norway,90,Left,,25,"195cm / 6'5""",94kg / 207lb,Striker,Striker,Official Position,100.0,91.88,93.252
+202126,Harry Kane,Striker,FC Bayern München,Bundesliga,England,89,Right,,32,"188cm / 6'2""",86kg / 190lb,Striker,Striker,Official Position,100.0,91.62,92.798
+231747,Kylian Mbappé,Striker,Real Madrid,LALIGA EA SPORTS,France,91,Right,"['LW', 'LM']",27,"182cm / 6'0""",75kg / 165lb,Striker,Striker,Official Position,100.0,87.75999999999999,91.954
+231478,Lautaro Martínez,Striker,Lombardia FC,Serie A Enilive,Argentina,88,Right,,28,"174cm / 5'9""",72kg / 159lb,Striker,Striker,Official Position,100.0,89.66,91.66399999999999
+188545,Robert Lewandowski,Striker,FC Barcelona,LALIGA EA SPORTS,Poland,88,Right,,37,"185cm / 6'1""",81kg / 179lb,Striker,Striker,Official Position,100.0,89.25999999999999,91.50399999999999
+231443,Ousmane Dembélé,Striker,Paris SG,Ligue 1 McDonald's,France,90,Left,"['RW', 'CAM']",28,"178cm / 5'10""",67kg / 148lb,Striker,Striker,Official Position,100.0,86.2,90.98
+215441,Serhou Guirassy,Striker,Borussia Dortmund,Bundesliga,Guinea,87,Right,,30,"187cm / 6'2""",82kg / 181lb,Striker,Striker,Official Position,100.0,88.62,90.898
+232293,Victor Osimhen,Striker,Galatasaray,Trendyol Süper Lig,Nigeria,87,Right,,27,"186cm / 6'1""",77kg / 170lb,Striker,Striker,Official Position,100.0,88.06,90.674
+233731,Alexander Isak,Striker,Liverpool,Premier League,Sweden,88,Right,,26,"192cm / 6'4""",77kg / 170lb,Striker,Striker,Official Position,100.0,86.94,90.576
+241651,Viktor Gyökeres,Striker,Arsenal,Premier League,Sweden,87,Right,,27,"189cm / 6'2""",94kg / 207lb,Striker,Striker,Official Position,100.0,86.3,89.97
+20801,Cristiano Ronaldo,Striker,Al Nassr,ROSHN Saudi League,Portugal,85,Right,,41,"187cm / 6'2""",85kg / 187lb,Striker,Striker,Official Position,100.0,86.9,89.51
+246191,Julián Alvarez,Striker,Atlético de Madrid,LALIGA EA SPORTS,Argentina,87,Right,,26,"170cm / 5'7""",71kg / 157lb,Striker,Striker,Official Position,100.0,84.76,89.354
+234236,Patrik Schick,Striker,Leverkusen,Bundesliga,Czech Republic,85,Left,,30,"191cm / 6'3""",87kg / 192lb,Striker,Striker,Official Position,100.0,85.9,89.11
+165153,Karim Benzema,Striker,Al Ittihad,ROSHN Saudi League,France,85,Right,['CAM'],38,"185cm / 6'1""",81kg / 179lb,Striker,Striker,Official Position,100.0,85.54,88.966
+194765,Antoine Griezmann,Striker,Atlético de Madrid,LALIGA EA SPORTS,France,85,Left,"['LM', 'CAM']",35,"176cm / 5'9""",67kg / 148lb,Striker,Striker,Official Position,100.0,83.86,88.294
+192505,Romelu Lukaku,Striker,SSC Napoli,Serie A Enilive,Belgium,84,Left,,32,"191cm / 6'3""",94kg / 207lb,Striker,Striker,Official Position,100.0,84.68,88.272
+228093,Marcus Thuram,Striker,Lombardia FC,Serie A Enilive,France,85,Right,,28,"192cm / 6'4""",80kg / 176lb,Striker,Striker,Official Position,100.0,83.52,88.158
+216549,Alexander Sørloth,Striker,Atlético de Madrid,LALIGA EA SPORTS,Norway,84,Left,"['RW', 'RM']",30,"195cm / 6'5""",94kg / 207lb,Striker,Striker,Official Position,100.0,84.38,88.152
+221697,Ollie Watkins,Striker,Aston Villa,Premier League,England,84,Right,,30,"180cm / 5'11""",70kg / 154lb,Striker,Striker,Official Position,100.0,83.82000000000001,87.928
+192123,Chris Wood,Striker,Nott'm Forest,Premier League,New Zealand,82,Right,,34,"191cm / 6'3""",92kg / 203lb,Striker,Striker,Official Position,100.0,85.3,87.82
+241850,Mateo Retegui,Striker,Al Qadsiah,ROSHN Saudi League,Italy,83,Right,,26,"186cm / 6'1""",86kg / 190lb,Striker,Striker,Official Position,100.0,84.08,87.68199999999999
+215333,Duván Zapata,Striker,Torino,Serie A Enilive,Colombia,82,Right,,35,"188cm / 6'2""",88kg / 194lb,Striker,Striker,Official Position,100.0,84.72,87.588
+214096,Tim Kleindienst,Striker,M'gladbach,Bundesliga,Germany,81,Left,,30,"194cm / 6'4""",85kg / 187lb,Striker,Striker,Official Position,100.0,85.16,87.414
+242458,Artem Dovbyk,Striker,AS Roma,Serie A Enilive,Ukraine,83,Left,,28,"189cm / 6'2""",78kg / 172lb,Striker,Striker,Official Position,100.0,83.14,87.306
+188335,Ante Budimir,Striker,CA Osasuna,LALIGA EA SPORTS,Croatia,82,Left,,34,"190cm / 6'3""",75kg / 165lb,Striker,Striker,Official Position,100.0,83.98,87.292

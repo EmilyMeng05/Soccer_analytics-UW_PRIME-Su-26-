@@ -1,0 +1,26 @@
+Name,Position,Team,League,OVR,GK Diving,GK Handling,GK Kicking,GK Positioning,GK Reflexes,ProtectionContribution,DistributionContribution,GoalkeeperSkill,StyleGap,GoalkeeperStyle,PC1,PC2
+Gregor Kobel,Goalkeeper,Borussia Dortmund,Bundesliga,86,87.0,83.0,64.0,86.0,87.0,85.75,64.0,81.4,21.75,Protection Focused,5.587023938234127,-2.6803971698728675
+Lukáš Hrádecký,Goalkeeper,AS Monaco,Ligue 1 McDonald's,81,83.0,79.0,64.0,81.0,83.0,81.5,64.0,78.0,17.5,Protection Focused,4.220655649320289,-2.115957249135254
+Lars Unnerstall,Goalkeeper,FC Twente,Eredivisie,78,78.0,77.0,65.0,78.0,81.0,78.5,65.0,75.8,13.5,Protection Focused,3.3169950733044136,-1.5108206020329382
+Nick Olij,Goalkeeper,PSV,Eredivisie,77,82.0,75.0,62.0,74.0,80.0,77.75,62.0,74.6,15.75,Protection Focused,2.8890097537252224,-2.0346130770310724
+Robin Zentner,Goalkeeper,1. FSV Mainz 05,Bundesliga,78,81.0,74.0,59.0,72.0,83.0,77.5,59.0,73.8,18.5,Protection Focused,2.5967441056283382,-2.5269393754421756
+Roman Bürki,Goalkeeper,St. Louis CITY SC,MLS,77,79.0,75.0,60.0,73.0,79.0,76.5,60.0,73.2,16.5,Protection Focused,2.353116773623888,-2.0955105985035307
+Nikola Vasilj,Goalkeeper,FC St. Pauli,Bundesliga,77,77.0,72.0,65.0,77.0,79.0,76.25,65.0,74.0,11.25,Protection Focused,2.5818847263978224,-1.2608035534030324
+Anthony Lopes,Goalkeeper,FC Nantes,Ligue 1 McDonald's,76,78.0,72.0,65.0,75.0,79.0,76.0,65.0,73.8,11.0,Protection Focused,2.507489635016967,-1.286513283264727
+Marius Müller,Goalkeeper,VfL Wolfsburg,Bundesliga,75,75.0,73.0,62.0,76.0,78.0,75.5,62.0,72.8,13.5,Protection Focused,2.146180522974732,-1.540556124192311
+Jo Hyeon Woo,Goalkeeper,Ulsan HD FC,K League 1,75,79.0,72.0,62.0,73.0,77.0,75.25,62.0,72.6,13.25,Protection Focused,2.0800438086387674,-1.652927308058603
+Lucas França,Goalkeeper,Nacional,Liga Portugal,75,73.0,72.0,65.0,75.0,78.0,74.5,65.0,72.6,9.5,Protection Focused,2.017828050270386,-0.9558497019196394
+Alfonso Herrero,Goalkeeper,Málaga CF,LALIGA HYPERMOTION,74,73.0,73.0,62.0,73.0,75.0,73.5,62.0,71.2,11.5,Protection Focused,1.5150182159748689,-1.2310885761252728
+Gastón Olveira,Goalkeeper,Olimpia,Libertadores,74,72.0,77.0,65.0,70.0,75.0,73.5,65.0,71.8,8.5,Protection Focused,1.732601867668746,-0.7496060354538566
+Cláudio Ramos,Goalkeeper,FC Porto,Liga Portugal,73,78.0,72.0,64.0,72.0,72.0,73.5,64.0,71.6,9.5,Protection Focused,1.6675180243388101,-1.0336680309331452
+Sven Ulreich,Goalkeeper,FC Bayern München,Bundesliga,73,74.0,69.0,62.0,73.0,76.0,73.0,62.0,70.8,11.0,Protection Focused,1.3381834944247393,-1.2757552356697786
+Alexandros Paschalakis,Goalkeeper,Olympiacos FC,Hellas Liga,73,74.0,68.0,64.0,74.0,75.0,72.75,64.0,71.0,8.75,Protection Focused,1.3885918958056294,-0.9300025218748655
+Rubén Yáñez,Goalkeeper,R. Sporting,LALIGA HYPERMOTION,73,73.0,71.0,64.0,70.0,77.0,72.75,64.0,71.0,8.75,Protection Focused,1.3980717775658218,-0.9613044340031339
+Rémy Descamps,Goalkeeper,OL,Ligue 1 McDonald's,73,74.0,68.0,65.0,73.0,76.0,72.75,65.0,71.2,7.75,Protection Focused,1.453423150956726,-0.8181849487218429
+Timo Horn,Goalkeeper,VfL Bochum 1848,Bundesliga 2,73,74.0,76.0,58.0,68.0,73.0,72.75,58.0,69.8,14.75,Protection Focused,1.0379064319693563,-1.7459369054687517
+Jiří Pavlenka,Goalkeeper,PAOK FC,Hellas Liga,73,76.0,70.0,62.0,68.0,77.0,72.75,62.0,70.6,10.75,Protection Focused,1.2718555100740068,-1.378215771454732
+Gaëtan Poussin,Goalkeeper,Red Star FC,Ligue 2 BKT,72,75.0,66.0,63.0,73.0,77.0,72.75,63.0,70.8,9.75,Protection Focused,1.3118503159263595,-1.188568906695522
+Janis Blaswich,Goalkeeper,Leverkusen,Bundesliga,73,73.0,68.0,65.0,76.0,73.0,72.5,65.0,71.0,7.5,Protection Focused,1.3756774517728765,-0.6555738114786539
+Nediljko Labrović,Goalkeeper,FC Augsburg,Bundesliga,73,73.0,68.0,63.0,73.0,76.0,72.5,63.0,70.6,9.5,Protection Focused,1.2379947177464956,-1.0569001863529586
+Dayne St. Clair,Goalkeeper,Minnesota United,MLS,73,73.0,69.0,60.0,72.0,76.0,72.5,60.0,70.0,12.5,Protection Focused,1.0442785988149004,-1.499327138180625
+Marco Silvestri,Goalkeeper,Cremonese,Serie A Enilive,72,72.0,71.0,57.0,73.0,74.0,72.5,57.0,69.4,15.5,Protection Focused,0.8552789791104337,-1.8301840288266662

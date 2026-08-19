@@ -1,0 +1,24 @@
+Squad Group,Squad Status,Name,Official Position,OVR,Best Suitability Score,Eligible Roles,Flexible Roles,Number of Eligible Roles,Number of Starting Formations,Starting Formations
+Goalkeeper,Starting Goalkeeper,Alisson,Goalkeeper,89,,,,,,
+Goalkeeper,Backup Goalkeeper,David Raya,Goalkeeper,87,,,,,,
+Goalkeeper,Backup Goalkeeper,Thibaut Courtois,Goalkeeper,89,,,,,,
+Outfield,Starter in at least one formation,Erling Haaland,Striker,90,93.252,Striker,None,1,3,"4-3-3, 4-2-3-1, 4-4-2"
+Outfield,Starter in at least one formation,Virgil van Dijk,Center Back,90,92.32,Center Back,None,1,3,"4-3-3, 4-2-3-1, 4-4-2"
+Outfield,Starter in at least one formation,Achraf Hakimi,Right Back,89,91.41,Full Back,None,1,3,"4-3-3, 4-2-3-1, 4-4-2"
+Outfield,Starter in at least one formation,Gabriel,Center Back,88,90.96,Center Back,None,1,3,"4-3-3, 4-2-3-1, 4-4-2"
+Outfield,Starter in at least one formation,Nuno Mendes,Left Back,86,88.864,Full Back,None,1,3,"4-3-3, 4-2-3-1, 4-4-2"
+Outfield,Starter in at least one formation,Vini Jr.,Left Winger,89,92.374,"Winger, Wide Midfielder",Wide Midfielder,2,2,"4-3-3, 4-2-3-1"
+Outfield,Starter in at least one formation,Rodri,Defensive Midfielder,90,92.06,"Defensive Midfielder, Central Midfielder",Central Midfielder,2,2,"4-3-3, 4-2-3-1"
+Outfield,Starter in at least one formation,Pedri,Central Midfielder,89,91.018,Central Midfielder,None,1,2,"4-3-3, 4-4-2"
+Outfield,Starter in at least one formation,Vitinha,Central Midfielder,89,90.854,"Central Midfielder, Striker",None,2,2,"4-3-3, 4-4-2"
+Outfield,Starter in at least one formation,Bukayo Saka,Right Winger,88,90.088,"Winger, Wide Midfielder",Wide Midfielder,2,2,"4-3-3, 4-2-3-1"
+Outfield,Starter in at least one formation,Harry Kane,Striker,89,92.798,Striker,None,1,1,4-4-2
+Outfield,Starter in at least one formation,Mohamed Salah,Right Midfielder,91,92.25,"Wide Midfielder, Winger, Attacking Midfielder","Winger, Attacking Midfielder",3,1,4-4-2
+Outfield,Starter in at least one formation,Joshua Kimmich,Defensive Midfielder,89,91.49,"Defensive Midfielder, Central Midfielder, Full Back","Central Midfielder, Full Back",3,1,4-2-3-1
+Outfield,Starter in at least one formation,Raphinha,Left Midfielder,89,91.482,"Wide Midfielder, Winger, Attacking Midfielder","Winger, Attacking Midfielder",3,1,4-4-2
+Outfield,Starter in at least one formation,Florian Wirtz,Attacking Midfielder,89,91.27,"Attacking Midfielder, Wide Midfielder",Wide Midfielder,2,1,4-2-3-1
+Outfield,Reserve,Kylian Mbappé,Striker,91,91.954,"Striker, Winger",Winger,2,0,None
+Outfield,Reserve,Ousmane Dembélé,Striker,90,90.98,"Striker, Wide Midfielder, Attacking Midfielder","Wide Midfielder, Attacking Midfielder",3,0,None
+Outfield,Reserve,Federico Valverde,Central Midfielder,89,90.782,"Central Midfielder, Defensive Midfielder",Defensive Midfielder,2,0,None
+Outfield,Reserve,Marquinhos,Center Back,87,90.01,"Center Back, Wide Midfielder, Winger",Winger,3,0,None
+Outfield,Reserve,Khvicha Kvaratskhelia,Left Winger,87,89.794,"Winger, Attacking Midfielder, Wide Midfielder","Attacking Midfielder, Wide Midfielder",3,0,None

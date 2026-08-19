@@ -1,0 +1,26 @@
+ID,Name,Position,Team,League,Nation,OVR,Preferred foot,Alternative positions,Age,Height,Weight,Original Role Group,Evaluated Role,Role Source,Position Fit Score,Role Attribute Score,Player Role Suitability
+209331,Mohamed Salah,Right Midfielder,Liverpool,Premier League,Egypt,91,Left,['RW'],33,"175cm / 5'9""",72kg / 159lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,88.5,92.25
+233419,Raphinha,Left Midfielder,FC Barcelona,LALIGA EA SPORTS,Brazil,89,Left,['LW'],29,"176cm / 5'9""",68kg / 150lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,88.33,91.482
+277643,Lamine Yamal,Right Midfielder,FC Barcelona,LALIGA EA SPORTS,Spain,89,Left,['RW'],18,"180cm / 5'11""",72kg / 159lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,85.89,90.506
+256516,Nico Williams,Left Midfielder,Athletic Club,LALIGA EA SPORTS,Spain,86,Right,"['RM', 'LW']",23,"181cm / 5'11""",67kg / 148lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,85.67,89.368
+247827,Michael Olise,Right Midfielder,FC Bayern München,Bundesliga,France,86,Left,['RW'],24,"184cm / 6'0""",73kg / 161lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.8,88.62
+241852,Moussa Diaby,Right Midfielder,Al Ittihad,ROSHN Saudi League,France,84,Left,['RW'],26,"170cm / 5'7""",67kg / 148lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,85.33,88.532
+241084,Luis Díaz,Left Midfielder,FC Bayern München,Bundesliga,Colombia,85,Right,"['LW', 'ST']",29,"180cm / 5'11""",73kg / 161lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.75,88.25
+210035,Grimaldo,Left Midfielder,Leverkusen,Bundesliga,Spain,84,Left,"['LB', 'LW']",30,"171cm / 5'7""",68kg / 150lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.37,87.748
+220502,Mattia Zaccagni,Left Midfielder,Latium,Serie A Enilive,Italy,84,Right,['LW'],30,"177cm / 5'10""",63kg / 139lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.13,87.652
+216201,Iñaki Williams,Right Midfielder,Athletic Club,LALIGA EA SPORTS,Ghana,83,Right,"['ST', 'RW']",31,"186cm / 6'1""",80kg / 176lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.53,87.46199999999999
+257279,Álex Baena,Left Midfielder,Atlético de Madrid,LALIGA EA SPORTS,Spain,84,Right,"['ST', 'LW']",24,"175cm / 5'9""",70kg / 154lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.19,87.276
+242516,Cody Gakpo,Left Midfielder,Liverpool,Premier League,Holland,84,Right,['LW'],26,"189cm / 6'2""",76kg / 168lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.01,87.20400000000001
+204485,Riyad Mahrez,Right Midfielder,Al Ahli,ROSHN Saudi League,Algeria,84,Left,['RW'],35,"179cm / 5'10""",67kg / 148lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.76,87.104
+232639,Ritsu Doan,Right Midfielder,Frankfurt,Bundesliga,Japan,82,Left,['RB'],27,"172cm / 5'8""",74kg / 163lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,83.38,87.05199999999999
+210602,Salem Al Dawsari,Left Midfielder,Al Hilal,ROSHN Saudi League,Saudi Arabia,82,Right,['LW'],34,"173cm / 5'8""",71kg / 157lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.88,86.852
+255565,Kaoru Mitoma,Left Midfielder,Brighton,Premier League,Japan,82,Right,['LW'],28,"178cm / 5'10""",74kg / 163lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.49,86.696
+208722,Sadio Mané,Left Midfielder,Al Nassr,ROSHN Saudi League,Senegal,83,Right,"['RM', 'ST', 'LW']",33,"174cm / 5'9""",69kg / 152lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.55,86.66999999999999
+213345,Kingsley Coman,Left Midfielder,Al Nassr,ROSHN Saudi League,France,83,Right,"['RM', 'LW']",29,"181cm / 5'11""",75kg / 165lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.05,86.47
+222492,Leroy Sané,Right Midfielder,Galatasaray,Trendyol Süper Lig,Germany,82,Left,"['LM', 'RW']",30,"183cm / 6'0""",80kg / 176lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.91,86.464
+237681,Takefusa Kubo,Right Midfielder,Real Sociedad,LALIGA EA SPORTS,Japan,82,Left,['RW'],24,"173cm / 5'8""",64kg / 141lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.55,86.32
+225201,Álex Berenguer,Left Midfielder,Athletic Club,LALIGA EA SPORTS,Spain,82,Right,"['RM', 'CAM', 'LW']",30,"175cm / 5'9""",73kg / 161lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,81.41,86.264
+253396,Giuliano Simeone,Right Midfielder,Atlético de Madrid,LALIGA EA SPORTS,Argentina,81,Right,"['ST', 'LM', 'RW']",23,"173cm / 5'8""",75kg / 165lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.08,86.182
+263205,Barış Alper Yılmaz,Left Midfielder,Galatasaray,Trendyol Süper Lig,Turkey,80,Right,"['RM', 'LW']",25,"186cm / 6'1""",80kg / 176lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,82.77,86.108
+231416,Dodi Lukébakio,Right Midfielder,SL Benfica,Liga Portugal,Belgium,82,Left,"['RW', 'ST']",28,"187cm / 6'2""",77kg / 170lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,80.66,85.964
+224371,Jarrod Bowen,Right Midfielder,West Ham,Premier League,England,83,Left,"['ST', 'RW']",29,"175cm / 5'9""",70kg / 154lb,Wide Midfielder,Wide Midfielder,Official Position,100.0,79.69,85.926

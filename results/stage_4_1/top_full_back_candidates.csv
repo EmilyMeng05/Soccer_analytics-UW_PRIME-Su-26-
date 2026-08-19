@@ -1,0 +1,26 @@
+ID,Name,Position,Team,League,Nation,OVR,Preferred foot,Alternative positions,Age,Height,Weight,Original Role Group,Evaluated Role,Role Source,Position Fit Score,Role Attribute Score,Player Role Suitability
+235212,Achraf Hakimi,Right Back,Paris SG,Ligue 1 McDonald's,Morocco,89,Right,['RM'],27,"181cm / 5'11""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,88.15,91.41
+252145,Nuno Mendes,Left Back,Paris SG,Ligue 1 McDonald's,Portugal,86,Left,['LM'],23,"180cm / 5'11""",70kg / 154lb,Full Back,Full Back,Official Position,100.0,84.41,88.864
+241486,Jules Koundé,Right Back,FC Barcelona,LALIGA EA SPORTS,France,87,Right,"['CB', 'RM']",27,"180cm / 5'11""",75kg / 165lb,Full Back,Full Back,Official Position,100.0,82.8,88.57
+226161,Marcos Llorente,Right Back,Atlético de Madrid,LALIGA EA SPORTS,Spain,84,Right,"['CM', 'RM']",31,"184cm / 6'0""",74kg / 163lb,Full Back,Full Back,Official Position,100.0,85.31,88.524
+231281,Trent Alexander-Arnold,Right Back,Real Madrid,LALIGA EA SPORTS,England,86,Right,['RM'],27,"180cm / 5'11""",69kg / 152lb,Full Back,Full Back,Official Position,100.0,83.09,88.336
+232656,Theo Hernández,Left Back,Al Hilal,ROSHN Saudi League,France,84,Left,['LM'],28,"184cm / 6'0""",81kg / 179lb,Full Back,Full Back,Official Position,100.0,84.03,88.012
+210514,João Cancelo,Right Back,Al Hilal,ROSHN Saudi League,Portugal,84,Right,"['LB', 'RM']",31,"182cm / 6'0""",74kg / 163lb,Full Back,Full Back,Official Position,100.0,83.86,87.944
+234396,Alphonso Davies,Left Back,FC Bayern München,Bundesliga,Canada,84,Left,['LM'],25,"185cm / 6'1""",77kg / 170lb,Full Back,Full Back,Official Position,100.0,83.05,87.62
+204963,Carvajal,Right Back,Real Madrid,LALIGA EA SPORTS,Spain,85,Right,['RM'],34,"173cm / 5'8""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,81.69,87.426
+229348,Antonee Robinson,Left Back,Fulham,Premier League,United States,82,Left,['LM'],28,"183cm / 6'0""",70kg / 154lb,Full Back,Full Back,Official Position,100.0,84.19,87.376
+226268,Federico Dimarco,Left Back,Lombardia FC,Serie A Enilive,Italy,85,Left,['LM'],28,"175cm / 5'9""",76kg / 168lb,Full Back,Full Back,Official Position,100.0,81.48,87.342
+253149,Jeremie Frimpong,Right Back,Liverpool,Premier League,Holland,83,Right,"['RM', 'RW']",25,"172cm / 5'8""",65kg / 143lb,Full Back,Full Back,Official Position,100.0,82.42,87.018
+260908,Milos Kerkez,Left Back,Liverpool,Premier League,Hungary,82,Left,['LM'],22,"180cm / 5'11""",71kg / 157lb,Full Back,Full Back,Official Position,100.0,83.11,86.944
+239231,Marc Cucurella,Left Back,Chelsea,Premier League,Spain,84,Left,,27,"174cm / 5'9""",66kg / 146lb,Full Back,Full Back,Official Position,100.0,80.96,86.78399999999999
+263578,Balde,Left Back,FC Barcelona,LALIGA EA SPORTS,Spain,83,Left,['LM'],22,"175cm / 5'9""",69kg / 152lb,Full Back,Full Back,Official Position,100.0,81.31,86.574
+236703,David Raum,Left Back,RB Leipzig,Bundesliga,Germany,82,Left,['LM'],27,"181cm / 5'11""",83kg / 183lb,Full Back,Full Back,Official Position,100.0,82.01,86.504
+217870,Giovanni Di Lorenzo,Right Back,SSC Napoli,Serie A Enilive,Italy,83,Right,"['CB', 'RM']",32,"183cm / 6'0""",82kg / 181lb,Full Back,Full Back,Official Position,100.0,81.13,86.502
+233096,Denzel Dumfries,Right Back,Lombardia FC,Serie A Enilive,Holland,84,Right,['RM'],29,"188cm / 6'2""",80kg / 176lb,Full Back,Full Back,Official Position,100.0,80.17999999999999,86.472
+243576,Pedro Porro,Right Back,Spurs,Premier League,Spain,82,Right,['RM'],26,"173cm / 5'8""",69kg / 152lb,Full Back,Full Back,Official Position,100.0,81.22999999999999,86.192
+251517,Joško Gvardiol,Left Back,Manchester City,Premier League,Croatia,84,Left,"['CB', 'LM']",24,"185cm / 6'1""",80kg / 176lb,Full Back,Full Back,Official Position,100.0,79.33,86.132
+227647,Maximilian Mittelstädt,Left Back,VfB Stuttgart,Bundesliga,Germany,82,Left,['LM'],29,"180cm / 5'11""",71kg / 157lb,Full Back,Full Back,Official Position,100.0,80.22,85.788
+228618,Ferland Mendy,Left Back,Real Madrid,LALIGA EA SPORTS,France,81,Left,['LM'],30,"180cm / 5'11""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,81.03,85.762
+225375,Konrad Laimer,Right Back,FC Bayern München,Bundesliga,Austria,82,Right,"['CDM', 'CM', 'RM']",28,"180cm / 5'11""",72kg / 159lb,Full Back,Full Back,Official Position,100.0,80.03,85.712
+261865,Miguel Gutiérrez,Left Back,SSC Napoli,Serie A Enilive,Spain,81,Left,['LM'],24,"180cm / 5'11""",73kg / 161lb,Full Back,Full Back,Official Position,100.0,80.88,85.702
+268889,Álvaro Carreras,Left Back,Real Madrid,LALIGA EA SPORTS,Spain,80,Left,['LM'],23,"186cm / 6'1""",78kg / 172lb,Full Back,Full Back,Official Position,100.0,81.54,85.61600000000001

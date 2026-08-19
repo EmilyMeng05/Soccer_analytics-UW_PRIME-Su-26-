@@ -1,0 +1,11 @@
+Formation,Formation Slot,Assigned Role,Name,Official Position,Role Source,OVR,Position Fit Score,Role Attribute Score,Selection Score,Tactical Score,PAC,SHO,PAS,DRI,DEF,PHY
+4-3-3,CB1,Center Back,Pau Cubarsí,Center Back,Official Position,82.0,100.0,82.15,86.56,84.83550000000001,70.0,42.0,66.0,77.0,84.0,76.0
+4-3-3,CB2,Center Back,Aymeric Laporte,Center Back,Official Position,82.0,100.0,82.55,86.72,84.78850000000001,51.0,50.0,74.0,70.0,83.0,77.0
+4-3-3,FB1,Full Back,Marc Cucurella,Left Back,Official Position,84.0,100.0,80.96,86.78399999999999,85.6522,75.0,64.0,79.0,80.0,82.0,79.0
+4-3-3,FB2,Full Back,Marcos Llorente,Right Back,Official Position,84.0,100.0,85.31,88.524,87.20670000000003,89.0,79.0,78.0,81.0,78.0,82.0
+4-3-3,DM,Defensive Midfielder,Rodri,Defensive Midfielder,Official Position,90.0,100.0,88.9,92.06,90.88550000000001,65.0,80.0,86.0,84.0,86.0,85.0
+4-3-3,CM1,Central Midfielder,Fabián Ruiz,Central Midfielder,Official Position,85.0,100.0,82.16,87.61399999999999,86.0787,61.0,77.0,80.0,81.0,75.0,72.0
+4-3-3,CM2,Central Midfielder,Pedri,Central Midfielder,Official Position,89.0,100.0,87.17,91.018,89.68940000000002,77.0,73.0,85.0,91.0,78.0,77.0
+4-3-3,W1,Winger,Lamine Yamal,Right Midfielder,Winger Attributes + Wide-Midfielder Position Fit,89.0,100.0,87.66,91.214,87.29620000000001,85.0,81.0,86.0,90.0,23.0,53.0
+4-3-3,W2,Winger,Nico Williams,Left Midfielder,Winger Attributes + Wide-Midfielder Position Fit,86.0,100.0,86.28,89.612,86.2896,93.0,76.0,80.0,87.0,36.0,66.0
+4-3-3,ST,Striker,Oyarzabal,Striker,Official Position,82.0,100.0,79.34,85.436,82.6863,77.0,83.0,81.0,82.0,42.0,65.0

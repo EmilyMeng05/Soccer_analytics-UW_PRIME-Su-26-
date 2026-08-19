@@ -1,0 +1,60 @@
+Role,Attribute,Attribute Weight
+Center Back,Interceptions,0.2
+Center Back,Heading Accuracy,0.15
+Center Back,Standing Tackle,0.2
+Center Back,Sliding Tackle,0.15
+Center Back,Strength,0.15
+Center Back,Aggression,0.1
+Center Back,Jumping,0.05
+Full Back,Acceleration,0.15
+Full Back,Sprint Speed,0.15
+Full Back,Crossing,0.15
+Full Back,Stamina,0.2
+Full Back,Interceptions,0.12
+Full Back,Standing Tackle,0.13
+Full Back,Short Passing,0.1
+Defensive Midfielder,Interceptions,0.2
+Defensive Midfielder,Standing Tackle,0.15
+Defensive Midfielder,Long Passing,0.15
+Defensive Midfielder,Short Passing,0.15
+Defensive Midfielder,Stamina,0.15
+Defensive Midfielder,Aggression,0.1
+Defensive Midfielder,Composure,0.1
+Central Midfielder,Short Passing,0.2
+Central Midfielder,Long Passing,0.18
+Central Midfielder,Vision,0.17
+Central Midfielder,Ball Control,0.15
+Central Midfielder,Composure,0.1
+Central Midfielder,Stamina,0.12
+Central Midfielder,Reactions,0.08
+Attacking Midfielder,Vision,0.2
+Attacking Midfielder,Dribbling,0.15
+Attacking Midfielder,Ball Control,0.15
+Attacking Midfielder,Short Passing,0.15
+Attacking Midfielder,Positioning,0.15
+Attacking Midfielder,Long Shots,0.1
+Attacking Midfielder,Curve,0.1
+Wide Midfielder,Acceleration,0.13
+Wide Midfielder,Sprint Speed,0.12
+Wide Midfielder,Crossing,0.18
+Wide Midfielder,Dribbling,0.12
+Wide Midfielder,Short Passing,0.12
+Wide Midfielder,Stamina,0.15
+Wide Midfielder,Vision,0.1
+Wide Midfielder,Ball Control,0.08
+Winger,Acceleration,0.15
+Winger,Sprint Speed,0.15
+Winger,Dribbling,0.15
+Winger,Crossing,0.15
+Winger,Positioning,0.15
+Winger,Finishing,0.12
+Winger,Ball Control,0.08
+Winger,Agility,0.05
+Striker,Finishing,0.22
+Striker,Positioning,0.2
+Striker,Shot Power,0.12
+Striker,Heading Accuracy,0.12
+Striker,Reactions,0.1
+Striker,Strength,0.1
+Striker,Volleys,0.08
+Striker,Composure,0.06

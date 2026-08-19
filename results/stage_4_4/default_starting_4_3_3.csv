@@ -1,0 +1,11 @@
+Formation,Formation Slot,Assigned Role,Name,Official Position,Role Source,OVR,Position Fit Score,Role Attribute Score,Selection Score,Tactical Score,PAC,SHO,PAS,DRI,DEF,PHY
+4-3-3,CB1,Center Back,Virgil van Dijk,Center Back,Official Position,90.0,100.0,89.55,92.32,90.8185,73.0,60.0,72.0,72.0,90.0,87.0
+4-3-3,CB2,Center Back,Gabriel,Center Back,Official Position,88.0,100.0,87.9,90.96,88.93050000000001,64.0,44.0,64.0,65.0,88.0,84.0
+4-3-3,FB1,Full Back,Nuno Mendes,Left Back,Official Position,86.0,100.0,84.41,88.864,87.66619999999999,95.0,65.0,76.0,82.0,80.0,77.0
+4-3-3,FB2,Full Back,Achraf Hakimi,Right Back,Official Position,89.0,100.0,88.15,91.41,90.328,92.0,79.0,82.0,83.0,82.0,79.0
+4-3-3,DM,Defensive Midfielder,Rodri,Defensive Midfielder,Official Position,90.0,100.0,88.9,92.06,90.88550000000001,65.0,80.0,86.0,84.0,86.0,85.0
+4-3-3,CM1,Central Midfielder,Pedri,Central Midfielder,Official Position,89.0,100.0,87.17,91.018,89.68940000000002,77.0,73.0,85.0,91.0,78.0,77.0
+4-3-3,CM2,Central Midfielder,Federico Valverde,Central Midfielder,Official Position,89.0,100.0,86.58,90.782,89.92560000000002,88.0,84.0,84.0,84.0,83.0,85.0
+4-3-3,W1,Winger,Bukayo Saka,Right Winger,Official Position,88.0,100.0,85.72,90.088,88.10789999999999,84.0,82.0,85.0,88.0,60.0,73.0
+4-3-3,W2,Winger,Vini Jr.,Left Winger,Official Position,89.0,100.0,90.56,92.374,88.6367,95.0,84.0,81.0,91.0,29.0,69.0
+4-3-3,ST,Striker,Erling Haaland,Striker,Official Position,90.0,100.0,91.88,93.252,89.93910000000001,86.0,91.0,70.0,80.0,45.0,88.0

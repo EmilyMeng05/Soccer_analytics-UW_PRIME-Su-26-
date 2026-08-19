@@ -1,0 +1,26 @@
+ID,Name,Position,Team,League,Nation,OVR,Preferred foot,Alternative positions,Age,Height,Weight,Original Role Group,Evaluated Role,Role Source,Position Fit Score,Role Attribute Score,Player Role Suitability
+231866,Rodri,Defensive Midfielder,Manchester City,Premier League,Spain,90,Right,['CM'],29,"190cm / 6'3""",82kg / 181lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,88.9,92.06
+212622,Joshua Kimmich,Defensive Midfielder,FC Bayern München,Bundesliga,Germany,89,Right,"['RB', 'CM']",31,"177cm / 5'10""",75kg / 165lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,88.35,91.49
+234378,Declan Rice,Defensive Midfielder,Arsenal,Premier League,England,87,Right,['CM'],27,"185cm / 6'1""",80kg / 176lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,86.8,90.17
+256079,Moisés Caicedo,Defensive Midfielder,Chelsea,Premier League,Ecuador,87,Right,['CM'],24,"178cm / 5'10""",73kg / 161lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,85.95,89.83
+208128,Hakan Çalhanoğlu,Defensive Midfielder,Lombardia FC,Serie A Enilive,Turkey,86,Right,['CM'],32,"178cm / 5'10""",69kg / 152lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.95,89.08
+241096,Sandro Tonali,Defensive Midfielder,Newcastle Utd,Premier League,Italy,86,Right,['CM'],25,"181cm / 5'11""",79kg / 174lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.0,88.7
+215914,N'Golo Kanté,Defensive Midfielder,Al Ittihad,ROSHN Saudi League,France,85,Right,['CM'],35,"168cm / 5'6""",70kg / 154lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.55,88.57
+246104,Ryan Gravenberch,Defensive Midfielder,Liverpool,Premier League,Holland,85,Right,['CM'],23,"190cm / 6'3""",77kg / 170lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.25,88.45
+199503,Granit Xhaka,Defensive Midfielder,Sunderland,Premier League,Switzerland,85,Left,['CM'],33,"186cm / 6'1""",80kg / 176lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.1,88.39
+222077,Manuel Locatelli,Defensive Midfielder,Juventus,Serie A Enilive,Italy,84,Right,['CM'],28,"185cm / 6'1""",75kg / 165lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.95,87.98
+223959,Lucas Torreira,Defensive Midfielder,Galatasaray,Trendyol Süper Lig,Uruguay,83,Right,['CM'],30,"166cm / 5'5""",60kg / 132lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,84.2,87.72999999999999
+241637,Aurélien Tchouaméni,Defensive Midfielder,Real Madrid,LALIGA EA SPORTS,France,84,Right,"['CM', 'CB']",26,"187cm / 6'2""",81kg / 179lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.05,87.62
+224293,Rúben Neves,Defensive Midfielder,Al Hilal,ROSHN Saudi League,Portugal,84,Right,['CM'],29,"180cm / 5'11""",83kg / 183lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.45,87.38
+244669,Morten Hjulmand,Defensive Midfielder,Sporting CP,Liga Portugal,Denmark,83,Right,['CM'],26,"185cm / 6'1""",78kg / 172lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.2,87.33
+236987,Boubacar Kamara,Defensive Midfielder,Aston Villa,Premier League,France,83,Right,['CM'],26,"184cm / 6'0""",68kg / 150lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.7,87.13
+209989,Thomas Partey,Defensive Midfielder,Villarreal CF,LALIGA EA SPORTS,Ghana,83,Right,"['CM', 'RB']",32,"185cm / 6'1""",77kg / 170lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.65,87.11
+229391,Palhinha,Defensive Midfielder,Spurs,Premier League,Portugal,83,Right,['CM'],30,"190cm / 6'3""",83kg / 183lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.35,86.99
+209499,Fabinho,Defensive Midfielder,Al Ittihad,ROSHN Saudi League,Brazil,82,Right,['CM'],32,"188cm / 6'2""",78kg / 172lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.15,86.96000000000001
+248148,Zubimendi,Defensive Midfielder,Arsenal,Premier League,Spain,83,Right,['CM'],27,"180cm / 5'11""",74kg / 163lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,82.25,86.94999999999999
+236496,Mattéo Guendouzi,Defensive Midfielder,Latium,Serie A Enilive,France,82,Right,['CM'],26,"185cm / 6'1""",68kg / 150lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.05,86.92
+216352,Marcelo Brozović,Defensive Midfielder,Al Nassr,ROSHN Saudi League,Croatia,81,Right,['CM'],33,"181cm / 5'11""",72kg / 159lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,83.05,86.57
+213648,Pierre-Emile Højbjerg,Defensive Midfielder,OM,Ligue 1 McDonald's,Denmark,82,Right,['CM'],30,"187cm / 6'2""",84kg / 185lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,81.8,86.42
+250959,Angelo Stiller,Defensive Midfielder,VfB Stuttgart,Bundesliga,Germany,83,Left,['CM'],24,"183cm / 6'0""",77kg / 170lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,80.85,86.38999999999999
+229261,Denis Zakaria,Defensive Midfielder,AS Monaco,Ligue 1 McDonald's,Switzerland,82,Right,['CM'],29,"190cm / 6'3""",81kg / 179lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,81.15,86.16
+202024,Remo Freuler,Defensive Midfielder,Bologna,Serie A Enilive,Switzerland,81,Right,['CM'],33,"180cm / 5'11""",80kg / 176lb,Defensive Midfielder,Defensive Midfielder,Official Position,100.0,81.6,85.99

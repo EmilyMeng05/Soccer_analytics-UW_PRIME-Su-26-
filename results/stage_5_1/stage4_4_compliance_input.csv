@@ -1,0 +1,4 @@
+Scenario,Starting Formation,Ending Formation,Players on Field,Goalkeepers on Field,Substitutions Used,Substitution Windows Used,Halftime Window Used,Removed Player Returned,All Individual Checks Passed,Lineup Legal,Failed Checks
+Leading,4-3-3,4-2-3-1,11,1,2,0,Yes,No,True,YES,
+Tied,4-3-3,4-3-3,11,1,0,0,No,No,True,YES,
+Trailing,4-3-3,4-4-2,11,1,3,0,Yes,No,True,YES,

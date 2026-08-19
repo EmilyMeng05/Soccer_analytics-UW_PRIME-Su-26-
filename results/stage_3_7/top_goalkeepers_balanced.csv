@@ -1,0 +1,26 @@
+Name,Position,Team,League,OVR,GK Diving,GK Handling,GK Kicking,GK Positioning,GK Reflexes,ProtectionContribution,DistributionContribution,GoalkeeperSkill,StyleGap,GoalkeeperStyle,PC1,PC2
+Pau López,Goalkeeper,Real Betis,LALIGA EA SPORTS,79,77.0,77.0,78.0,79.0,79.0,78.0,78.0,78.0,0.0,High Protection and Distribution,4.022827765623261,0.5470212698836365
+Dominik Kotarski,Goalkeeper,F.C. København,3F Superliga,77,79.0,72.0,76.0,73.0,80.0,76.0,76.0,76.0,0.0,High Protection and Distribution,3.240755260146158,0.2580094135730762
+Mads Hermansen,Goalkeeper,West Ham,Premier League,76,76.0,75.0,76.0,76.0,77.0,76.0,76.0,76.0,0.0,High Protection and Distribution,3.2500926235930323,0.48610485997699526
+Yann Sommer,Goalkeeper,Lombardia FC,Serie A Enilive,87,83.0,82.0,85.0,87.0,89.0,85.25,85.0,85.2,0.25,High Protection and Distribution,6.800088956928631,0.5370569602960306
+Mike Maignan,Goalkeeper,Milano FC,Serie A Enilive,87,84.0,83.0,85.0,84.0,88.0,84.75,85.0,84.8,0.25,High Protection and Distribution,6.654411228649211,0.5616693160406142
+Bartłomiej Drągowski,Goalkeeper,Panathinaikos,Hellas Liga,76,77.0,73.0,75.0,73.0,78.0,75.25,75.0,75.2,0.25,High Protection and Distribution,2.9395257012597735,0.3085067262307988
+Diogo Costa,Goalkeeper,FC Porto,Liga Portugal,84,83.0,78.0,82.0,83.0,86.0,82.5,82.0,82.4,0.5,High Protection and Distribution,5.719994982054818,0.3696189080704965
+Brice Samba,Goalkeeper,Stade Rennais FC,Ligue 1 McDonald's,80,78.0,80.0,80.0,80.0,80.0,79.5,80.0,79.6,0.5,High Protection and Distribution,4.645803808355319,0.6734031005168253
+Noah Atubolu,Goalkeeper,SC Freiburg,Bundesliga,77,76.0,73.0,75.0,74.0,79.0,75.5,75.0,75.4,0.5,High Protection and Distribution,3.012316747895791,0.29867821037884157
+Justin Bijlow,Goalkeeper,Feyenoord,Eredivisie,75,77.0,72.0,75.0,73.0,76.0,74.5,75.0,74.6,0.5,High Protection and Distribution,2.701714622794416,0.42537271824655326
+Gerónimo Rulli,Goalkeeper,OM,Ligue 1 McDonald's,82,82.0,77.0,80.0,81.0,83.0,80.75,80.0,80.6,0.75,High Protection and Distribution,5.032930127925241,0.3287379135295957
+Marko Dmitrović,Goalkeeper,RCD Espanyol,LALIGA EA SPORTS,79,76.0,79.0,78.0,80.0,80.0,78.75,78.0,78.6,0.75,High Protection and Distribution,4.26375129857091,0.5061870933358548
+David Ospina,Goalkeeper,Atl. Nacional,Libertadores,76,75.0,74.0,77.0,79.0,77.0,76.25,77.0,76.4,0.75,High Protection and Distribution,3.385333234113615,0.6595299039330077
+Ortwin De Wolf,Goalkeeper,KV Mechelen,1A Pro League,75,76.0,73.0,76.0,75.0,77.0,75.25,76.0,75.4,0.75,High Protection and Distribution,3.003483674881792,0.532253855793089
+Antonín Kinský,Goalkeeper,Spurs,Premier League,75,76.0,76.0,76.0,74.0,75.0,75.25,76.0,75.4,0.75,High Protection and Distribution,3.023461106640089,0.6022518615374644
+Guido Herrera,Goalkeeper,Talleres,LPF,76,75.0,74.0,74.0,74.0,76.0,74.75,74.0,74.6,0.75,High Protection and Distribution,2.716772604772998,0.34386070376825156
+Andriy Lunin,Goalkeeper,Real Madrid,LALIGA EA SPORTS,81,80.0,78.0,79.0,80.0,82.0,80.0,79.0,79.8,1.0,High Protection and Distribution,4.730096524294019,0.34369698047366615
+Álvaro Valles,Goalkeeper,Real Betis,LALIGA EA SPORTS,79,78.0,78.0,78.0,80.0,80.0,79.0,78.0,78.8,1.0,High Protection and Distribution,4.3448007222518195,0.40969712347930026
+Milan Borjan,Goalkeeper,Al Riyadh,ROSHN Saudi League,78,72.0,78.0,76.0,82.0,76.0,77.0,76.0,76.8,1.0,High Protection and Distribution,3.566046376129912,0.6234035394544974
+Maarten Vandevoordt,Goalkeeper,RB Leipzig,Bundesliga,76,78.0,75.0,75.0,74.0,77.0,76.0,75.0,75.8,1.0,High Protection and Distribution,3.191820065734605,0.257042911146393
+Lucas Perri,Goalkeeper,Leeds United,Premier League,81,80.0,79.0,79.0,80.0,82.0,80.25,79.0,80.0,1.25,High Protection and Distribution,4.814162767449835,0.32819415012575404
+Caoimhin Kelleher,Goalkeeper,Brentford,Premier League,79,77.0,76.0,79.0,78.0,80.0,77.75,79.0,78.0,1.25,High Protection and Distribution,4.003592777618543,0.6743416733845715
+Yehvann Diouf,Goalkeeper,OGC Nice,Ligue 1 McDonald's,78,78.0,75.0,76.0,76.0,80.0,77.25,76.0,77.0,1.25,High Protection and Distribution,3.645825543394069,0.22206731727076517
+Dominik Greif,Goalkeeper,OL,Ligue 1 McDonald's,78,77.0,76.0,78.0,77.0,77.0,76.75,78.0,77.0,1.25,High Protection and Distribution,3.628063762358687,0.6941739321399295
+Sivera,Goalkeeper,D. Alavés,LALIGA EA SPORTS,76,76.0,74.0,77.0,75.0,78.0,75.75,77.0,76.0,1.25,High Protection and Distribution,3.2308576355883134,0.6134252634779302

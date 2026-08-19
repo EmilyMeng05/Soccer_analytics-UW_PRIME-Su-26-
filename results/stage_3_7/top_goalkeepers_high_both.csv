@@ -1,0 +1,26 @@
+Name,Position,Team,League,OVR,GK Diving,GK Handling,GK Kicking,GK Positioning,GK Reflexes,ProtectionContribution,DistributionContribution,GoalkeeperSkill,StyleGap,GoalkeeperStyle,PC1,PC2
+Alisson,Goalkeeper,Liverpool,Premier League,89,86.0,85.0,86.0,90.0,89.0,87.5,86.0,87.2,1.5,High Protection and Distribution,7.601825873745924,0.42448508245146055
+David Raya,Goalkeeper,Arsenal,Premier League,87,86.0,84.0,87.0,85.0,87.0,85.5,87.0,85.8,1.5,High Protection and Distribution,7.038067783178457,0.7644235689352366
+Thibaut Courtois,Goalkeeper,Real Madrid,LALIGA EA SPORTS,89,85.0,89.0,76.0,88.0,90.0,88.0,76.0,85.6,12.0,High Protection and Distribution,7.1110995068470375,-1.0754829380980822
+Yann Sommer,Goalkeeper,Lombardia FC,Serie A Enilive,87,83.0,82.0,85.0,87.0,89.0,85.25,85.0,85.2,0.25,High Protection and Distribution,6.800088956928631,0.5370569602960306
+Marc-André ter Stegen,Goalkeeper,FC Barcelona,LALIGA EA SPORTS,86,84.0,84.0,89.0,84.0,85.0,84.25,89.0,85.2,4.75,High Protection and Distribution,6.773601418424451,1.2876345036611634
+Jan Oblak,Goalkeeper,Atlético de Madrid,LALIGA EA SPORTS,88,85.0,90.0,78.0,86.0,87.0,87.0,78.0,85.2,9.0,High Protection and Distribution,6.94046617203119,-0.6139427179703429
+Mike Maignan,Goalkeeper,Milano FC,Serie A Enilive,87,84.0,83.0,85.0,84.0,88.0,84.75,85.0,84.8,0.25,High Protection and Distribution,6.654411228649211,0.5616693160406142
+Ederson,Goalkeeper,Fenerbahçe,Trendyol Süper Lig,85,83.0,82.0,91.0,83.0,83.0,82.75,91.0,84.4,8.25,High Protection and Distribution,6.423560400777174,1.7858546989806823
+Gianluigi Donnarumma,Goalkeeper,Manchester City,Premier League,89,90.0,83.0,70.0,87.0,90.0,87.5,70.0,84.0,17.5,High Protection and Distribution,6.54240295322874,-2.1314395346015536
+Manuel Neuer,Goalkeeper,FC Bayern München,Bundesliga,84,81.0,81.0,90.0,86.0,81.0,82.25,90.0,83.8,7.75,High Protection and Distribution,6.189627742777985,1.821927666973421
+Jordan Pickford,Goalkeeper,Everton,Premier League,84,84.0,78.0,88.0,81.0,87.0,82.5,88.0,83.6,5.5,High Protection and Distribution,6.1210841077043385,1.177362510574928
+Emiliano Martínez,Goalkeeper,Aston Villa,Premier League,85,83.0,82.0,82.0,85.0,85.0,83.75,82.0,83.4,1.75,High Protection and Distribution,6.136340461822527,0.3280024972722304
+Diogo Costa,Goalkeeper,FC Porto,Liga Portugal,84,83.0,78.0,82.0,83.0,86.0,82.5,82.0,82.4,0.5,High Protection and Distribution,5.719994982054818,0.3696189080704965
+Péter Gulácsi,Goalkeeper,RB Leipzig,Bundesliga,85,83.0,83.0,74.0,87.0,84.0,84.25,74.0,82.2,10.25,High Protection and Distribution,5.769004812955316,-0.8459519734156948
+Marco Carnesecchi,Goalkeeper,Bergamo Calcio,Serie A Enilive,84,86.0,83.0,71.0,85.0,86.0,85.0,71.0,82.2,14.0,High Protection and Distribution,5.814164324032925,-1.527085121749722
+Álex Remiro,Goalkeeper,Real Sociedad,LALIGA EA SPORTS,83,83.0,78.0,80.0,84.0,84.0,82.25,80.0,81.8,2.25,High Protection and Distribution,5.511856009353016,0.16112709688472085
+Ivan Provedel,Goalkeeper,Latium,Serie A Enilive,82,83.0,79.0,80.0,83.0,84.0,82.25,80.0,81.8,2.25,High Protection and Distribution,5.517445790109224,0.16076760165707807
+Joan García,Goalkeeper,FC Barcelona,LALIGA EA SPORTS,83,81.0,82.0,77.0,83.0,86.0,83.0,77.0,81.8,6.0,High Protection and Distribution,5.558967788361686,-0.3171787074500578
+Unai Simón,Goalkeeper,Athletic Club,LALIGA EA SPORTS,85,84.0,80.0,76.0,84.0,85.0,83.25,76.0,81.8,7.25,High Protection and Distribution,5.573677547154045,-0.5659798202139559
+Wojciech Szczęsny,Goalkeeper,FC Barcelona,LALIGA EA SPORTS,84,82.0,83.0,75.0,84.0,84.0,83.25,75.0,81.6,8.25,High Protection and Distribution,5.517452892234062,-0.5971697490859791
+Matz Sels,Goalkeeper,Nott'm Forest,Premier League,83,82.0,80.0,79.0,83.0,83.0,82.0,79.0,81.4,3.0,High Protection and Distribution,5.375646482295972,0.10458693337864608
+Michele Di Gregorio,Goalkeeper,Juventus,Serie A Enilive,81,82.0,78.0,79.0,83.0,85.0,82.0,79.0,81.4,3.0,High Protection and Distribution,5.361258831293883,0.034229432406628124
+Yassine Bounou,Goalkeeper,Al Hilal,ROSHN Saudi League,82,81.0,82.0,76.0,82.0,85.0,82.5,76.0,81.2,6.5,High Protection and Distribution,5.337183608411372,-0.3987096103625419
+Oliver Baumann,Goalkeeper,TSG Hoffenheim,Bundesliga,83,83.0,81.0,78.0,80.0,83.0,81.75,78.0,81.0,3.75,High Protection and Distribution,5.24040587177539,-0.06883811057736636
+Giorgi Mamardashvili,Goalkeeper,Liverpool,Premier League,84,84.0,81.0,72.0,84.0,84.0,83.25,72.0,81.0,11.25,High Protection and Distribution,5.315130173071353,-1.120224345194645
