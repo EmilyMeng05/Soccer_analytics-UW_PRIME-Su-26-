@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Optimized Team vs Independent Position Specialists</title>
+<style>
+:root{--bg:#f7f7f4;--panel:#fff;--text:#17211b;--muted:#637068;--line:#dfe5e0;--opt:#207a53;--base:#68717a}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,sans-serif}
+main{max-width:1050px;margin:auto;padding:34px 22px} h1{font-size:clamp(26px,4vw,42px);margin:0 0 6px} .subtitle{color:var(--muted);margin:0 0 28px}
+.headline{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:26px} .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.big{font-size:30px;font-weight:700} .small{color:var(--muted)} .charts{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-bottom:28px}
+.metric h2{font-size:16px;margin:0 0 10px} .bar-row{display:grid;grid-template-columns:90px 1fr 55px;gap:10px;align-items:center;margin:9px 0}
+.bar-track{height:14px;background:var(--line);border-radius:20px;overflow:hidden} .bar{height:100%} .optimized{background:var(--opt)} .baseline{background:var(--base)}
+table{width:100%;border-collapse:collapse;background:var(--panel)} th,td{padding:12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top} th{color:var(--muted);font-size:13px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px} .pill{font-size:13px;color:var(--muted)} .note{margin-top:18px;color:var(--muted)}
+@media(max-width:700px){.headline,.charts{grid-template-columns:1fr} .bar-row{grid-template-columns:82px 1fr 50px}}
+</style></head><body><main>
+<h1>Optimized 4-3-3 vs independent position specialists</h1>
+<p class="subtitle">Specialists maximize the position-specific attribute grade. The optimized XI also considers OVR, position fit, formation flexibility, and squad continuity.</p>
+<div class="headline">
+ <div class="card"><div class="big">5 of 7</div><div class="small">role groups select the same player set</div></div>
+ <div class="card"><div class="big">2</div><div class="small">role groups change when specialists are chosen independently</div></div>
+</div>
+<div class="charts">
+        <section class="metric">
+          <h2>Average Role Attribute Score</h2>
+          <div class="bar-row"><span>Optimized</span><div class="bar-track"><div class="bar optimized" style="width:88.08%"></div></div><strong>88.08</strong></div>
+          <div class="bar-row"><span>Specialists</span><div class="bar-track"><div class="bar baseline" style="width:88.32%"></div></div><strong>88.32</strong></div>
+        </section>
+        <section class="metric">
+          <h2>Average Role Suitability</h2>
+          <div class="bar-row"><span>Optimized</span><div class="bar-track"><div class="bar optimized" style="width:91.31%"></div></div><strong>91.31</strong></div>
+          <div class="bar-row"><span>Specialists</span><div class="bar-track"><div class="bar baseline" style="width:91.16%"></div></div><strong>91.16</strong></div>
+        </section>
+        <section class="metric">
+          <h2>Average Position Fit</h2>
+          <div class="bar-row"><span>Optimized</span><div class="bar-track"><div class="bar optimized" style="width:100.00%"></div></div><strong>100.00</strong></div>
+          <div class="bar-row"><span>Specialists</span><div class="bar-track"><div class="bar baseline" style="width:100.00%"></div></div><strong>100.00</strong></div>
+        </section></div>
+<div class="table-wrap"><table><thead><tr><th>Role</th><th>Optimized method</th><th>Independent specialists</th><th>Optimized grade</th><th>Specialist grade</th><th>Result</th></tr></thead><tbody><tr><td>Goalkeeper</td><td>Alisson</td><td>Alisson</td><td>87.20</td><td>87.20</td><td><span class='pill'>Same</span></td></tr><tr><td>Center Back</td><td>Gabriel, Virgil van Dijk</td><td>Gabriel, Virgil van Dijk</td><td>88.72</td><td>88.72</td><td><span class='pill'>Same</span></td></tr><tr><td>Full Back</td><td>Achraf Hakimi, Nuno Mendes</td><td>Achraf Hakimi, Nuno Mendes</td><td>86.28</td><td>86.28</td><td><span class='pill'>Same</span></td></tr><tr><td>Defensive Midfielder</td><td>Rodri</td><td>Rodri</td><td>88.90</td><td>88.90</td><td><span class='pill'>Same</span></td></tr><tr><td>Central Midfielder</td><td>Federico Valverde, Pedri</td><td>Kevin De Bruyne, Martin Ødegaard</td><td>86.88</td><td>88.00</td><td><span class='pill'>Different</span></td></tr><tr><td>Winger</td><td>Bukayo Saka, Vini Jr.</td><td>Rodrygo, Vini Jr.</td><td>88.14</td><td>88.22</td><td><span class='pill'>Different</span></td></tr><tr><td>Striker</td><td>Erling Haaland</td><td>Erling Haaland</td><td>91.88</td><td>91.88</td><td><span class='pill'>Same</span></td></tr></tbody></table></div>
+<p class="note">The role grade is computed before OVR and position fit are added. The optimized method uses final suitability = 40% role grade + 35% OVR + 25% position fit. Role-level rows compare player sets, so CB1/CB2 ordering does not create a false difference.</p>
+</main></body></html>
