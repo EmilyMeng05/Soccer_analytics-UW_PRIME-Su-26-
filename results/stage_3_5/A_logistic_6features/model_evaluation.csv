@@ -1,0 +1,2 @@
+Experiment,Model,Features,Position Labels,Top-1 Accuracy,Macro F1,Weighted F1,Top-2 Accuracy,Top-3 Accuracy
+3.5A,Logistic Regression,6,8,0.6694736842105263,0.603235021075371,0.6737328535891446,0.8627368421052631,0.9553684210526315

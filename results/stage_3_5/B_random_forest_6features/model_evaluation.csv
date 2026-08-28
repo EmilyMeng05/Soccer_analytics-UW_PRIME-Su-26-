@@ -1,0 +1,2 @@
+Experiment,Model,Features,Position Labels,Top-1 Accuracy,Macro F1,Weighted F1,Top-2 Accuracy,Top-3 Accuracy
+3.5B,Random Forest,6,8,0.6698947368421052,0.590256973391869,0.6694288750599526,0.8631578947368421,0.9515789473684211
