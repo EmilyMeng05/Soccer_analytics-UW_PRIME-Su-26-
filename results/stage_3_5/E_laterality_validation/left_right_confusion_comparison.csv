@@ -1,0 +1,4 @@
+Pair,Skills Only Left->Right,Skills Only Right->Left,Skills Only Total Confusion,With Foot Left->Right,With Foot Right->Left,With Foot Total Confusion,Confusion Reduction
+Left Back <-> Right Back,80,79,159,13,1,14,0.9119496855345912
+Left Midfielder <-> Right Midfielder,35,30,65,23,29,52,0.2
+Left Winger <-> Right Winger,15,9,24,11,10,21,0.125
