@@ -17,7 +17,7 @@ import unicodedata
 import numpy as np
 import pandas as pd
 
-from stage4_4_starting_xi_substitution_plans import add_tactical_scores, optimize_lineup
+from archive.stage4_4_starting_xi_substitution_plans import add_tactical_scores, optimize_lineup
 from stage5_1_match_simulation_engine import (
     N_SIMULATIONS,
     RANDOM_SEED,

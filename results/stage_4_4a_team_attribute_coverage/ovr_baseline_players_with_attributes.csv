@@ -1,0 +1,71 @@
+Method,Formation,Formation Slot,Name,Match Source,Player Key,PAC,SHO,PAS,DRI,DEF,PHY
+OVR Baseline,4-3-3,LB,Nuno Mendes,Player Key / ID,252145,95.0,65.0,76.0,82.0,80.0,77.0
+OVR Baseline,4-3-3,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,4-3-3,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,4-3-3,RB,Achraf Hakimi,Player Key / ID,235212,92.0,79.0,82.0,83.0,82.0,79.0
+OVR Baseline,4-3-3,DM,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,4-3-3,CM1,Jude Bellingham,Player Key / ID,252371,80.0,86.0,83.0,90.0,78.0,85.0
+OVR Baseline,4-3-3,CM2,Vitinha,Player Key / ID,255253,72.0,80.0,86.0,90.0,75.0,70.0
+OVR Baseline,4-3-3,LW,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,4-3-3,RW,Mohamed Salah,Player Key / ID,209331,89.0,88.0,86.0,90.0,45.0,76.0
+OVR Baseline,4-3-3,ST,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0
+OVR Baseline,4-2-3-1,LB,Nuno Mendes,Player Key / ID,252145,95.0,65.0,76.0,82.0,80.0,77.0
+OVR Baseline,4-2-3-1,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,4-2-3-1,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,4-2-3-1,RB,Achraf Hakimi,Player Key / ID,235212,92.0,79.0,82.0,83.0,82.0,79.0
+OVR Baseline,4-2-3-1,DM1,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,4-2-3-1,DM2,Vitinha,Player Key / ID,255253,72.0,80.0,86.0,90.0,75.0,70.0
+OVR Baseline,4-2-3-1,AM,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0
+OVR Baseline,4-2-3-1,LW,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,4-2-3-1,RW,Mohamed Salah,Player Key / ID,209331,89.0,88.0,86.0,90.0,45.0,76.0
+OVR Baseline,4-2-3-1,ST,Erling Haaland,Player Key / ID,239085,86.0,91.0,70.0,80.0,45.0,88.0
+OVR Baseline,4-4-2,LB,Nuno Mendes,Player Key / ID,252145,95.0,65.0,76.0,82.0,80.0,77.0
+OVR Baseline,4-4-2,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,4-4-2,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,4-4-2,RB,Achraf Hakimi,Player Key / ID,235212,92.0,79.0,82.0,83.0,82.0,79.0
+OVR Baseline,4-4-2,LM,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,4-4-2,CM1,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,4-4-2,CM2,Jude Bellingham,Player Key / ID,252371,80.0,86.0,83.0,90.0,78.0,85.0
+OVR Baseline,4-4-2,RM,Mohamed Salah,Player Key / ID,209331,89.0,88.0,86.0,90.0,45.0,76.0
+OVR Baseline,4-4-2,ST1,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0
+OVR Baseline,4-4-2,ST2,Erling Haaland,Player Key / ID,239085,86.0,91.0,70.0,80.0,45.0,88.0
+OVR Baseline,4-1-2-1-2,LB,Nuno Mendes,Player Key / ID,252145,95.0,65.0,76.0,82.0,80.0,77.0
+OVR Baseline,4-1-2-1-2,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,4-1-2-1-2,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,4-1-2-1-2,RB,Achraf Hakimi,Player Key / ID,235212,92.0,79.0,82.0,83.0,82.0,79.0
+OVR Baseline,4-1-2-1-2,DM,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,4-1-2-1-2,CM1,Jude Bellingham,Player Key / ID,252371,80.0,86.0,83.0,90.0,78.0,85.0
+OVR Baseline,4-1-2-1-2,CM2,Vitinha,Player Key / ID,255253,72.0,80.0,86.0,90.0,75.0,70.0
+OVR Baseline,4-1-2-1-2,AM,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0
+OVR Baseline,4-1-2-1-2,ST1,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,4-1-2-1-2,ST2,Erling Haaland,Player Key / ID,239085,86.0,91.0,70.0,80.0,45.0,88.0
+OVR Baseline,3-5-2,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,3-5-2,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,3-5-2,CB3,Alessandro Bastoni,Player Key / ID,237383,74.0,46.0,75.0,76.0,88.0,82.0
+OVR Baseline,3-5-2,LWB,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,3-5-2,RWB,Mohamed Salah,Player Key / ID,209331,89.0,88.0,86.0,90.0,45.0,76.0
+OVR Baseline,3-5-2,DM,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,3-5-2,CM1,Jude Bellingham,Player Key / ID,252371,80.0,86.0,83.0,90.0,78.0,85.0
+OVR Baseline,3-5-2,CM2,Vitinha,Player Key / ID,255253,72.0,80.0,86.0,90.0,75.0,70.0
+OVR Baseline,3-5-2,ST1,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0
+OVR Baseline,3-5-2,ST2,Erling Haaland,Player Key / ID,239085,86.0,91.0,70.0,80.0,45.0,88.0
+OVR Baseline,3-4-3,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,3-4-3,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,3-4-3,CB3,Alessandro Bastoni,Player Key / ID,237383,74.0,46.0,75.0,76.0,88.0,82.0
+OVR Baseline,3-4-3,LWB,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,3-4-3,RWB,Mohamed Salah,Player Key / ID,209331,89.0,88.0,86.0,90.0,45.0,76.0
+OVR Baseline,3-4-3,CM1,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,3-4-3,CM2,Jude Bellingham,Player Key / ID,252371,80.0,86.0,83.0,90.0,78.0,85.0
+OVR Baseline,3-4-3,LW,Raphinha,Player Key / ID,233419,91.0,84.0,85.0,87.0,53.0,75.0
+OVR Baseline,3-4-3,RW,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0
+OVR Baseline,3-4-3,ST,Erling Haaland,Player Key / ID,239085,86.0,91.0,70.0,80.0,45.0,88.0
+OVR Baseline,5-3-2,LB,Nuno Mendes,Player Key / ID,252145,95.0,65.0,76.0,82.0,80.0,77.0
+OVR Baseline,5-3-2,CB1,Virgil van Dijk,Player Key / ID,203376,73.0,60.0,72.0,72.0,90.0,87.0
+OVR Baseline,5-3-2,CB2,Gabriel,Player Key / ID,232580,64.0,44.0,64.0,65.0,88.0,84.0
+OVR Baseline,5-3-2,CB3,Alessandro Bastoni,Player Key / ID,237383,74.0,46.0,75.0,76.0,88.0,82.0
+OVR Baseline,5-3-2,RB,Achraf Hakimi,Player Key / ID,235212,92.0,79.0,82.0,83.0,82.0,79.0
+OVR Baseline,5-3-2,DM,Rodri,Player Key / ID,231866,65.0,80.0,86.0,84.0,86.0,85.0
+OVR Baseline,5-3-2,CM1,Jude Bellingham,Player Key / ID,252371,80.0,86.0,83.0,90.0,78.0,85.0
+OVR Baseline,5-3-2,CM2,Vitinha,Player Key / ID,255253,72.0,80.0,86.0,90.0,75.0,70.0
+OVR Baseline,5-3-2,ST1,Kylian Mbappé,Player Key / ID,231747,97.0,90.0,81.0,92.0,37.0,76.0
+OVR Baseline,5-3-2,ST2,Ousmane Dembélé,Player Key / ID,231443,91.0,88.0,83.0,93.0,50.0,69.0

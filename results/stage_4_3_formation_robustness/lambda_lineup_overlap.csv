@@ -1,0 +1,22 @@
+Formation,Lambda A,Lambda B,Shared Players,Jaccard Overlap,Only Lambda A,Only Lambda B
+4-3-3,0.1,0.25,10,0.8333333333333334,Rodri,Moisés Caicedo
+4-3-3,0.1,0.4,9,0.6923076923076923,Achraf Hakimi|Rodri,Carvajal|Moisés Caicedo
+4-3-3,0.25,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal
+4-2-3-1,0.1,0.25,10,0.8333333333333334,Rodri,N'Golo Kanté
+4-2-3-1,0.1,0.4,9,0.6923076923076923,Achraf Hakimi|Rodri,Carvajal|N'Golo Kanté
+4-2-3-1,0.25,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal
+4-4-2,0.1,0.25,9,0.6923076923076923,Kylian Mbappé|Mohamed Salah,Bukayo Saka|Dan Ndoye
+4-4-2,0.1,0.4,8,0.5714285714285714,Achraf Hakimi|Kylian Mbappé|Mohamed Salah,Adama Traoré|Carvajal|Dan Ndoye
+4-4-2,0.25,0.4,9,0.6923076923076923,Achraf Hakimi|Bukayo Saka,Adama Traoré|Carvajal
+4-1-2-1-2,0.1,0.25,10,0.8333333333333334,Rodri,Moisés Caicedo
+4-1-2-1-2,0.1,0.4,9,0.6923076923076923,Achraf Hakimi|Rodri,Carvajal|Moisés Caicedo
+4-1-2-1-2,0.25,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal
+3-5-2,0.1,0.25,10,0.8333333333333334,Rodri,Moisés Caicedo
+3-5-2,0.1,0.4,9,0.6923076923076923,Achraf Hakimi|Rodri,Carvajal|Moisés Caicedo
+3-5-2,0.25,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal
+3-4-3,0.1,0.25,11,1.0,,
+3-4-3,0.1,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal
+3-4-3,0.25,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal
+5-3-2,0.1,0.25,10,0.8333333333333334,Rodri,Moisés Caicedo
+5-3-2,0.1,0.4,9,0.6923076923076923,Achraf Hakimi|Rodri,Carvajal|Moisés Caicedo
+5-3-2,0.25,0.4,10,0.8333333333333334,Achraf Hakimi,Carvajal

@@ -1,0 +1,10 @@
+Name,Formations Selected,Number of Formations,Formation Robustness,Method,Core Threshold
+Achraf Hakimi,3-4-3|3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|4-4-2|5-3-2,7,1.0,Role-Adjusted Quality (lambda=0.25),0.7
+Alisson,3-4-3|3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|4-4-2|5-3-2,7,1.0,Role-Adjusted Quality (lambda=0.25),0.7
+Erling Haaland,3-4-3|3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|4-4-2|5-3-2,7,1.0,Role-Adjusted Quality (lambda=0.25),0.7
+Gabriel,3-4-3|3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|4-4-2|5-3-2,7,1.0,Role-Adjusted Quality (lambda=0.25),0.7
+Nuno Mendes,3-4-3|3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|4-4-2|5-3-2,7,1.0,Role-Adjusted Quality (lambda=0.25),0.7
+Virgil van Dijk,3-4-3|3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|4-4-2|5-3-2,7,1.0,Role-Adjusted Quality (lambda=0.25),0.7
+Pedri,3-4-3|3-5-2|4-1-2-1-2|4-3-3|4-4-2|5-3-2,6,0.8571428571428571,Role-Adjusted Quality (lambda=0.25),0.7
+Vitinha,3-4-3|3-5-2|4-1-2-1-2|4-3-3|4-4-2|5-3-2,6,0.8571428571428571,Role-Adjusted Quality (lambda=0.25),0.7
+Moisés Caicedo,3-5-2|4-1-2-1-2|4-2-3-1|4-3-3|5-3-2,5,0.7142857142857143,Role-Adjusted Quality (lambda=0.25),0.7

@@ -1,0 +1,78 @@
+Method,Role Adjustment Strength,Formation,Formation Slot,Name,Player Key,Primary Position,OVR,Quality Score,Role Fit Score,Role Fit Penalty,Selection Score,Accepted Exact Positions,Suitability Roles,Player Exact Eligible Positions
+Role-Adjusted Quality,0.25,4-3-3,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,4-3-3,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back,Fullback,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,4-3-3,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-3-3,CB2,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-3-3,RB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back,Fullback,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,4-3-3,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.004320283393134644,0.8662413534479729,Defensive Midfielder,Defensive Midfielder,Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-3-3,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.030736171861737882,0.8626448070430534,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-3-3,CM2,Vitinha,255253,Central Midfielder,89.0,0.89,0.795899749002126,0.0510250627494685,0.8445876941529731,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-3-3,LW,Vini Jr.,238794,Left Winger,89.0,0.89,0.804790673085482,0.048802331728629494,0.8465659247615198,Left Winger,Winger,Left Midfielder|Left Winger|Striker
+Role-Adjusted Quality,0.25,4-3-3,RW,Mohamed Salah,209331,Right Midfielder,91.0,0.91,0.6368583257414466,0.09078541856463834,0.827385269106179,Right Winger,Winger,Right Midfielder|Right Winger
+Role-Adjusted Quality,0.25,4-3-3,ST,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,4-2-3-1,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,4-2-3-1,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back,Fullback,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,4-2-3-1,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-2-3-1,CB2,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-2-3-1,RB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back,Fullback,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,4-2-3-1,DM1,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.004320283393134644,0.8662413534479729,Defensive Midfielder,Defensive Midfielder,Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-2-3-1,DM2,N'Golo Kanté,215914,Defensive Midfielder,85.0,0.85,0.9692898560025314,0.007677535999367158,0.8434740944005379,Defensive Midfielder,Defensive Midfielder,Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-2-3-1,AM,Jamal Musiala,256790,Attacking Midfielder,88.0,0.88,0.92995252531437,0.0175118686714075,0.8645895555691614,Attacking Midfielder,Attacking Midfielder,Attacking Midfielder|Central Midfielder|Left Midfielder|Striker
+Role-Adjusted Quality,0.25,4-2-3-1,LW,Vini Jr.,238794,Left Winger,89.0,0.89,0.804790673085482,0.048802331728629494,0.8465659247615198,Left Winger,Winger,Left Midfielder|Left Winger|Striker
+Role-Adjusted Quality,0.25,4-2-3-1,RW,Mohamed Salah,209331,Right Midfielder,91.0,0.91,0.6368583257414466,0.09078541856463834,0.827385269106179,Right Winger,Winger,Right Midfielder|Right Winger
+Role-Adjusted Quality,0.25,4-2-3-1,ST,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,4-4-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,4-4-2,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back,Fullback,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,4-4-2,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-4-2,CB2,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-4-2,RB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back,Fullback,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,4-4-2,LM,Dan Ndoye,257980,Left Midfielder,79.0,0.79,0.6956324948037924,0.0760918762990519,0.729887417723749,Left Midfielder,Wide Midfielder,Left Midfielder|Left Winger|Right Midfielder
+Role-Adjusted Quality,0.25,4-4-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.030736171861737882,0.8626448070430534,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-4-2,CM2,Vitinha,255253,Central Midfielder,89.0,0.89,0.795899749002126,0.0510250627494685,0.8445876941529731,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-4-2,RM,Bukayo Saka,246669,Right Winger,88.0,0.88,0.4636782264920498,0.13408044337698755,0.7620092098282509,Right Midfielder,Wide Midfielder,Right Midfielder|Right Winger
+Role-Adjusted Quality,0.25,4-4-2,ST1,Harry Kane,202126,Striker,89.0,0.89,0.9841806203997862,0.003954844900053461,0.8864801880389525,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,4-4-2,ST2,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,4-1-2-1-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,4-1-2-1-2,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back,Fullback,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,4-1-2-1-2,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-1-2-1-2,CB2,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,4-1-2-1-2,RB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back,Fullback,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,4-1-2-1-2,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.004320283393134644,0.8662413534479729,Defensive Midfielder,Defensive Midfielder,Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-1-2-1-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.030736171861737882,0.8626448070430534,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-1-2-1-2,CM2,Vitinha,255253,Central Midfielder,89.0,0.89,0.795899749002126,0.0510250627494685,0.8445876941529731,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,4-1-2-1-2,AM,Jamal Musiala,256790,Attacking Midfielder,88.0,0.88,0.92995252531437,0.0175118686714075,0.8645895555691614,Attacking Midfielder,Attacking Midfielder,Attacking Midfielder|Central Midfielder|Left Midfielder|Striker
+Role-Adjusted Quality,0.25,4-1-2-1-2,ST1,Harry Kane,202126,Striker,89.0,0.89,0.9841806203997862,0.003954844900053461,0.8864801880389525,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,4-1-2-1-2,ST2,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,3-5-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,3-5-2,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,3-5-2,CB2,Jonathan Tah,213331,Center Back,87.0,0.87,0.9997990044585502,5.0248885362452755e-05,0.8699562834697346,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,3-5-2,CB3,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,3-5-2,LWB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back|Left Midfielder,Fullback|Wide Midfielder,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,3-5-2,RWB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back|Right Midfielder,Fullback|Wide Midfielder,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,3-5-2,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.004320283393134644,0.8662413534479729,Defensive Midfielder,Defensive Midfielder,Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,3-5-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.030736171861737882,0.8626448070430534,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,3-5-2,CM2,Vitinha,255253,Central Midfielder,89.0,0.89,0.795899749002126,0.0510250627494685,0.8445876941529731,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,3-5-2,ST1,Harry Kane,202126,Striker,89.0,0.89,0.9841806203997862,0.003954844900053461,0.8864801880389525,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,3-5-2,ST2,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,3-4-3,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,3-4-3,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,3-4-3,CB2,Jonathan Tah,213331,Center Back,87.0,0.87,0.9997990044585502,5.0248885362452755e-05,0.8699562834697346,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,3-4-3,CB3,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,3-4-3,LWB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back|Left Midfielder,Fullback|Wide Midfielder,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,3-4-3,RWB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back|Right Midfielder,Fullback|Wide Midfielder,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,3-4-3,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.030736171861737882,0.8626448070430534,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,3-4-3,CM2,Vitinha,255253,Central Midfielder,89.0,0.89,0.795899749002126,0.0510250627494685,0.8445876941529731,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,3-4-3,LW,Vini Jr.,238794,Left Winger,89.0,0.89,0.804790673085482,0.048802331728629494,0.8465659247615198,Left Winger,Winger,Left Midfielder|Left Winger|Striker
+Role-Adjusted Quality,0.25,3-4-3,RW,Mohamed Salah,209331,Right Midfielder,91.0,0.91,0.6368583257414466,0.09078541856463834,0.827385269106179,Right Winger,Winger,Right Midfielder|Right Winger
+Role-Adjusted Quality,0.25,3-4-3,ST,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,5-3-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.032,0.86152,Goalkeeper,GoalkeeperSkill,Goalkeeper
+Role-Adjusted Quality,0.25,5-3-2,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.0012427990048050064,0.8589311928558677,Left Back,Fullback,Left Back|Left Midfielder
+Role-Adjusted Quality,0.25,5-3-2,CB1,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.0009549312451097025,0.8991405618794013,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,5-3-2,CB2,Jonathan Tah,213331,Center Back,87.0,0.87,0.9997990044585502,5.0248885362452755e-05,0.8699562834697346,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,5-3-2,CB3,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,7.260446372989171e-05,0.8799361080719177,Center Back,Center Back,Center Back
+Role-Adjusted Quality,0.25,5-3-2,RB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.8337612402261589,0.041559689943460265,0.8530118759503204,Right Back,Fullback,Right Back|Right Midfielder
+Role-Adjusted Quality,0.25,5-3-2,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.004320283393134644,0.8662413534479729,Defensive Midfielder,Defensive Midfielder,Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,5-3-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.030736171861737882,0.8626448070430534,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,5-3-2,CM2,Vitinha,255253,Central Midfielder,89.0,0.89,0.795899749002126,0.0510250627494685,0.8445876941529731,Central Midfielder,Central Midfielder,Attacking Midfielder|Central Midfielder|Defensive Midfielder
+Role-Adjusted Quality,0.25,5-3-2,ST1,Harry Kane,202126,Striker,89.0,0.89,0.9841806203997862,0.003954844900053461,0.8864801880389525,Striker,Striker,Striker
+Role-Adjusted Quality,0.25,5-3-2,ST2,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,9.71787131714974e-06,0.8999912539158146,Striker,Striker,Striker

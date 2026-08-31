@@ -1,0 +1,24 @@
+Name,OVR Number of Formations,OVR Formation Robustness,Role-Adjusted Number of Formations,Role-Adjusted Formation Robustness,Change in Number of Formations,Change in Formation Robustness,Robustness Direction
+Pedri,0.0,0.0,6.0,0.8571428571428571,6.0,0.8571428571428571,Gained Robustness
+Moisés Caicedo,0.0,0.0,5.0,0.7142857142857143,5.0,0.7142857142857143,Gained Robustness
+Harry Kane,0.0,0.0,4.0,0.5714285714285714,4.0,0.5714285714285714,Gained Robustness
+Jonathan Tah,0.0,0.0,3.0,0.42857142857142855,3.0,0.42857142857142855,Gained Robustness
+Vini Jr.,0.0,0.0,3.0,0.42857142857142855,3.0,0.42857142857142855,Gained Robustness
+Achraf Hakimi,5.0,0.7142857142857143,7.0,1.0,2.0,0.2857142857142857,Gained Robustness
+Erling Haaland,5.0,0.7142857142857143,7.0,1.0,2.0,0.2857142857142857,Gained Robustness
+Nuno Mendes,5.0,0.7142857142857143,7.0,1.0,2.0,0.2857142857142857,Gained Robustness
+Jamal Musiala,0.0,0.0,2.0,0.2857142857142857,2.0,0.2857142857142857,Gained Robustness
+Bukayo Saka,0.0,0.0,1.0,0.14285714285714285,1.0,0.14285714285714285,Gained Robustness
+Dan Ndoye,0.0,0.0,1.0,0.14285714285714285,1.0,0.14285714285714285,Gained Robustness
+N'Golo Kanté,0.0,0.0,1.0,0.14285714285714285,1.0,0.14285714285714285,Gained Robustness
+Vitinha,5.0,0.7142857142857143,6.0,0.8571428571428571,1.0,0.1428571428571428,Gained Robustness
+Alisson,7.0,1.0,7.0,1.0,0.0,0.0,Unchanged
+Gabriel,7.0,1.0,7.0,1.0,0.0,0.0,Unchanged
+Virgil van Dijk,7.0,1.0,7.0,1.0,0.0,0.0,Unchanged
+Raphinha,1.0,0.14285714285714285,0.0,0.0,-1.0,-0.14285714285714285,Lost Robustness
+Mohamed Salah,5.0,0.7142857142857143,3.0,0.42857142857142855,-2.0,-0.28571428571428575,Lost Robustness
+Alessandro Bastoni,3.0,0.42857142857142855,0.0,0.0,-3.0,-0.42857142857142855,Lost Robustness
+Jude Bellingham,6.0,0.8571428571428571,0.0,0.0,-6.0,-0.8571428571428571,Lost Robustness
+Kylian Mbappé,7.0,1.0,0.0,0.0,-7.0,-1.0,Lost Robustness
+Ousmane Dembélé,7.0,1.0,0.0,0.0,-7.0,-1.0,Lost Robustness
+Rodri,7.0,1.0,0.0,0.0,-7.0,-1.0,Lost Robustness

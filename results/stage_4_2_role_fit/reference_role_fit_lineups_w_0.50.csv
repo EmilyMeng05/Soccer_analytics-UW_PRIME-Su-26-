@@ -1,0 +1,78 @@
+Method,Role Fit Weight,Formation,Formation Slot,Name,Player Key,Primary Position,OVR,Quality Score,Role Fit Score,Selection Score,Accepted Exact Positions,Suitability Roles
+Quality + Role Fit,0.5,4-3-3,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,4-3-3,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.92751440199039,Left Back,Fullback
+Quality + Role Fit,0.5,4-3-3,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,4-3-3,CB2,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,4-3-3,RB,Carvajal,204963,Right Back,85.0,0.85,0.98902408278031,0.919512041390155,Right Back,Fullback
+Quality + Role Fit,0.5,4-3-3,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.9263594332137307,Defensive Midfielder,Defensive Midfielder
+Quality + Role Fit,0.5,4-3-3,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.8835276562765242,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,4-3-3,CM2,Gavi,264240,Central Midfielder,83.0,0.83,0.8806411715533047,0.8553205857766524,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,4-3-3,LW,Vini Jr.,238794,Left Winger,89.0,0.89,0.804790673085482,0.847395336542741,Left Winger,Winger
+Quality + Role Fit,0.5,4-3-3,RW,Rodrygo,243812,Right Winger,85.0,0.85,0.7235301846910862,0.7867650923455431,Right Winger,Winger
+Quality + Role Fit,0.5,4-3-3,ST,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,4-2-3-1,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,4-2-3-1,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.92751440199039,Left Back,Fullback
+Quality + Role Fit,0.5,4-2-3-1,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,4-2-3-1,CB2,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,4-2-3-1,RB,Carvajal,204963,Right Back,85.0,0.85,0.98902408278031,0.919512041390155,Right Back,Fullback
+Quality + Role Fit,0.5,4-2-3-1,DM1,N'Golo Kanté,215914,Defensive Midfielder,85.0,0.85,0.9692898560025314,0.9096449280012657,Defensive Midfielder,Defensive Midfielder
+Quality + Role Fit,0.5,4-2-3-1,DM2,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.9263594332137307,Defensive Midfielder,Defensive Midfielder
+Quality + Role Fit,0.5,4-2-3-1,AM,Jamal Musiala,256790,Attacking Midfielder,88.0,0.88,0.92995252531437,0.904976262657185,Attacking Midfielder,Attacking Midfielder
+Quality + Role Fit,0.5,4-2-3-1,LW,Vini Jr.,238794,Left Winger,89.0,0.89,0.804790673085482,0.847395336542741,Left Winger,Winger
+Quality + Role Fit,0.5,4-2-3-1,RW,Rodrygo,243812,Right Winger,85.0,0.85,0.7235301846910862,0.7867650923455431,Right Winger,Winger
+Quality + Role Fit,0.5,4-2-3-1,ST,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,4-4-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,4-4-2,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.92751440199039,Left Back,Fullback
+Quality + Role Fit,0.5,4-4-2,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,4-4-2,CB2,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,4-4-2,RB,Carvajal,204963,Right Back,85.0,0.85,0.98902408278031,0.919512041390155,Right Back,Fullback
+Quality + Role Fit,0.5,4-4-2,LM,Samuel Iling-Junior,272379,Left Midfielder,74.0,0.74,0.8155818472390659,0.777790923619533,Left Midfielder,Wide Midfielder
+Quality + Role Fit,0.5,4-4-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.8835276562765242,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,4-4-2,CM2,Gavi,264240,Central Midfielder,83.0,0.83,0.8806411715533047,0.8553205857766524,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,4-4-2,RM,Adama Traoré,213956,Right Midfielder,76.0,0.76,0.8025271649032177,0.7812635824516089,Right Midfielder,Wide Midfielder
+Quality + Role Fit,0.5,4-4-2,ST1,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,4-4-2,ST2,Lautaro Martínez,231478,Striker,88.0,0.88,0.9957760401692644,0.9378880200846322,Striker,Striker
+Quality + Role Fit,0.5,4-1-2-1-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,4-1-2-1-2,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.92751440199039,Left Back,Fullback
+Quality + Role Fit,0.5,4-1-2-1-2,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,4-1-2-1-2,CB2,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,4-1-2-1-2,RB,Carvajal,204963,Right Back,85.0,0.85,0.98902408278031,0.919512041390155,Right Back,Fullback
+Quality + Role Fit,0.5,4-1-2-1-2,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.9263594332137307,Defensive Midfielder,Defensive Midfielder
+Quality + Role Fit,0.5,4-1-2-1-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.8835276562765242,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,4-1-2-1-2,CM2,Gavi,264240,Central Midfielder,83.0,0.83,0.8806411715533047,0.8553205857766524,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,4-1-2-1-2,AM,Jamal Musiala,256790,Attacking Midfielder,88.0,0.88,0.92995252531437,0.904976262657185,Attacking Midfielder,Attacking Midfielder
+Quality + Role Fit,0.5,4-1-2-1-2,ST1,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,4-1-2-1-2,ST2,Lautaro Martínez,231478,Striker,88.0,0.88,0.9957760401692644,0.9378880200846322,Striker,Striker
+Quality + Role Fit,0.5,3-5-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,3-5-2,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,3-5-2,CB2,Jonathan Tah,213331,Center Back,87.0,0.87,0.9997990044585502,0.9348995022292751,Center Back,Center Back
+Quality + Role Fit,0.5,3-5-2,CB3,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,3-5-2,LWB,Nuno Mendes,252145,Left Back,86.0,0.86,0.49913700551221657,0.6795685027561083,Left Back|Left Midfielder,Fullback|Wide Midfielder
+Quality + Role Fit,0.5,3-5-2,RWB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.47259382864328153,0.6812969143216407,Right Back|Right Midfielder,Fullback|Wide Midfielder
+Quality + Role Fit,0.5,3-5-2,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.9263594332137307,Defensive Midfielder,Defensive Midfielder
+Quality + Role Fit,0.5,3-5-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.8835276562765242,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,3-5-2,CM2,Gavi,264240,Central Midfielder,83.0,0.83,0.8806411715533047,0.8553205857766524,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,3-5-2,ST1,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,3-5-2,ST2,Lautaro Martínez,231478,Striker,88.0,0.88,0.9957760401692644,0.9378880200846322,Striker,Striker
+Quality + Role Fit,0.5,3-4-3,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,3-4-3,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,3-4-3,CB2,Jonathan Tah,213331,Center Back,87.0,0.87,0.9997990044585502,0.9348995022292751,Center Back,Center Back
+Quality + Role Fit,0.5,3-4-3,CB3,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,3-4-3,LWB,Nuno Mendes,252145,Left Back,86.0,0.86,0.49913700551221657,0.6795685027561083,Left Back|Left Midfielder,Fullback|Wide Midfielder
+Quality + Role Fit,0.5,3-4-3,RWB,Achraf Hakimi,235212,Right Back,89.0,0.89,0.47259382864328153,0.6812969143216407,Right Back|Right Midfielder,Fullback|Wide Midfielder
+Quality + Role Fit,0.5,3-4-3,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.8835276562765242,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,3-4-3,CM2,Gavi,264240,Central Midfielder,83.0,0.83,0.8806411715533047,0.8553205857766524,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,3-4-3,LW,Vini Jr.,238794,Left Winger,89.0,0.89,0.804790673085482,0.847395336542741,Left Winger,Winger
+Quality + Role Fit,0.5,3-4-3,RW,Rodrygo,243812,Right Winger,85.0,0.85,0.7235301846910862,0.7867650923455431,Right Winger,Winger
+Quality + Role Fit,0.5,3-4-3,ST,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,5-3-2,GK,Alisson,212831,Goalkeeper,89.0,0.89,0.872,0.881,Goalkeeper,GoalkeeperSkill
+Quality + Role Fit,0.5,5-3-2,LB,Nuno Mendes,252145,Left Back,86.0,0.86,0.99502880398078,0.92751440199039,Left Back,Fullback
+Quality + Role Fit,0.5,5-3-2,CB1,Gabriel,232580,Center Back,88.0,0.88,0.9997095821450804,0.9398547910725402,Center Back,Center Back
+Quality + Role Fit,0.5,5-3-2,CB2,Jonathan Tah,213331,Center Back,87.0,0.87,0.9997990044585502,0.9348995022292751,Center Back,Center Back
+Quality + Role Fit,0.5,5-3-2,CB3,Virgil van Dijk,203376,Center Back,90.0,0.9,0.9961802750195612,0.9480901375097806,Center Back,Center Back
+Quality + Role Fit,0.5,5-3-2,RB,Carvajal,204963,Right Back,85.0,0.85,0.98902408278031,0.919512041390155,Right Back,Fullback
+Quality + Role Fit,0.5,5-3-2,DM,Moisés Caicedo,256079,Defensive Midfielder,87.0,0.87,0.9827188664274614,0.9263594332137307,Defensive Midfielder,Defensive Midfielder
+Quality + Role Fit,0.5,5-3-2,CM1,Pedri,251854,Central Midfielder,89.0,0.89,0.8770553125530485,0.8835276562765242,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,5-3-2,CM2,Gavi,264240,Central Midfielder,83.0,0.83,0.8806411715533047,0.8553205857766524,Central Midfielder,Central Midfielder
+Quality + Role Fit,0.5,5-3-2,ST1,Erling Haaland,239085,Striker,90.0,0.9,0.9999611285147314,0.9499805642573658,Striker,Striker
+Quality + Role Fit,0.5,5-3-2,ST2,Lautaro Martínez,231478,Striker,88.0,0.88,0.9957760401692644,0.9378880200846322,Striker,Striker
